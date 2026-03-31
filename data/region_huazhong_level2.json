@@ -1,0 +1,545 @@
+{
+  "region": "华中",
+  "level": 2,
+  "description": "华中地区国家二级博物馆数据",
+  "provinces": [
+    {
+      "name": "河南",
+      "cities": [
+        {
+          "name": "郑州市",
+          "museums": [
+            {
+              "name": "黄河博物馆",
+              "level": 2,
+              "address": "河南省郑州市惠济区迎宾路402号",
+              "lng": 113.622,
+              "lat": 34.851,
+              "description": "世界上最早的江河博物馆，展示黄河历史与治理。",
+              "treasures": [
+                {
+                  "name": "黄河治理历史文物",
+                  "era": "历代",
+                  "description": "系统展示黄河治理数千年历程的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "郑州山海砗磲博物馆",
+              "level": 2,
+              "address": "河南省郑州市金水区",
+              "lng": 113.68,
+              "lat": 34.776,
+              "description": "以砗磲文化为主题的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "砗磲工艺品",
+                  "era": "历代",
+                  "description": "收藏有珍贵的砗磲化石和工艺品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "开封市",
+          "museums": [
+            {
+              "name": "开封市博物馆",
+              "level": 2,
+              "address": "河南省开封市鼓楼区迎宾路26号",
+              "lng": 114.358,
+              "lat": 34.792,
+              "description": "以宋代文物为特色的综合性历史博物馆。",
+              "treasures": [
+                {
+                  "name": "宋代汴京文物",
+                  "era": "北宋",
+                  "description": "开封地区出土的北宋都城汴京时期珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "洛阳市",
+          "museums": [
+            {
+              "name": "洛阳民俗博物馆",
+              "level": 2,
+              "address": "河南省洛阳市老城区",
+              "lng": 112.46,
+              "lat": 34.69,
+              "description": "以洛阳民俗文化为主题的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "洛阳民俗文物",
+                  "era": "明清",
+                  "description": "收藏有大量洛阳地区的民俗文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "洛阳隋唐大运河文化博物馆",
+              "level": 2,
+              "address": "河南省洛阳市瀍河回族区",
+              "lng": 112.488,
+              "lat": 34.677,
+              "description": "展示隋唐大运河历史文化的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "隋唐运河遗物",
+                  "era": "隋唐",
+                  "description": "洛阳隋唐大运河含嘉仓等遗址出土文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "偃师博物馆",
+              "level": 2,
+              "address": "河南省洛阳市偃师区",
+              "lng": 112.79,
+              "lat": 34.724,
+              "description": "以二里头文化为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "二里头遗址文物",
+                  "era": "夏代",
+                  "description": "偃师二里头遗址出土的夏代文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "许昌市",
+          "museums": [
+            {
+              "name": "禹州钧官窑址博物馆",
+              "level": 2,
+              "address": "河南省许昌市禹州市",
+              "lng": 113.488,
+              "lat": 34.141,
+              "description": "以钧瓷文化为主题的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "钧窑瓷器",
+                  "era": "宋代",
+                  "description": "禹州钧官窑遗址出土的珍贵宋代钧瓷。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "濮阳市",
+          "museums": [
+            {
+              "name": "濮阳市博物馆",
+              "level": 2,
+              "address": "河南省濮阳市华龙区",
+              "lng": 115.029,
+              "lat": 35.762,
+              "description": "濮阳市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "西水坡蚌塑龙虎图案",
+                  "era": "新石器时代",
+                  "description": "距今约6400年的蚌壳摆塑龙虎图案，被誉为\"中华第一龙\"。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "三门峡市",
+          "museums": [
+            {
+              "name": "三门峡市虢国博物馆",
+              "level": 2,
+              "address": "河南省三门峡市湖滨区",
+              "lng": 111.201,
+              "lat": 34.785,
+              "description": "以虢国墓地出土文物为主题的遗址类博物馆。",
+              "treasures": [
+                {
+                  "name": "虢季子白盘（复制品）",
+                  "era": "西周",
+                  "description": "虢国墓地出土的大量精美青铜器和玉器。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "漯河市",
+          "museums": [
+            {
+              "name": "漯河市博物馆",
+              "level": 2,
+              "address": "河南省漯河市郾城区",
+              "lng": 114.016,
+              "lat": 33.576,
+              "description": "漯河市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "贾湖遗址出土文物（部分）",
+                  "era": "新石器时代",
+                  "description": "贾湖遗址相关展品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "湖北",
+      "cities": [
+        {
+          "name": "武汉市",
+          "museums": [
+            {
+              "name": "武汉市中山舰博物馆",
+              "level": 2,
+              "address": "湖北省武汉市江夏区金口街",
+              "lng": 114.216,
+              "lat": 30.382,
+              "description": "以中山舰实物为核心的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "中山舰",
+                  "era": "近代",
+                  "description": "孙中山蒙难时乘坐的军舰，打捞修复后展出。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "武汉革命博物馆",
+              "level": 2,
+              "address": "湖北省武汉市武昌区红巷13号",
+              "lng": 114.308,
+              "lat": 30.547,
+              "description": "展示武汉地区革命历史的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "武汉革命历史文物",
+                  "era": "近代",
+                  "description": "收藏有大量武汉地区革命历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "长江文明馆",
+              "level": 2,
+              "address": "湖北省武汉市硚口区金南二路8号",
+              "lng": 114.22,
+              "lat": 30.59,
+              "description": "以长江文明为主题的大型综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "长江流域文物",
+                  "era": "历代",
+                  "description": "系统展示长江流域文明发展历程的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "盘龙城遗址博物院",
+              "level": 2,
+              "address": "湖北省武汉市黄陂区",
+              "lng": 114.25,
+              "lat": 30.69,
+              "description": "以商代盘龙城遗址为核心的博物馆。",
+              "treasures": [
+                {
+                  "name": "商代青铜大圆鼎",
+                  "era": "商代",
+                  "description": "盘龙城遗址出土的商代青铜器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "荆门市博物馆",
+              "level": 2,
+              "address": "湖北省荆门市东宝区",
+              "lng": 112.203,
+              "lat": 31.042,
+              "description": "荆门市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "郭店楚简",
+                  "era": "战国",
+                  "description": "荆门郭店一号楚墓出土的竹简，含大量先秦儒道文献。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "武汉中共中央机关旧址纪念馆",
+              "level": 2,
+              "address": "湖北省武汉市江岸区",
+              "lng": 114.298,
+              "lat": 30.581,
+              "description": "展示中共中央在武汉时期历史的纪念馆。",
+              "treasures": [
+                {
+                  "name": "大革命时期文物",
+                  "era": "近代",
+                  "description": "中共中央在武汉活动的历史文物和文献。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "宜昌市",
+          "museums": [
+            {
+              "name": "宜昌博物馆",
+              "level": 2,
+              "address": "湖北省宜昌市伍家岗区",
+              "lng": 111.316,
+              "lat": 30.692,
+              "description": "以巴楚文化为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "巴楚文物",
+                  "era": "春秋战国",
+                  "description": "宜昌地区出土的巴楚文化精品文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "襄阳市",
+          "museums": [
+            {
+              "name": "襄阳市博物馆",
+              "level": 2,
+              "address": "湖北省襄阳市襄城区",
+              "lng": 112.144,
+              "lat": 32.009,
+              "description": "以三国文化为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "三国时期文物",
+                  "era": "三国",
+                  "description": "襄阳地区出土的三国时期历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "黄冈市",
+          "museums": [
+            {
+              "name": "黄冈市博物馆",
+              "level": 2,
+              "address": "湖北省黄冈市黄州区",
+              "lng": 114.872,
+              "lat": 30.453,
+              "description": "黄冈市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "东坡赤壁文物",
+                  "era": "宋代",
+                  "description": "与苏东坡黄州时期相关的历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "黄麻起义和鄂豫皖苏区革命纪念馆",
+              "level": 2,
+              "address": "湖北省黄冈市红安县",
+              "lng": 114.616,
+              "lat": 31.284,
+              "description": "纪念黄麻起义的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "鄂豫皖苏区革命文物",
+                  "era": "近代",
+                  "description": "收藏有鄂豫皖苏区革命时期的珍贵历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "湖南",
+      "cities": [
+        {
+          "name": "长沙市",
+          "museums": [
+            {
+              "name": "长沙市博物馆",
+              "level": 2,
+              "address": "湖南省长沙市开福区新河三角洲",
+              "lng": 112.968,
+              "lat": 28.215,
+              "description": "长沙市综合性历史博物馆。",
+              "treasures": [
+                {
+                  "name": "长沙窑瓷器",
+                  "era": "唐代",
+                  "description": "长沙铜官窑遗址出土的唐代外销瓷器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国共产党长沙历史馆",
+              "level": 2,
+              "address": "湖南省长沙市岳麓区",
+              "lng": 112.931,
+              "lat": 28.23,
+              "description": "展示中国共产党在长沙活动历史的专题场馆。",
+              "treasures": [
+                {
+                  "name": "长沙革命历史文物",
+                  "era": "近代",
+                  "description": "收藏有中共在长沙活动的历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "浏阳市博物馆",
+              "level": 2,
+              "address": "湖南省长沙市浏阳市",
+              "lng": 113.633,
+              "lat": 28.163,
+              "description": "以花炮文化和浏阳历史为特色的博物馆。",
+              "treasures": [
+                {
+                  "name": "浏阳花炮文物",
+                  "era": "清代至现代",
+                  "description": "收藏有浏阳花炮制作工艺的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "宁乡市博物馆",
+              "level": 2,
+              "address": "湖南省长沙市宁乡市",
+              "lng": 112.553,
+              "lat": 28.253,
+              "description": "以宁乡青铜器为特色的博物馆。",
+              "treasures": [
+                {
+                  "name": "四羊方尊出土地文物",
+                  "era": "商代",
+                  "description": "宁乡地区出土的商代青铜器（四羊方尊出土地）。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "衡阳市",
+          "museums": [
+            {
+              "name": "衡阳市博物馆",
+              "level": 2,
+              "address": "湖南省衡阳市石鼓区",
+              "lng": 112.571,
+              "lat": 26.893,
+              "description": "衡阳市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "衡阳出土文物",
+                  "era": "历代",
+                  "description": "衡阳地区出土的历代珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "怀化市",
+          "museums": [
+            {
+              "name": "怀化市博物馆",
+              "level": 2,
+              "address": "湖南省怀化市鹤城区",
+              "lng": 110.002,
+              "lat": 27.57,
+              "description": "怀化市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "沅水流域文物",
+                  "era": "历代",
+                  "description": "怀化沅水流域出土的历代文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "湖南雷锋纪念馆",
+              "level": 2,
+              "address": "湖南省长沙市望城区",
+              "lng": 112.825,
+              "lat": 28.317,
+              "description": "纪念雷锋在湖南成长经历的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "雷锋在湖南的遗物",
+                  "era": "现代",
+                  "description": "收藏有雷锋在望城成长时期的珍贵遗物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "张家界市",
+          "museums": [
+            {
+              "name": "贺龙纪念馆",
+              "level": 2,
+              "address": "湖南省张家界市桑植县",
+              "lng": 110.165,
+              "lat": 29.395,
+              "description": "纪念贺龙元帅的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "贺龙遗物与文献",
+                  "era": "近代",
+                  "description": "收藏有贺龙元帅的珍贵遗物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+{
+  "region": "西北",
+  "provinces": [
+    {
+      "name": "陕西",
+      "cities": [
+        {
+          "name": "西安市",
+          "museums": [
+            {
+              "name": "陕西历史博物馆",
+              "level": 1,
+              "address": "陕西省西安市雁塔区小寨东路91号",
+              "lng": 108.949,
+              "lat": 34.227,
+              "description": "中国第一座大型现代化国家级博物馆，被誉为\"古都明珠，华夏宝库\"。",
+              "treasures": [
+                {
+                  "name": "镶金兽首玛瑙杯",
+                  "era": "唐代",
+                  "description": "1970年何家村窖藏出土，选用罕见红色缠丝玛瑙制成，兽首口部镶金，首批禁止出国（境）展览文物。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Agate_cup_with_golden_beast_head.JPG/400px-Agate_cup_with_golden_beast_head.JPG"
+                },
+                {
+                  "name": "舞马衔杯纹银壶",
+                  "era": "唐代",
+                  "description": "何家村窖藏出土，仿游牧民族皮囊壶形制，壶身錾刻舞马衔杯图案。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "三彩载乐骆驼俑",
+                  "era": "唐代",
+                  "description": "骆驼上七位乐手演奏，展示了丝绸之路的文化交融，是唐三彩中的精品。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/TriColour-GlazedTombFigurine-1.jpg/400px-TriColour-GlazedTombFigurine-1.jpg"
+                },
+                {
+                  "name": "葡萄花鸟纹银香囊",
+                  "era": "唐代",
+                  "description": "何家村窖藏出土，通体银质镂空，内层球体可自由旋转，无论怎样转动香料不会洒出。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "鎏金舞马衔杯纹皮囊式银壶",
+                  "era": "唐代",
+                  "description": "高14.8厘米，壶两侧各有一匹舞马口衔酒杯的浮雕，印证了唐玄宗驯马舞的史实。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "皇后之玺",
+                  "era": "西汉",
+                  "description": "1968年咸阳出土，白玉质螭虎钮，篆刻\"皇后之玺\"四字，是目前发现的唯一一枚汉代皇后玉玺。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "五祀卫鼎",
+                  "era": "西周",
+                  "description": "铭文207字，记载了一件土地交易事件，对研究西周法律和土地制度有重要价值。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "鎏金铁芯铜龙",
+                  "era": "唐代",
+                  "description": "造型优美，龙体鎏金，以铁为芯，铜为表，反映了唐代金属工艺的高超水平。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "青釉提梁倒灌壶",
+                  "era": "五代",
+                  "description": "耀州窑精品，壶底有梅花孔可注水，正置后水不会流出，设计巧妙堪称一绝。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "秦始皇帝陵博物院",
+              "level": 1,
+              "address": "陕西省西安市临潼区",
+              "lng": 109.273,
+              "lat": 34.384,
+              "description": "以秦始皇兵马俑为核心的大型遗址博物院，世界文化遗产。",
+              "treasures": [
+                {
+                  "name": "铜车马",
+                  "era": "秦代",
+                  "description": "1980年秦陵出土，按真车真马二分之一比例制作，由3000多个零件组成，是中国考古史上体型最大、结构最复杂的古代青铜器。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Bronze_chariot_and_horses_No.2_%28Qin_dynasty%29.jpg/400px-Bronze_chariot_and_horses_No.2_%28Qin_dynasty%29.jpg"
+                },
+                {
+                  "name": "兵马俑",
+                  "era": "秦代",
+                  "description": "秦始皇陵陪葬坑出土的大量陶俑，被誉为\"世界第八大奇迹\"，已发掘8000余尊。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Terracotta_Army%2C_View_of_Pit_1.jpg/400px-Terracotta_Army%2C_View_of_Pit_1.jpg"
+                },
+                {
+                  "name": "跪射俑",
+                  "era": "秦代",
+                  "description": "秦兵马俑中保存最完整的一尊，左腿蹲曲，右膝跪地，双手持弓弩状，体现了秦军的严谨军事训练。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "高级军吏俑（将军俑）",
+                  "era": "秦代",
+                  "description": "身着双层战袍，头戴鹖冠，是秦俑中等级最高的武士俑，面容威严沉稳。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "百戏俑",
+                  "era": "秦代",
+                  "description": "秦陵K9901陪葬坑出土，上身赤裸，肌肉发达，推测为表演杂技的伎乐俑。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "石质铠甲",
+                  "era": "秦代",
+                  "description": "秦陵石铠甲坑出土，由数百片经过精心打磨的石片以铜丝穿缀而成。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "青铜仙鹤",
+                  "era": "秦代",
+                  "description": "秦陵出土的一组青铜禽鸟，造型写实，包括仙鹤、天鹅等，展示了秦代工匠的高超技艺。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "西安碑林博物馆",
+              "level": 1,
+              "address": "陕西省西安市碑林区三学街15号",
+              "lng": 108.948,
+              "lat": 34.252,
+              "description": "中国最大的碑石博物馆，收藏碑石3000余方。",
+              "treasures": [
+                {
+                  "name": "开成石经",
+                  "era": "唐代",
+                  "description": "唐文宗开成二年刻成，共114石，是中国最完整的石刻经书。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "大秦景教流行中国碑",
+                  "era": "唐代",
+                  "description": "记录景教（基督教聂斯脱里派）在唐朝传播的珍贵石碑。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "西安半坡博物馆",
+              "level": 1,
+              "address": "陕西省西安市灞桥区半坡路155号",
+              "lng": 109.025,
+              "lat": 34.277,
+              "description": "中国第一座新石器时代遗址博物馆。",
+              "treasures": [
+                {
+                  "name": "人面鱼纹彩陶盆",
+                  "era": "仰韶文化",
+                  "description": "距今约6000年，盆内绘有人面鱼纹图案，是仰韶文化的标志性文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "西安博物院",
+              "level": 1,
+              "address": "陕西省西安市碑林区友谊西路72号",
+              "lng": 108.93,
+              "lat": 34.241,
+              "description": "以小雁塔为核心的综合性历史博物馆。",
+              "treasures": [
+                {
+                  "name": "唐代三彩腾空马",
+                  "era": "唐代",
+                  "description": "西安出土的唐三彩精品，马腾空跃起的姿态极为生动。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "汉景帝阳陵博物院",
+              "level": 1,
+              "address": "陕西省西安市咸阳机场专用公路旁",
+              "lng": 108.857,
+              "lat": 34.415,
+              "description": "汉景帝刘启的陵墓遗址博物馆。",
+              "treasures": [
+                {
+                  "name": "汉代裸体彩绘陶俑",
+                  "era": "西汉",
+                  "description": "汉阳陵出土的大量彩绘陶俑，原本穿有丝绸衣物，展示了西汉社会生活。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "大唐西市博物馆",
+              "level": 1,
+              "address": "陕西省西安市莲湖区劳动南路118号",
+              "lng": 108.913,
+              "lat": 34.243,
+              "description": "建于唐长安城西市遗址之上的博物馆。",
+              "treasures": [
+                {
+                  "name": "丝绸之路贸易文物",
+                  "era": "唐代",
+                  "description": "唐代西市遗址出土的各类贸易文物，展示丝绸之路的繁荣。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "陕西自然博物馆",
+              "level": 1,
+              "address": "陕西省西安市雁塔区长安南路88号",
+              "lng": 108.946,
+              "lat": 34.215,
+              "description": "陕西省唯一的省级自然博物馆。",
+              "treasures": [
+                {
+                  "name": "大熊猫标本",
+                  "era": "现代",
+                  "description": "秦岭大熊猫等珍稀动植物标本。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "宝鸡市",
+          "museums": [
+            {
+              "name": "宝鸡青铜器博物院",
+              "level": 1,
+              "address": "陕西省宝鸡市渭滨区公园南路",
+              "lng": 107.15,
+              "lat": 34.354,
+              "description": "中国唯一以青铜器命名的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "何尊",
+                  "era": "西周",
+                  "description": "1963年宝鸡出土，内底铭文122字，\"宅兹中国\"是\"中国\"一词最早的文字记录。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/He_Zun.jpg/400px-He_Zun.jpg"
+                },
+                {
+                  "name": "逨盘",
+                  "era": "西周",
+                  "description": "2003年宝鸡眉县出土，铭文372字，记载了单氏家族八代人辅佐西周十二代天子的历史。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "折觥",
+                  "era": "西周",
+                  "description": "宝鸡出土的西周青铜酒器，造型为一只卧牛，器身装饰精美。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "秦公镈",
+                  "era": "春秋",
+                  "description": "宝鸡出土的秦国大型编钟之一，铭文记载了秦国的历史。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "铜禁",
+                  "era": "西周",
+                  "description": "宝鸡出土的西周铜禁，造型规整，是周代礼制的重要实物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "延安市",
+          "museums": [
+            {
+              "name": "延安革命纪念馆",
+              "level": 1,
+              "address": "陕西省延安市宝塔区王家坪路",
+              "lng": 109.476,
+              "lat": 36.6,
+              "description": "中华人民共和国成立后较早建立的革命纪念馆。",
+              "treasures": [
+                {
+                  "name": "延安时期历史文物",
+                  "era": "近代",
+                  "description": "收藏有大量延安时期的珍贵历史文物和文献。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "铜川市",
+          "museums": [
+            {
+              "name": "陕甘边革命根据地照金纪念馆",
+              "level": 1,
+              "address": "陕西省铜川市耀州区照金镇",
+              "lng": 108.779,
+              "lat": 35.096,
+              "description": "纪念陕甘边革命根据地的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "陕甘边革命根据地历史文物",
+                  "era": "近代",
+                  "description": "收藏有陕甘边革命根据地时期的历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "宝鸡市",
+          "museums": [
+            {
+              "name": "法门寺博物馆",
+              "level": 1,
+              "address": "陕西省宝鸡市扶风县法门镇",
+              "lng": 107.901,
+              "lat": 34.444,
+              "description": "以法门寺地宫出土文物为核心的博物馆。",
+              "treasures": [
+                {
+                  "name": "唐代鎏金银茶具",
+                  "era": "唐代",
+                  "description": "法门寺地宫出土的唐代宫廷茶具，是世界上发现的最早、最完整的宫廷茶具。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "佛指骨舍利",
+                  "era": "唐代",
+                  "description": "法门寺地宫出土的释迦牟尼佛指骨舍利，是佛教界至高无上的圣物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "咸阳市",
+          "museums": [
+            {
+              "name": "乾陵博物馆",
+              "level": 1,
+              "address": "陕西省咸阳市乾县乾陵",
+              "lng": 108.222,
+              "lat": 34.575,
+              "description": "以唐高宗与武则天合葬墓——乾陵为核心的博物馆。",
+              "treasures": [
+                {
+                  "name": "乾陵陪葬墓壁画",
+                  "era": "唐代",
+                  "description": "永泰公主墓、章怀太子墓等陪葬墓出土的精美唐代壁画。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "咸阳博物院",
+              "level": 1,
+              "address": "陕西省咸阳市渭城区中山街53号",
+              "lng": 108.712,
+              "lat": 34.339,
+              "description": "以秦汉文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "西汉三千彩绘兵马俑",
+                  "era": "西汉",
+                  "description": "咸阳杨家湾汉墓出土的大量彩绘兵马俑。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "汉中市",
+          "museums": [
+            {
+              "name": "汉中市博物馆",
+              "level": 1,
+              "address": "陕西省汉中市汉台区东大街26号",
+              "lng": 107.032,
+              "lat": 33.068,
+              "description": "以石门摩崖石刻为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "石门十三品",
+                  "era": "汉至宋",
+                  "description": "褒斜道石门及其南北山崖间的摩崖石刻，是中国书法史上的重要遗迹。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "甘肃",
+      "cities": [
+        {
+          "name": "兰州市",
+          "museums": [
+            {
+              "name": "甘肃省博物馆",
+              "level": 1,
+              "address": "甘肃省兰州市七里河区西津西路3号",
+              "lng": 103.823,
+              "lat": 36.056,
+              "description": "以丝绸之路文物和彩陶为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "铜奔马（马踏飞燕）",
+                  "era": "东汉",
+                  "description": "1969年甘肃武威雷台汉墓出土，三足腾空、一足踏燕，被选为中国旅游标志。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Gansu_Museum_2007_257.jpg/400px-Gansu_Museum_2007_257.jpg"
+                },
+                {
+                  "name": "舞蹈纹彩陶盆",
+                  "era": "新石器时代",
+                  "description": "1973年大通上孙家寨出土，盆内绘有三组五人手拉手跳舞的场景，是原始艺术的杰作。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "人头形器口彩陶瓶",
+                  "era": "新石器时代",
+                  "description": "甘肃秦安大地湾遗址出土，瓶口塑为人头形，五官清晰，是中国史前雕塑的代表作。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "驿使图画像砖",
+                  "era": "魏晋",
+                  "description": "嘉峪关魏晋墓出土，描绘一骑马驿使手持文书飞驰的场景，被选为中国邮政标志。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "铜鎏金观音菩萨像",
+                  "era": "明代",
+                  "description": "明永乐年间宫廷造像，鎏金铜质，通高20厘米，代表了明代铸造工艺最高水平。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "武威铜奔马仪仗队",
+                  "era": "东汉",
+                  "description": "雷台汉墓出土的完整青铜车马仪仗队，共39件，展示了东汉豪族的出行排场。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "敦煌市",
+          "museums": [
+            {
+              "name": "敦煌研究院",
+              "level": 1,
+              "address": "甘肃省酒泉市敦煌市莫高窟",
+              "lng": 94.806,
+              "lat": 40.036,
+              "description": "世界文化遗产莫高窟的保护研究机构和博物馆。",
+              "treasures": [
+                {
+                  "name": "莫高窟壁画与彩塑",
+                  "era": "十六国至元代",
+                  "description": "莫高窟保存有735个洞窟，45000平方米壁画，2415尊彩塑，是世界上规模最大的佛教艺术宝库。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "青海",
+      "cities": [
+        {
+          "name": "西宁市",
+          "museums": [
+            {
+              "name": "青海省博物馆",
+              "level": 1,
+              "address": "青海省西宁市城西区新宁路58号",
+              "lng": 101.757,
+              "lat": 36.617,
+              "description": "青海省唯一的省级综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "铜鎏金观音造像",
+                  "era": "明代",
+                  "description": "明代藏传佛教铜鎏金观音造像，工艺精湛，是青海省博物馆镇馆之宝。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "舞蹈纹彩陶盆",
+                  "era": "新石器时代",
+                  "description": "大通上孙家寨出土，描绘了远古先民手拉手跳舞的场景。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "宁夏",
+      "cities": [
+        {
+          "name": "银川市",
+          "museums": [
+            {
+              "name": "宁夏回族自治区博物馆",
+              "level": 1,
+              "address": "宁夏回族自治区银川市金凤区人民广场东街",
+              "lng": 106.263,
+              "lat": 38.473,
+              "description": "宁夏最大的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "鎏金铜牛",
+                  "era": "西夏",
+                  "description": "西夏王陵出土的鎏金铜牛，造型逼真，重188千克。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "固原市",
+          "museums": [
+            {
+              "name": "固原博物馆",
+              "level": 1,
+              "address": "宁夏回族自治区固原市原州区西城路133号",
+              "lng": 106.244,
+              "lat": 36.016,
+              "description": "以丝绸之路文物和北周墓葬文物为特色。",
+              "treasures": [
+                {
+                  "name": "北周鎏金银壶",
+                  "era": "北周",
+                  "description": "固原李贤墓出土，造型为萨珊波斯风格，壶身浮雕描绘特洛伊战争的场景，是东西方文化交流的珍贵实物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新疆",
+      "cities": [
+        {
+          "name": "乌鲁木齐市",
+          "museums": [
+            {
+              "name": "新疆维吾尔自治区博物馆",
+              "level": 1,
+              "address": "新疆维吾尔自治区乌鲁木齐市沙依巴克区西北路581号",
+              "lng": 87.607,
+              "lat": 43.792,
+              "description": "新疆最大的综合性博物馆，以丝绸之路文物和古代干尸著称。",
+              "treasures": [
+                {
+                  "name": "\"五星出东方利中国\"锦护臂",
+                  "era": "汉代",
+                  "description": "1995年尼雅遗址出土，织有\"五星出东方利中国\"汉字，首批禁止出国（境）展览文物。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Wuxing_chu_dongfang_li_Zhongguo.jpg/400px-Wuxing_chu_dongfang_li_Zhongguo.jpg"
+                },
+                {
+                  "name": "楼兰美女干尸",
+                  "era": "约4000年前",
+                  "description": "1980年罗布泊发现，距今约3800年，保存极好，面部清晰可辨。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "彩绘伏羲女娲绢画",
+                  "era": "唐代",
+                  "description": "阿斯塔那墓出土，绢本设色，描绘伏羲女娲交尾图，是丝路文化的重要见证。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "彩绘天王踏鬼木俑",
+                  "era": "唐代",
+                  "description": "阿斯塔那墓出土的墓室守护神木俑，全身施彩绘，造型威严。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "\"望四海贵富寿为国庆\"锦",
+                  "era": "汉代",
+                  "description": "尼雅遗址出土，与\"五星\"锦同为珍贵的汉代织锦。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "五羊纹彩陶壶",
+                  "era": "新石器时代",
+                  "description": "新疆出土的彩陶精品，壶身绘有五只山羊图案，展示了西域古代生活。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

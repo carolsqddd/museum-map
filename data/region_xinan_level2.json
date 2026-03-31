@@ -1,0 +1,433 @@
+{
+  "region": "西南",
+  "level": 2,
+  "description": "西南地区国家二级博物馆数据",
+  "provinces": [
+    {
+      "name": "重庆",
+      "cities": [
+        {
+          "name": "重庆市",
+          "museums": [
+            {
+              "name": "重庆建川博物馆",
+              "level": 2,
+              "address": "重庆市九龙坡区谢家湾付家沟1号",
+              "lng": 106.496,
+              "lat": 29.51,
+              "description": "利用抗战时期兵工厂洞体建筑群打造的博物馆聚落。",
+              "treasures": [
+                {
+                  "name": "抗战兵工文物",
+                  "era": "近代",
+                  "description": "收藏有大量抗战时期重庆兵工厂的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "重庆巴人博物馆",
+              "level": 2,
+              "address": "重庆市九龙坡区红狮大道6号",
+              "lng": 106.465,
+              "lat": 29.502,
+              "description": "以巴人文化为主题的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "巴文化文物",
+                  "era": "商周至秦汉",
+                  "description": "收藏有巴蜀地区的古代巴人文化文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "重庆市北碚区博物馆",
+              "level": 2,
+              "address": "重庆市北碚区",
+              "lng": 106.394,
+              "lat": 29.804,
+              "description": "北碚区综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "卢作孚相关文物",
+                  "era": "近代",
+                  "description": "收藏有实业家卢作孚在北碚活动的历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "大足石刻博物馆",
+              "level": 2,
+              "address": "重庆市大足区",
+              "lng": 105.721,
+              "lat": 29.707,
+              "description": "以大足石刻世界文化遗产为核心的博物馆。",
+              "treasures": [
+                {
+                  "name": "大足石刻造像",
+                  "era": "唐宋",
+                  "description": "大足石刻保存有5万余尊唐宋造像，是世界石窟艺术的杰出代表。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "重庆白鹤梁水下博物馆",
+              "level": 2,
+              "address": "重庆市涪陵区",
+              "lng": 107.394,
+              "lat": 29.713,
+              "description": "世界首座水下博物馆，保护白鹤梁题刻。",
+              "treasures": [
+                {
+                  "name": "白鹤梁题刻",
+                  "era": "唐至清",
+                  "description": "白鹤梁上1200年间的水文题刻，被誉为\"世界第一古代水文站\"。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "四川",
+      "cities": [
+        {
+          "name": "成都市",
+          "museums": [
+            {
+              "name": "四川省建川博物馆",
+              "level": 2,
+              "address": "四川省成都市大邑县安仁镇",
+              "lng": 103.615,
+              "lat": 30.504,
+              "description": "中国最大的民间博物馆聚落，包含30余座博物馆。",
+              "treasures": [
+                {
+                  "name": "抗战文物",
+                  "era": "近代",
+                  "description": "收藏有800多万件抗战和近现代文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "大邑县刘氏庄园博物馆",
+              "level": 2,
+              "address": "四川省成都市大邑县安仁镇",
+              "lng": 103.618,
+              "lat": 30.503,
+              "description": "以大地主刘文彩庄园为馆址的博物馆。",
+              "treasures": [
+                {
+                  "name": "收租院泥塑",
+                  "era": "现代",
+                  "description": "著名的大型泥塑群像\"收租院\"。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "成都蜀锦织绣博物馆",
+              "level": 2,
+              "address": "四川省成都市青羊区",
+              "lng": 104.043,
+              "lat": 30.673,
+              "description": "以蜀锦蜀绣为主题的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "蜀锦蜀绣精品",
+                  "era": "历代",
+                  "description": "收藏有大量珍贵的蜀锦蜀绣艺术品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "成都川菜博物馆",
+              "level": 2,
+              "address": "四川省成都市郫都区",
+              "lng": 103.845,
+              "lat": 30.733,
+              "description": "世界唯一以菜系为主题的博物馆。",
+              "treasures": [
+                {
+                  "name": "川菜文化文物",
+                  "era": "历代",
+                  "description": "收藏有大量与川菜文化相关的历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "泸州市",
+          "museums": [
+            {
+              "name": "泸州市博物馆",
+              "level": 2,
+              "address": "四川省泸州市江阳区",
+              "lng": 105.442,
+              "lat": 28.872,
+              "description": "泸州市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "宋代石刻",
+                  "era": "宋代",
+                  "description": "泸州地区出土的宋代石刻精品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "眉山市",
+          "museums": [
+            {
+              "name": "眉山三苏祠博物馆",
+              "level": 2,
+              "address": "四川省眉山市东坡区",
+              "lng": 103.835,
+              "lat": 30.049,
+              "description": "苏洵、苏轼、苏辙三父子的故居博物馆。",
+              "treasures": [
+                {
+                  "name": "三苏文化文物",
+                  "era": "宋代",
+                  "description": "收藏有三苏相关的珍贵文物和碑刻。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "宜宾市",
+          "museums": [
+            {
+              "name": "宜宾市博物院",
+              "level": 2,
+              "address": "四川省宜宾市翠屏区",
+              "lng": 104.643,
+              "lat": 28.752,
+              "description": "以僰人文化和长江文化为特色的博物馆。",
+              "treasures": [
+                {
+                  "name": "僰人悬棺文物",
+                  "era": "明代",
+                  "description": "宜宾珙县僰人悬棺出土的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "巴中市",
+          "museums": [
+            {
+              "name": "川陕革命根据地博物馆",
+              "level": 2,
+              "address": "四川省巴中市巴州区",
+              "lng": 106.747,
+              "lat": 31.859,
+              "description": "展示川陕苏区革命历史的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "川陕苏区革命文物",
+                  "era": "近代",
+                  "description": "收藏有川陕苏区时期的珍贵革命文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "广元市",
+          "museums": [
+            {
+              "name": "广元市博物馆",
+              "level": 2,
+              "address": "四川省广元市利州区",
+              "lng": 105.829,
+              "lat": 32.433,
+              "description": "广元市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "蜀道文物",
+                  "era": "历代",
+                  "description": "广元蜀道沿线出土的历代珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "贵州",
+      "cities": [
+        {
+          "name": "贵阳市",
+          "museums": [
+            {
+              "name": "贵州省地质博物馆",
+              "level": 2,
+              "address": "贵州省贵阳市观山湖区",
+              "lng": 106.615,
+              "lat": 26.619,
+              "description": "展示贵州地质资源的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "贵州海生爬行动物化石",
+                  "era": "三叠纪",
+                  "description": "贵州关岭出土的珍贵海百合和海龙化石。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "毕节市",
+          "museums": [
+            {
+              "name": "毕节市博物馆",
+              "level": 2,
+              "address": "贵州省毕节市七星关区",
+              "lng": 105.285,
+              "lat": 27.302,
+              "description": "毕节市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "彝族文化文物",
+                  "era": "历代",
+                  "description": "收藏有毕节地区彝族文化的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "云南",
+      "cities": [
+        {
+          "name": "昆明市",
+          "museums": [
+            {
+              "name": "云南民族博物馆",
+              "level": 2,
+              "address": "云南省昆明市西山区滇池路1503号",
+              "lng": 102.668,
+              "lat": 24.965,
+              "description": "中国规模最大的民族博物馆之一。",
+              "treasures": [
+                {
+                  "name": "云南少数民族文物",
+                  "era": "历代",
+                  "description": "收藏有云南25个少数民族的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "云南铁路博物馆",
+              "level": 2,
+              "address": "云南省昆明市官渡区",
+              "lng": 102.718,
+              "lat": 25.011,
+              "description": "以滇越铁路为主题的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "滇越铁路文物",
+                  "era": "近代",
+                  "description": "收藏有滇越铁路建设运营的珍贵历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "大理市",
+          "museums": [
+            {
+              "name": "大理州博物馆",
+              "level": 2,
+              "address": "云南省大理州大理市",
+              "lng": 100.17,
+              "lat": 25.594,
+              "description": "以南诏大理国文化为特色的博物馆。",
+              "treasures": [
+                {
+                  "name": "南诏大理国文物",
+                  "era": "唐宋",
+                  "description": "大理地区出土的南诏大理国珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "红河州",
+          "museums": [
+            {
+              "name": "红河哈尼族彝族自治州博物馆",
+              "level": 2,
+              "address": "云南省红河州蒙自市",
+              "lng": 103.364,
+              "lat": 23.366,
+              "description": "以哈尼族、彝族文化为特色的博物馆。",
+              "treasures": [
+                {
+                  "name": "哈尼梯田文化遗物",
+                  "era": "历代",
+                  "description": "收藏有哈尼梯田文化相关的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "西藏",
+      "cities": [
+        {
+          "name": "拉萨市",
+          "museums": [
+            {
+              "name": "布达拉宫管理处",
+              "level": 2,
+              "address": "西藏自治区拉萨市城关区北京中路35号",
+              "lng": 91.118,
+              "lat": 29.657,
+              "description": "世界文化遗产布达拉宫的管理和展示机构。",
+              "treasures": [
+                {
+                  "name": "布达拉宫文物",
+                  "era": "唐至清",
+                  "description": "布达拉宫内收藏的大量珍贵佛教文物和历史档案。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

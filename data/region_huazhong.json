@@ -1,0 +1,437 @@
+{
+  "region": "华中",
+  "provinces": [
+    {
+      "name": "河南",
+      "cities": [
+        {
+          "name": "郑州市",
+          "museums": [
+            {
+              "name": "河南博物院",
+              "level": 1,
+              "address": "河南省郑州市金水区农业路8号",
+              "lng": 113.67,
+              "lat": 34.789,
+              "description": "首批中央地方共建国家级重点博物馆，馆藏文物17万余件。",
+              "treasures": [
+                {
+                  "name": "莲鹤方壶",
+                  "era": "春秋",
+                  "description": "1923年河南新郑出土，壶盖上立一展翅欲飞的仙鹤，首批禁止出国（境）展览文物。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Lotus_and_Crane_Fang_Hu.jpg/400px-Lotus_and_Crane_Fang_Hu.jpg"
+                },
+                {
+                  "name": "贾湖骨笛",
+                  "era": "新石器时代",
+                  "description": "距今约9000年，出土于河南舞阳贾湖遗址，世界上最早的可吹奏乐器，被称为\"中华第一笛\"。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "云纹铜禁",
+                  "era": "春秋",
+                  "description": "河南淅川下寺出土，目前所见最早的失蜡法铸件，首批禁止出国（境）展览文物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "妇好鸮尊",
+                  "era": "商代",
+                  "description": "河南安阳妇好墓出土，造型为猫头鹰，是商代青铜器中的精品。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Fuhao_Owl-shaped_Zun.jpg/400px-Fuhao_Owl-shaped_Zun.jpg"
+                },
+                {
+                  "name": "杜岭方鼎",
+                  "era": "商代",
+                  "description": "1974年郑州杜岭出土，是目前已知年代最早、体量最大的商代青铜重器之一。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "武则天金简",
+                  "era": "唐代",
+                  "description": "1982年嵩山峻极峰出土，是中国目前发现的唯一一件金简，记录武则天在嵩山祭祀的内容。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "玉柄铁剑",
+                  "era": "西周",
+                  "description": "三门峡虢国墓出土，距今约2800年，被称为\"中华第一剑\"，是中国最早的人工冶铁制品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "四神云气图",
+                  "era": "西汉",
+                  "description": "河南永城芒砀山梁王墓出土的壁画，描绘青龙、白虎、朱雀、玄武四神和云气缭绕的景象。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "汝窑天蓝釉刻花鹅颈瓶",
+                  "era": "北宋",
+                  "description": "唯一一件刻花的汝窑瓷器，釉色天蓝，温润如玉，是汝瓷中的绝世珍品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "郑州博物馆",
+              "level": 1,
+              "address": "河南省郑州市中原区嵩山南路168号",
+              "lng": 113.624,
+              "lat": 34.734,
+              "description": "郑州市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "商代饕餮乳钉纹铜方鼎",
+                  "era": "商代",
+                  "description": "郑州商城遗址出土的商代青铜重器。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "河南自然博物馆",
+              "level": 1,
+              "address": "河南省郑州市金水区",
+              "lng": 113.68,
+              "lat": 34.796,
+              "description": "河南省唯一的省级自然博物馆。",
+              "treasures": [
+                {
+                  "name": "恐龙蛋化石群",
+                  "era": "白垩纪",
+                  "description": "河南出土的大量恐龙蛋化石，数量居世界前列。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "洛阳市",
+          "museums": [
+            {
+              "name": "洛阳博物馆",
+              "level": 1,
+              "address": "河南省洛阳市洛龙区聂泰路",
+              "lng": 112.46,
+              "lat": 34.624,
+              "description": "以洛阳十三朝古都历史文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "东汉石辟邪",
+                  "era": "东汉",
+                  "description": "洛阳出土的东汉大型石刻，气势宏伟，雕刻精细。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "洛阳古墓博物馆",
+              "level": 1,
+              "address": "河南省洛阳市老城区",
+              "lng": 112.444,
+              "lat": 34.698,
+              "description": "世界上第一座古墓博物馆，展示历代墓葬文化。",
+              "treasures": [
+                {
+                  "name": "北魏帝王陵壁画",
+                  "era": "北魏",
+                  "description": "洛阳地区发掘的北魏帝王陵墓壁画。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "二里头夏都遗址博物馆",
+              "level": 1,
+              "address": "河南省洛阳市偃师区",
+              "lng": 112.682,
+              "lat": 34.688,
+              "description": "展示夏朝都城遗址的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "绿松石龙形器",
+                  "era": "夏代",
+                  "description": "二里头遗址出土，由2000余片绿松石组成，被誉为\"中国龙\"的最早实物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "安阳市",
+          "museums": [
+            {
+              "name": "中国文字博物馆",
+              "level": 1,
+              "address": "河南省安阳市北关区人民大道东段656号",
+              "lng": 114.359,
+              "lat": 36.107,
+              "description": "中国第一座文字主题博物馆。",
+              "treasures": [
+                {
+                  "name": "甲骨文",
+                  "era": "商代",
+                  "description": "殷墟出土的甲骨文，是中国最早的成熟文字体系。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "南阳市",
+          "museums": [
+            {
+              "name": "南阳市博物院",
+              "level": 1,
+              "address": "河南省南阳市卧龙区",
+              "lng": 112.534,
+              "lat": 33.004,
+              "description": "以汉画像石为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "汉画像石",
+                  "era": "汉代",
+                  "description": "南阳地区出土的大量汉代画像石，数量和艺术水平居全国前列。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "湖北",
+      "cities": [
+        {
+          "name": "武汉市",
+          "museums": [
+            {
+              "name": "湖北省博物馆",
+              "level": 1,
+              "address": "湖北省武汉市武昌区东湖路160号",
+              "lng": 114.371,
+              "lat": 30.567,
+              "description": "首批中央地方共建国家级重点博物馆，以曾侯乙墓出土文物闻名。",
+              "treasures": [
+                {
+                  "name": "曾侯乙编钟",
+                  "era": "战国",
+                  "description": "1978年湖北随县出土，全套65件，重2567千克，是世界上已知最大最重最完整的青铜编钟。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bianzhong.jpg/400px-Bianzhong.jpg"
+                },
+                {
+                  "name": "越王勾践剑",
+                  "era": "春秋",
+                  "description": "1965年湖北江陵望山出土，长55.7厘米，历经2400余年仍锋利无比，被誉为\"天下第一剑\"。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Sword_of_Goujian%2C_Hubei_Provincial_Museum%2C_2015-04-06_01.jpg/400px-Sword_of_Goujian%2C_Hubei_Provincial_Museum%2C_2015-04-06_01.jpg"
+                },
+                {
+                  "name": "曾侯乙尊盘",
+                  "era": "战国",
+                  "description": "曾侯乙墓出土，尊与盘套合而成，采用极其复杂的失蜡法铸造，镂空装饰精美绝伦。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "曾侯乙外棺",
+                  "era": "战国",
+                  "description": "曾侯乙墓出土的彩绘漆棺，重约7000千克，棺面绘有大量神灵异兽图案。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "鹿角立鹤",
+                  "era": "战国",
+                  "description": "曾侯乙墓出土，鹤顶上插有鹿角，造型奇特，是楚文化中\"鹿鹤同体\"神灵观念的实物体现。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "元青花四爱图梅瓶",
+                  "era": "元代",
+                  "description": "2006年钟祥郢靖王墓出土，瓶身绘\"四爱图\"，是目前发现的最完整的元代青花梅瓶之一。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "曾侯乙十六节龙凤玉挂饰",
+                  "era": "战国",
+                  "description": "曾侯乙墓出土，用一整块玉料雕成16节龙凤纹玉饰，全长48厘米，是玉雕工艺的杰作。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "虎座鸟架鼓",
+                  "era": "战国",
+                  "description": "湖北荆州出土的楚国漆器，以虎为座、凤鸟为架，悬挂大鼓，造型华丽生动。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "武汉博物馆",
+              "level": 1,
+              "address": "湖北省武汉市江汉区青年路373号",
+              "lng": 114.267,
+              "lat": 30.586,
+              "description": "武汉市综合性历史博物馆。",
+              "treasures": [
+                {
+                  "name": "元代青花瓷",
+                  "era": "元代",
+                  "description": "武汉地区出土的元代青花瓷精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "辛亥革命武昌起义纪念馆",
+              "level": 1,
+              "address": "湖北省武汉市武昌区武珞路1号",
+              "lng": 114.305,
+              "lat": 30.543,
+              "description": "纪念辛亥革命武昌起义的专题纪念馆，位于红楼。",
+              "treasures": [
+                {
+                  "name": "辛亥革命历史文物",
+                  "era": "近代",
+                  "description": "收藏有辛亥革命时期的珍贵历史文物和文献。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "荆州市",
+          "museums": [
+            {
+              "name": "荆州博物馆",
+              "level": 1,
+              "address": "湖北省荆州市荆州区荆北路",
+              "lng": 112.191,
+              "lat": 30.361,
+              "description": "以楚文化和西汉古尸为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "西汉男尸（遂先生）",
+                  "era": "西汉",
+                  "description": "1975年荆州凤凰山168号汉墓出土，保存完好的西汉男尸，距今2100多年。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "随州市",
+          "museums": [
+            {
+              "name": "随州市博物馆",
+              "level": 1,
+              "address": "湖北省随州市曾都区擂鼓墩路",
+              "lng": 113.383,
+              "lat": 31.722,
+              "description": "以曾国文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "曾国青铜器",
+                  "era": "春秋战国",
+                  "description": "随州地区出土的曾国青铜器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "湖南",
+      "cities": [
+        {
+          "name": "长沙市",
+          "museums": [
+            {
+              "name": "湖南博物院",
+              "level": 1,
+              "address": "湖南省长沙市开福区东风路50号",
+              "lng": 112.984,
+              "lat": 28.209,
+              "description": "以马王堆汉墓出土文物闻名于世的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "素纱襌衣",
+                  "era": "西汉",
+                  "description": "1972年马王堆一号汉墓出土，重仅49克，是世界上最轻薄的衣服。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Mawangdui_silk_banner.jpg/400px-Mawangdui_silk_banner.jpg"
+                },
+                {
+                  "name": "T形帛画",
+                  "era": "西汉",
+                  "description": "马王堆一号汉墓出土，描绘天上、人间、地下三层世界，是中国古代帛画的代表作。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mawangdui_Han_Tomb_1_Banner.jpg/400px-Mawangdui_Han_Tomb_1_Banner.jpg"
+                },
+                {
+                  "name": "辛追夫人湿尸",
+                  "era": "西汉",
+                  "description": "马王堆一号汉墓出土，保存完好的2000年前女尸，被誉为\"东方睡美人\"。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "帛书《老子》乙本",
+                  "era": "西汉",
+                  "description": "马王堆三号汉墓出土的帛书《道德经》，是目前发现最早的《老子》抄本之一。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "竽",
+                  "era": "西汉",
+                  "description": "马王堆出土的西汉竽，保存完好，是研究古代音乐的珍贵实物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "漆木瑟",
+                  "era": "西汉",
+                  "description": "马王堆出土的漆木乐器，装饰精美，是汉代漆器工艺的代表。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "黑地彩绘漆棺",
+                  "era": "西汉",
+                  "description": "马王堆出土的彩绘漆棺，棺面绘有大量神灵瑞兽和云气纹样，色彩鲜艳。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "商皿方罍",
+                  "era": "商代",
+                  "description": "湖南桃源出土，方罍盖于1919年出土后入湖南博物院，罍身曾流失海外近百年，2014年由湖南省购回合体。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "韶山市",
+          "museums": [
+            {
+              "name": "韶山毛泽东同志纪念馆",
+              "level": 1,
+              "address": "湖南省湘潭市韶山市韶山冲",
+              "lng": 112.492,
+              "lat": 27.915,
+              "description": "系统展示毛泽东生平的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "毛泽东遗物与文献",
+                  "era": "近代",
+                  "description": "收藏有大量毛泽东的珍贵遗物、手稿和照片。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

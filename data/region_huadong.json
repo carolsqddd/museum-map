@@ -1,0 +1,1718 @@
+{
+  "region": "华东",
+  "provinces": [
+    {
+      "name": "上海",
+      "cities": [
+        {
+          "name": "上海市",
+          "museums": [
+            {
+              "name": "上海博物馆",
+              "level": 1,
+              "address": "上海市黄浦区人民大道201号",
+              "lng": 121.474,
+              "lat": 31.229,
+              "description": "首批中央地方共建国家级重点博物馆，以青铜器、陶瓷器、书画为特色。",
+              "treasures": [
+                {
+                  "name": "大克鼎",
+                  "era": "西周",
+                  "description": "高93.1厘米，重201.5千克，铭文290字，是西周晚期青铜器重器。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Da_Ke_ding.jpg/400px-Da_Ke_ding.jpg"
+                },
+                {
+                  "name": "王羲之《上虞帖》",
+                  "era": "东晋（唐摹本）",
+                  "description": "王羲之草书代表作的唐代摹本，是书法艺术的绝世珍品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "商鞅方升",
+                  "era": "战国",
+                  "description": "秦孝公十八年商鞅颁发的标准量器，是研究秦国统一度量衡的重要实物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "子仲姜盘",
+                  "era": "春秋",
+                  "description": "盘内有浮雕的鱼、龟、蛙等水生动物，可以在原地旋转，构思巧妙。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "王献之《鸭头丸帖》",
+                  "era": "东晋（唐摹本）",
+                  "description": "王献之行草书代表作的唐摹本，笔法秀美流畅。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "越窑青釉海棠式碗",
+                  "era": "五代",
+                  "description": "五代越窑秘色瓷精品，碗呈四瓣海棠花形，釉色温润。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "元代青花缠枝牡丹纹罐",
+                  "era": "元代",
+                  "description": "上海博物馆收藏的元代青花瓷精品，纹饰精美。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "淳化阁帖",
+                  "era": "北宋",
+                  "description": "北宋淳化三年（992年）刻制的最早的一部汇集历代书法墨迹的法帖。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "上海科技馆",
+              "level": 1,
+              "address": "上海市浦东新区世纪大道2000号",
+              "lng": 121.542,
+              "lat": 31.218,
+              "description": "上海重要的科普教育基地和休闲旅游景点。",
+              "treasures": [
+                {
+                  "name": "科技互动展品",
+                  "era": "现代",
+                  "description": "包含多个主题展区，以互动体验方式展示科学原理与技术成就。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "上海鲁迅纪念馆",
+              "level": 1,
+              "address": "上海市虹口区甜爱路200号",
+              "lng": 121.491,
+              "lat": 31.275,
+              "description": "纪念鲁迅在上海时期生活与创作的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "鲁迅手稿与遗物",
+                  "era": "近代",
+                  "description": "收藏有鲁迅在上海十年间的大量手稿、书信和生活用品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中共一大纪念馆",
+              "level": 1,
+              "address": "上海市黄浦区黄陂南路374号",
+              "lng": 121.474,
+              "lat": 31.221,
+              "description": "中国共产党第一次全国代表大会会址纪念馆。",
+              "treasures": [
+                {
+                  "name": "中共一大历史文物",
+                  "era": "近代",
+                  "description": "收藏有中国共产党成立初期的珍贵历史文献和实物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "陈云纪念馆",
+              "level": 1,
+              "address": "上海市青浦区练塘镇老朱枫公路3516号",
+              "lng": 121.037,
+              "lat": 31.075,
+              "description": "纪念陈云同志的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "陈云同志遗物与文献",
+                  "era": "近代",
+                  "description": "系统收藏陈云同志的生平文献和珍贵遗物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "上海中国航海博物馆",
+              "level": 1,
+              "address": "上海市浦东新区申港大道197号",
+              "lng": 121.896,
+              "lat": 30.914,
+              "description": "中国首个国家级航海博物馆。",
+              "treasures": [
+                {
+                  "name": "明代福船（复原）",
+                  "era": "明代",
+                  "description": "按1:1比例复原的明代福船，展示中国古代造船和航海技术。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "上海市龙华烈士纪念馆",
+              "level": 1,
+              "address": "上海市徐汇区龙华路2887号",
+              "lng": 121.445,
+              "lat": 31.165,
+              "description": "纪念上海地区革命烈士的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "革命烈士遗物",
+                  "era": "近代",
+                  "description": "收藏有大量在上海牺牲的革命先烈的珍贵遗物和文献。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "江苏",
+      "cities": [
+        {
+          "name": "南京市",
+          "museums": [
+            {
+              "name": "南京博物院",
+              "level": 1,
+              "address": "江苏省南京市玄武区中山东路321号",
+              "lng": 118.837,
+              "lat": 32.06,
+              "description": "中国三大博物馆之一，首批中央地方共建国家级重点博物馆。",
+              "treasures": [
+                {
+                  "name": "金兽",
+                  "era": "西汉",
+                  "description": "1982年盱眙出土，纯金铸造，重9千克，是中国出土最重的金器。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/NanjingMuseum-GoldenBeast.jpg/400px-NanjingMuseum-GoldenBeast.jpg"
+                },
+                {
+                  "name": "清乾隆帝行围图转旋瓶",
+                  "era": "清代",
+                  "description": "旋转内胆可呈现连续画面，工艺极其复杂精湛。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "银缕玉衣",
+                  "era": "东汉",
+                  "description": "徐州出土的东汉银缕玉衣，是汉代高等级丧葬玉衣珍品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "青瓷神兽尊",
+                  "era": "西晋",
+                  "description": "造型奇特，神兽仰头张口，通体施青釉，是六朝青瓷的代表作。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "竹林七贤与荣启期砖画",
+                  "era": "南朝",
+                  "description": "南京西善桥宫山墓出土，以模印拼嵌的方式表现竹林七贤和荣启期的形象。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "坤舆万国全图",
+                  "era": "明代",
+                  "description": "利玛窦绘制的世界地图，是中国目前发现的最早的有完整经纬线的世界地图。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "明洪武釉里红岁寒三友纹梅瓶",
+                  "era": "明代",
+                  "description": "南京明代墓葬出土，\"萧何月下追韩信\"釉里红梅瓶为同类题材之冠。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "金蝉玉叶",
+                  "era": "明代",
+                  "description": "南京出土的一件明代金蝉伏在碧玉叶上的饰品，金蝉栩栩如生，工艺精湛。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "侵华日军南京大屠杀遇难同胞纪念馆",
+              "level": 1,
+              "address": "江苏省南京市建邺区水西门大街418号",
+              "lng": 118.748,
+              "lat": 32.035,
+              "description": "纪念南京大屠杀遇难同胞的专题纪念馆，世界级反战博物馆。",
+              "treasures": [
+                {
+                  "name": "南京大屠杀历史文物",
+                  "era": "近代",
+                  "description": "包括约翰·拉贝日记、魏特琳日记等珍贵历史文献和遇难者遗物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "南京市博物总馆",
+              "level": 1,
+              "address": "江苏省南京市秦淮区朝天宫4号",
+              "lng": 118.768,
+              "lat": 32.044,
+              "description": "以六朝文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "青瓷莲花尊",
+                  "era": "南朝",
+                  "description": "南朝青瓷精品，造型优美，是六朝制瓷工艺的代表作。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "雨花台烈士纪念馆",
+              "level": 1,
+              "address": "江苏省南京市雨花台区雨花路215号",
+              "lng": 118.779,
+              "lat": 32.014,
+              "description": "纪念在雨花台牺牲的革命烈士的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "革命烈士遗书与遗物",
+                  "era": "近代",
+                  "description": "收藏有大量革命烈士的遗书、照片和生活用品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "南京城墙博物馆",
+              "level": 1,
+              "address": "江苏省南京市秦淮区",
+              "lng": 118.79,
+              "lat": 32.02,
+              "description": "展示南京明城墙历史文化的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "明城砖",
+                  "era": "明代",
+                  "description": "带有铭文的明代城砖，记录了制砖的府县和工匠信息。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "南京大报恩寺遗址博物馆",
+              "level": 1,
+              "address": "江苏省南京市秦淮区雨花路1号",
+              "lng": 118.778,
+              "lat": 32.019,
+              "description": "建于明代大报恩寺遗址之上的遗址类博物馆。",
+              "treasures": [
+                {
+                  "name": "七宝阿育王塔",
+                  "era": "宋代",
+                  "description": "2008年南京大报恩寺地宫出土，内藏佛顶真骨舍利。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "南京中国科举博物馆",
+              "level": 1,
+              "address": "江苏省南京市秦淮区金陵路1号",
+              "lng": 118.785,
+              "lat": 32.026,
+              "description": "中国科举制度专题博物馆，位于江南贡院遗址。",
+              "treasures": [
+                {
+                  "name": "历代科举文物",
+                  "era": "明清",
+                  "description": "收藏有大量科举制度相关的试卷、匾额和考场用具。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "苏州市",
+          "museums": [
+            {
+              "name": "苏州博物馆",
+              "level": 1,
+              "address": "江苏省苏州市姑苏区东北街204号",
+              "lng": 120.629,
+              "lat": 31.323,
+              "description": "贝聿铭设计的综合性博物馆，建筑本身即为艺术品。",
+              "treasures": [
+                {
+                  "name": "五代秘色瓷莲花碗",
+                  "era": "五代",
+                  "description": "1956年苏州虎丘云岩寺塔出土，釉色青碧，是秘色瓷的代表作。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "苏州丝绸博物馆",
+              "level": 1,
+              "address": "江苏省苏州市姑苏区人民路2001号",
+              "lng": 120.623,
+              "lat": 31.319,
+              "description": "中国第一座丝绸专题博物馆。",
+              "treasures": [
+                {
+                  "name": "宋代缂丝",
+                  "era": "宋代",
+                  "description": "珍贵的宋代缂丝织品，展示了苏州丝绸的千年传承。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "吴中区博物馆（吴文化博物馆）",
+              "level": 1,
+              "address": "江苏省苏州市吴中区澹台街9号",
+              "lng": 120.636,
+              "lat": 31.276,
+              "description": "以吴文化为主题的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "吴国青铜器",
+                  "era": "春秋",
+                  "description": "苏州地区出土的吴国青铜器，展示吴越文化风采。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "常熟博物馆",
+              "level": 1,
+              "address": "江苏省苏州市常熟市北门大街1号",
+              "lng": 120.751,
+              "lat": 31.654,
+              "description": "以常熟地方历史和虞山画派为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "虞山画派书画",
+                  "era": "明清",
+                  "description": "收藏有大量虞山画派名家作品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "无锡市",
+          "museums": [
+            {
+              "name": "无锡博物院",
+              "level": 1,
+              "address": "江苏省无锡市梁溪区钟书路100号",
+              "lng": 120.29,
+              "lat": 31.565,
+              "description": "无锡地区最大的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "春秋吴王僚剑",
+                  "era": "春秋",
+                  "description": "无锡出土的珍贵吴国青铜兵器。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "江阴市博物馆",
+              "level": 1,
+              "address": "江苏省无锡市江阴市人民中路143号",
+              "lng": 120.285,
+              "lat": 31.908,
+              "description": "以江阴地区历史文化为主题的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "明代金银器",
+                  "era": "明代",
+                  "description": "江阴出土的明代贵族墓葬金银器。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "宜兴市博物馆",
+              "level": 1,
+              "address": "江苏省无锡市宜兴市东氿新城",
+              "lng": 119.831,
+              "lat": 31.347,
+              "description": "以紫砂文化为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "紫砂壶精品",
+                  "era": "明清",
+                  "description": "收藏有历代紫砂名壶精品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "徐州市",
+          "museums": [
+            {
+              "name": "徐州博物馆",
+              "level": 1,
+              "address": "江苏省徐州市云龙区和平路118号",
+              "lng": 117.196,
+              "lat": 34.257,
+              "description": "以汉代文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "银缕玉衣",
+                  "era": "西汉",
+                  "description": "1994年徐州狮子山楚王墓出土，是目前国内出土最早、最完整的银缕玉衣。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "淮海战役纪念馆",
+              "level": 1,
+              "address": "江苏省徐州市泉山区解放南路2号",
+              "lng": 117.178,
+              "lat": 34.242,
+              "description": "全面展示淮海战役历史的大型纪念馆。",
+              "treasures": [
+                {
+                  "name": "淮海战役历史文物",
+                  "era": "近代",
+                  "description": "收藏有大量淮海战役期间的武器装备和历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "常州市",
+          "museums": [
+            {
+              "name": "常州博物馆",
+              "level": 1,
+              "address": "江苏省常州市新北区龙城大道1288号",
+              "lng": 119.97,
+              "lat": 31.816,
+              "description": "常州市综合性历史博物馆。",
+              "treasures": [
+                {
+                  "name": "良渚文化玉器",
+                  "era": "新石器时代",
+                  "description": "常州地区出土的良渚文化玉器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "南通市",
+          "museums": [
+            {
+              "name": "南通博物苑",
+              "level": 1,
+              "address": "江苏省南通市崇川区濠南路19号",
+              "lng": 120.876,
+              "lat": 32.013,
+              "description": "中国人独立创办的第一座公共博物馆，创建于1905年。",
+              "treasures": [
+                {
+                  "name": "张謇相关文物",
+                  "era": "近代",
+                  "description": "收藏有大量南通实业家张謇的遗物和文献。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "连云港市",
+          "museums": [
+            {
+              "name": "连云港市博物馆",
+              "level": 1,
+              "address": "江苏省连云港市海州区朝阳东路68号",
+              "lng": 119.221,
+              "lat": 34.596,
+              "description": "以连云港地区出土文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "西汉尹湾汉墓简牍",
+                  "era": "西汉",
+                  "description": "1993年连云港尹湾汉墓出土，包含重要的行政文书简牍。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "淮安市",
+          "museums": [
+            {
+              "name": "淮安市博物馆",
+              "level": 1,
+              "address": "江苏省淮安市清江浦区健康西路146号",
+              "lng": 119.021,
+              "lat": 33.597,
+              "description": "淮安市综合性历史博物馆。",
+              "treasures": [
+                {
+                  "name": "运河文物",
+                  "era": "明清",
+                  "description": "收藏有大量与大运河相关的历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "周恩来纪念馆",
+              "level": 1,
+              "address": "江苏省淮安市淮安区永怀路2号",
+              "lng": 119.145,
+              "lat": 33.503,
+              "description": "纪念周恩来总理的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "周恩来遗物与文献",
+                  "era": "近代",
+                  "description": "收藏有周恩来总理的珍贵遗物和历史文献。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "盐城市",
+          "museums": [
+            {
+              "name": "新四军纪念馆",
+              "level": 1,
+              "address": "江苏省盐城市亭湖区建军东路159号",
+              "lng": 120.162,
+              "lat": 33.379,
+              "description": "全面展示新四军抗战历史的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "新四军历史文物",
+                  "era": "近代",
+                  "description": "收藏有大量新四军作战、生活的历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "扬州市",
+          "museums": [
+            {
+              "name": "扬州中国大运河博物馆",
+              "level": 1,
+              "address": "江苏省扬州市广陵区开发东路",
+              "lng": 119.466,
+              "lat": 32.382,
+              "description": "中国首个大运河主题的国家级博物馆。",
+              "treasures": [
+                {
+                  "name": "大运河历史文物",
+                  "era": "历代",
+                  "description": "系统展示大运河2500年发展历程的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "镇江市",
+          "museums": [
+            {
+              "name": "镇江博物馆",
+              "level": 1,
+              "address": "江苏省镇江市润州区伯先路85号",
+              "lng": 119.43,
+              "lat": 32.197,
+              "description": "以吴越文化和六朝文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "青铜器\"宜侯夨簋\"",
+                  "era": "西周",
+                  "description": "镇江出土的西周青铜器，铭文记录了分封诸侯的重要史实。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "浙江",
+      "cities": [
+        {
+          "name": "杭州市",
+          "museums": [
+            {
+              "name": "浙江省博物馆",
+              "level": 1,
+              "address": "浙江省杭州市西湖区孤山路25号",
+              "lng": 120.141,
+              "lat": 30.254,
+              "description": "首批中央地方共建国家级重点博物馆，以河姆渡文物和古越文物为特色。",
+              "treasures": [
+                {
+                  "name": "富春山居图（剩山图）",
+                  "era": "元代",
+                  "description": "黄公望所作，中国十大传世名画之一，描绘富春江两岸秀丽山水，被誉为\"画中之兰亭\"。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Huang_Gongwang_Fuchun_Mountain.jpg/400px-Huang_Gongwang_Fuchun_Mountain.jpg"
+                },
+                {
+                  "name": "良渚文化玉琮王",
+                  "era": "新石器时代",
+                  "description": "良渚遗址出土的最大玉琮，高8.9厘米，重6.5千克，雕刻精美的神人兽面纹。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "越王者旨於睗剑",
+                  "era": "战国",
+                  "description": "剑身铸有鸟虫篆铭文，是越王者旨於睗的佩剑，剑中极品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "双鸟朝阳纹象牙蝶形器",
+                  "era": "新石器时代",
+                  "description": "河姆渡文化遗物，以象牙雕刻双鸟朝阳图案，被认为是中国传统花鸟画的原始雏形。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "唐落霞式\"彩凤鸣岐\"七弦琴",
+                  "era": "唐代",
+                  "description": "唐代古琴，琴名\"彩凤鸣岐\"，音色优美，是传世唐琴中的珍品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "五代吴越鎏金银阿育王塔",
+                  "era": "五代",
+                  "description": "雷峰塔出土，纯银鎏金，做工精美，首次发现的吴越银阿育王塔。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "春秋伎乐铜屋",
+                  "era": "春秋",
+                  "description": "罕见的先秦青铜房屋模型，屋内有乐伎演奏场景，是研究先秦建筑和音乐的珍贵实物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "北宋彩塑泥菩萨立像",
+                  "era": "北宋",
+                  "description": "宋塑典范之作，被誉为\"东方维纳斯\"，造型优美，色彩鲜艳。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "浙江自然博物院",
+              "level": 1,
+              "address": "浙江省杭州市下城区西湖文化广场6号",
+              "lng": 120.171,
+              "lat": 30.282,
+              "description": "浙江省唯一的省级自然博物馆。",
+              "treasures": [
+                {
+                  "name": "礼贤江山龙化石",
+                  "era": "白垩纪",
+                  "description": "浙江出土的恐龙化石，是浙江省自然博物馆的代表性标本。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国丝绸博物馆",
+              "level": 1,
+              "address": "浙江省杭州市西湖区玉皇山路73-1号",
+              "lng": 120.156,
+              "lat": 30.224,
+              "description": "世界上最大的丝绸专业博物馆。",
+              "treasures": [
+                {
+                  "name": "战国织锦",
+                  "era": "战国",
+                  "description": "珍贵的战国丝织品，展示中国丝绸之路的源远流长。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国茶叶博物馆",
+              "level": 1,
+              "address": "浙江省杭州市西湖区龙井路88号",
+              "lng": 120.113,
+              "lat": 30.231,
+              "description": "中国唯一的茶叶专题博物馆。",
+              "treasures": [
+                {
+                  "name": "历代茶具精品",
+                  "era": "历代",
+                  "description": "收藏有从唐代到清代的各类珍贵茶具。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "杭州博物院",
+              "level": 1,
+              "address": "浙江省杭州市上城区粮道山18号",
+              "lng": 120.166,
+              "lat": 30.249,
+              "description": "展示杭州历史文化的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "南宋官窑瓷器",
+                  "era": "南宋",
+                  "description": "杭州地区出土的南宋官窑瓷器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "良渚博物院",
+              "level": 1,
+              "address": "浙江省杭州市余杭区美丽洲路1号",
+              "lng": 119.985,
+              "lat": 30.405,
+              "description": "展示良渚文明的专题博物馆，世界文化遗产。",
+              "treasures": [
+                {
+                  "name": "良渚玉琮王",
+                  "era": "新石器时代",
+                  "description": "良渚遗址出土的最大玉琮，高8.9厘米，重6.5千克，雕刻精美的神人兽面纹。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "杭州工艺美术博物馆",
+              "level": 1,
+              "address": "浙江省杭州市拱墅区小河路336号",
+              "lng": 120.132,
+              "lat": 30.302,
+              "description": "展示杭州传统工艺美术的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "杭州刺绣、扇、伞精品",
+                  "era": "明清至现代",
+                  "description": "杭州传统工艺美术的代表性作品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "杭州西湖博物馆总馆",
+              "level": 1,
+              "address": "浙江省杭州市西湖区南山路89号",
+              "lng": 120.152,
+              "lat": 30.242,
+              "description": "以世界文化遗产西湖为主题的博物馆。",
+              "treasures": [
+                {
+                  "name": "西湖历史文物",
+                  "era": "历代",
+                  "description": "收藏有与西湖相关的历代文物和艺术品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国水利博物馆",
+              "level": 1,
+              "address": "浙江省杭州市萧山区水博大道1号",
+              "lng": 120.327,
+              "lat": 30.175,
+              "description": "中国第一座水利专题博物馆。",
+              "treasures": [
+                {
+                  "name": "水利工程文物",
+                  "era": "历代",
+                  "description": "系统展示中国水利发展史的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "宁波市",
+          "museums": [
+            {
+              "name": "宁波博物院",
+              "level": 1,
+              "address": "浙江省宁波市鄞州区首南中路1000号",
+              "lng": 121.549,
+              "lat": 29.825,
+              "description": "王澍设计的综合性博物馆，建筑获普利兹克奖。",
+              "treasures": [
+                {
+                  "name": "越窑青瓷",
+                  "era": "唐代",
+                  "description": "宁波地区出土的唐代越窑青瓷精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "宁波市天一阁博物院",
+              "level": 1,
+              "address": "浙江省宁波市海曙区天一街10号",
+              "lng": 121.545,
+              "lat": 29.87,
+              "description": "中国现存最早的私家藏书楼，亚洲最古老的图书馆。",
+              "treasures": [
+                {
+                  "name": "明代古籍善本",
+                  "era": "明代",
+                  "description": "收藏有大量明代古籍善本，以方志收藏最为著名。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "宁波中国港口博物馆",
+              "level": 1,
+              "address": "浙江省宁波市北仑区春晓街道港博路6号",
+              "lng": 121.862,
+              "lat": 29.784,
+              "description": "中国首个港口专题博物馆。",
+              "treasures": [
+                {
+                  "name": "古代航海贸易文物",
+                  "era": "宋元",
+                  "description": "收藏有大量与海上丝绸之路相关的贸易文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "温州市",
+          "museums": [
+            {
+              "name": "温州博物馆",
+              "level": 1,
+              "address": "浙江省温州市鹿城区世纪广场路",
+              "lng": 120.691,
+              "lat": 28.001,
+              "description": "以温州地方文物和瓯文化为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "北宋瓯窑褐彩植物纹注子",
+                  "era": "北宋",
+                  "description": "温州地区出土的瓯窑精品瓷器。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "嘉兴市",
+          "museums": [
+            {
+              "name": "南湖革命纪念馆",
+              "level": 1,
+              "address": "浙江省嘉兴市南湖区烟雨路186号",
+              "lng": 120.759,
+              "lat": 30.749,
+              "description": "纪念中国共产党第一次全国代表大会在嘉兴南湖闭幕的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "中共一大历史文物",
+                  "era": "近代",
+                  "description": "收藏有中共一大南湖会议的珍贵历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "嘉兴博物馆",
+              "level": 1,
+              "address": "浙江省嘉兴市南湖区海盐塘路37号",
+              "lng": 120.759,
+              "lat": 30.74,
+              "description": "嘉兴地区综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "马家浜文化遗物",
+                  "era": "新石器时代",
+                  "description": "嘉兴地区出土的新石器时代马家浜文化遗物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "绍兴市",
+          "museums": [
+            {
+              "name": "绍兴博物馆",
+              "level": 1,
+              "address": "浙江省绍兴市越城区偏门直街75号",
+              "lng": 120.57,
+              "lat": 29.996,
+              "description": "以越文化为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "越国青铜器",
+                  "era": "春秋战国",
+                  "description": "绍兴地区出土的越国青铜器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "舟山市",
+          "museums": [
+            {
+              "name": "舟山博物馆",
+              "level": 1,
+              "address": "浙江省舟山市定海区昌国路98号",
+              "lng": 122.107,
+              "lat": 30.016,
+              "description": "以海洋文化和海防历史为特色的博物馆。",
+              "treasures": [
+                {
+                  "name": "海防历史文物",
+                  "era": "明清",
+                  "description": "展示舟山群岛海防历史的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "丽水市",
+          "museums": [
+            {
+              "name": "丽水市博物馆",
+              "level": 1,
+              "address": "浙江省丽水市莲都区大猷街30号",
+              "lng": 119.922,
+              "lat": 28.449,
+              "description": "丽水地区综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "龙泉窑青瓷",
+                  "era": "南宋",
+                  "description": "丽水龙泉出土的南宋龙泉窑青瓷精品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "安徽",
+      "cities": [
+        {
+          "name": "合肥市",
+          "museums": [
+            {
+              "name": "安徽博物院",
+              "level": 1,
+              "address": "安徽省合肥市蜀山区怀宁路268号",
+              "lng": 117.236,
+              "lat": 31.842,
+              "description": "安徽省最大的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "楚大鼎",
+                  "era": "战国",
+                  "description": "1933年安徽寿县出土，又名铸客大鼎，高113厘米，重约400千克，是迄今发现的战国最大的圆鼎。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "福建",
+      "cities": [
+        {
+          "name": "福州市",
+          "museums": [
+            {
+              "name": "福建博物院",
+              "level": 1,
+              "address": "福建省福州市鼓楼区湖头街96号",
+              "lng": 119.284,
+              "lat": 26.091,
+              "description": "福建省最大的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "南宋建窑兔毫盏",
+                  "era": "南宋",
+                  "description": "福建建阳出产的建窑黑釉茶盏，以兔毫纹著称，是宋代斗茶文化的代表器物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "龙岩市",
+          "museums": [
+            {
+              "name": "古田会议纪念馆",
+              "level": 1,
+              "address": "福建省龙岩市上杭县古田镇",
+              "lng": 116.828,
+              "lat": 25.224,
+              "description": "纪念古田会议的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "古田会议历史文物",
+                  "era": "近代",
+                  "description": "收藏有古田会议期间的珍贵历史文物和文献。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "泉州市",
+          "museums": [
+            {
+              "name": "泉州海外交通史博物馆",
+              "level": 1,
+              "address": "福建省泉州市丰泽区东湖街425号",
+              "lng": 118.609,
+              "lat": 24.9,
+              "description": "中国唯一的海外交通史专题博物馆，世界文化遗产泉州的核心展示馆。",
+              "treasures": [
+                {
+                  "name": "宋代古船",
+                  "era": "南宋",
+                  "description": "1974年泉州湾后渚港出土的宋代海船，是中国出土的最大最完整的古代远洋木帆船。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国闽台缘博物馆",
+              "level": 1,
+              "address": "福建省泉州市丰泽区北清东路212号",
+              "lng": 118.578,
+              "lat": 24.927,
+              "description": "展示大陆与台湾历史关系的国家级专题博物馆。",
+              "treasures": [
+                {
+                  "name": "闽台关系历史文物",
+                  "era": "历代",
+                  "description": "系统展示福建与台湾历史渊源的珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "厦门市",
+          "museums": [
+            {
+              "name": "厦门华侨博物院",
+              "level": 1,
+              "address": "福建省厦门市思明区思明南路493号",
+              "lng": 118.09,
+              "lat": 24.447,
+              "description": "中国第一座华侨博物馆，由陈嘉庚创办。",
+              "treasures": [
+                {
+                  "name": "华侨历史文物",
+                  "era": "近代",
+                  "description": "收藏有大量东南亚华侨的珍贵历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "江西",
+      "cities": [
+        {
+          "name": "南昌市",
+          "museums": [
+            {
+              "name": "江西省博物馆",
+              "level": 1,
+              "address": "江西省南昌市红谷滩区赣江北大道698号",
+              "lng": 115.859,
+              "lat": 28.682,
+              "description": "江西省最大的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "伏鸟双尾青铜虎",
+                  "era": "商代",
+                  "description": "1989年新干大洋洲出土，长53.5厘米，重6.2千克，现存最大的先秦青铜虎。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "商兽面纹鹿耳四足青铜甗",
+                  "era": "商代",
+                  "description": "新干出土，造型独特，纹饰精美，是殷商青铜器的杰出代表。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "双面神人青铜头像",
+                  "era": "商代",
+                  "description": "新干出土，一面为人面、一面为兽面，极为罕见，反映了古代江南地区独特的青铜文化。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "商虎耳虎形扁足铜鼎",
+                  "era": "商代",
+                  "description": "新干出土，鼎耳为立虎，扁足亦为虎形，造型在商代青铜鼎中绝无仅有。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "元青花梅瓶",
+                  "era": "元代",
+                  "description": "高安窖藏出土的元代青花梅瓶，是江西高安博物馆的代表性藏品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "南昌八一起义纪念馆",
+              "level": 1,
+              "address": "江西省南昌市西湖区中山路380号",
+              "lng": 115.894,
+              "lat": 28.684,
+              "description": "纪念南昌起义的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "南昌起义历史文物",
+                  "era": "近代",
+                  "description": "收藏有南昌起义期间的珍贵历史文物和文献。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "八大山人纪念馆",
+              "level": 1,
+              "address": "江西省南昌市青云谱区青云谱路259号",
+              "lng": 115.912,
+              "lat": 28.63,
+              "description": "纪念明末清初画家八大山人（朱耷）的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "八大山人书画",
+                  "era": "清代",
+                  "description": "收藏有朱耷（八大山人）的书画精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "南昌汉代海昏侯国遗址博物馆",
+              "level": 1,
+              "address": "江西省南昌市新建区",
+              "lng": 115.733,
+              "lat": 28.838,
+              "description": "展示海昏侯刘贺墓出土文物的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "马蹄金与麟趾金",
+                  "era": "西汉",
+                  "description": "海昏侯墓出土的纯金制品，造型精美，是汉代黄金铸造工艺的杰出代表。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "江西省革命烈士纪念堂",
+              "level": 1,
+              "address": "江西省南昌市东湖区八一大道399号",
+              "lng": 115.906,
+              "lat": 28.689,
+              "description": "纪念江西革命烈士的专题场馆。",
+              "treasures": [
+                {
+                  "name": "江西革命烈士遗物",
+                  "era": "近代",
+                  "description": "收藏有江西籍革命烈士的珍贵遗物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "井冈山市",
+          "museums": [
+            {
+              "name": "井冈山革命博物馆",
+              "level": 1,
+              "address": "江西省吉安市井冈山市茨坪红军南路",
+              "lng": 114.289,
+              "lat": 26.575,
+              "description": "纪念井冈山革命根据地的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "井冈山革命历史文物",
+                  "era": "近代",
+                  "description": "收藏有大量红军在井冈山时期的珍贵历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "瑞金市",
+          "museums": [
+            {
+              "name": "瑞金中央革命根据地纪念馆",
+              "level": 1,
+              "address": "江西省赣州市瑞金市沙洲坝镇",
+              "lng": 116.032,
+              "lat": 25.868,
+              "description": "展示中央苏区革命历史的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "中华苏维埃共和国历史文物",
+                  "era": "近代",
+                  "description": "收藏有中华苏维埃时期的珍贵历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "萍乡市",
+          "museums": [
+            {
+              "name": "安源路矿工人运动纪念馆",
+              "level": 1,
+              "address": "江西省萍乡市安源区安源镇",
+              "lng": 113.871,
+              "lat": 27.614,
+              "description": "纪念安源路矿工人运动的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "安源大罢工历史文物",
+                  "era": "近代",
+                  "description": "收藏有安源路矿工人大罢工的珍贵历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "九江市",
+          "museums": [
+            {
+              "name": "九江市博物馆",
+              "level": 1,
+              "address": "江西省九江市浔阳区",
+              "lng": 116.003,
+              "lat": 29.705,
+              "description": "九江地区综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "九江出土文物",
+                  "era": "历代",
+                  "description": "收藏有九江地区出土的历代珍贵文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "景德镇市",
+          "museums": [
+            {
+              "name": "景德镇御窑博物院",
+              "level": 1,
+              "address": "江西省景德镇市珠山区",
+              "lng": 117.209,
+              "lat": 29.292,
+              "description": "展示景德镇御窑遗址和御窑瓷器的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "明代御窑瓷器",
+                  "era": "明代",
+                  "description": "景德镇御窑遗址出土的明代官窑瓷器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "山东",
+      "cities": [
+        {
+          "name": "济南市",
+          "museums": [
+            {
+              "name": "山东博物馆",
+              "level": 1,
+              "address": "山东省济南市历下区经十路11899号",
+              "lng": 117.073,
+              "lat": 36.648,
+              "description": "山东省最大的综合性博物馆，馆藏文物丰富。",
+              "treasures": [
+                {
+                  "name": "红陶兽形壶",
+                  "era": "大汶口文化",
+                  "description": "距今约6000年，造型为一只小猪，生动可爱，是新石器时代陶器艺术的杰出代表。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "东平汉墓壁画",
+                  "era": "汉代",
+                  "description": "山东东平出土，色彩鲜艳，内容丰富，是汉代绘画艺术的珍贵实物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "蛋壳黑陶高柄杯",
+                  "era": "龙山文化",
+                  "description": "日照东海峪出土，壁厚仅0.3毫米，被誉为\"黑如漆、薄如纸、硬如瓷\"。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "亚醜钺",
+                  "era": "商代",
+                  "description": "青州苏埠屯商墓出土，因铭\"亚醜\"得名，首批禁止出国（境）展览文物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "鲁国大玉璧",
+                  "era": "战国",
+                  "description": "曲阜鲁国故城出土，径32.8厘米，是目前发现的战国时期最大玉璧。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "颂簋",
+                  "era": "西周",
+                  "description": "曲阜鲁国故城出土，周宣王时珍品，器底和器盖有精美铭文。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "孙子兵法与孙膑兵法竹简",
+                  "era": "西汉",
+                  "description": "1972年银雀山汉墓出土，证实了《孙膑兵法》的存在，是新中国三十年十大考古发现之一。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "甲骨文",
+                  "era": "商代",
+                  "description": "山东博物馆收藏甲骨数量位居全国前列，包含大量商代卜辞。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "济南市博物馆",
+              "level": 1,
+              "address": "山东省济南市历下区经十一路30号",
+              "lng": 117.033,
+              "lat": 36.644,
+              "description": "济南市地方综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "商代错金目纹戈",
+                  "era": "商代",
+                  "description": "济南出土的珍贵商代青铜兵器，错金工艺精湛。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "济南市章丘区博物馆",
+              "level": 1,
+              "address": "山东省济南市章丘区",
+              "lng": 117.535,
+              "lat": 36.714,
+              "description": "以龙山文化为特色的地方博物馆。",
+              "treasures": [
+                {
+                  "name": "龙山文化蛋壳黑陶杯",
+                  "era": "龙山文化",
+                  "description": "章丘龙山镇出土，壁厚仅0.3毫米，被誉为\"黑如漆、薄如纸、硬如瓷\"。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "青岛市",
+          "museums": [
+            {
+              "name": "青岛市博物馆",
+              "level": 1,
+              "address": "山东省青岛市崂山区梅岭东路51号",
+              "lng": 120.461,
+              "lat": 36.068,
+              "description": "青岛市综合性博物馆，以古代书画和瓷器收藏著称。",
+              "treasures": [
+                {
+                  "name": "北魏双丈八佛石造像",
+                  "era": "北魏",
+                  "description": "青岛地区出土的北魏佛教石刻造像，为青岛市博物馆三大镇馆之宝之一。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国人民解放军海军博物馆",
+              "level": 1,
+              "address": "山东省青岛市市南区莱阳路8号",
+              "lng": 120.328,
+              "lat": 36.054,
+              "description": "中国唯一的海军专题军事博物馆。",
+              "treasures": [
+                {
+                  "name": "退役军舰",
+                  "era": "现代",
+                  "description": "展示有多艘退役驱逐舰、潜艇等海军装备。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "淄博市",
+          "museums": [
+            {
+              "name": "淄博市博物馆",
+              "level": 1,
+              "address": "山东省淄博市张店区",
+              "lng": 118.049,
+              "lat": 36.803,
+              "description": "以齐文化为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "齐国青铜器",
+                  "era": "春秋战国",
+                  "description": "淄博地区出土的齐国青铜器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "蒲松龄纪念馆",
+              "level": 1,
+              "address": "山东省淄博市淄川区蒲家庄",
+              "lng": 118.003,
+              "lat": 36.666,
+              "description": "纪念《聊斋志异》作者蒲松龄的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "蒲松龄手稿",
+                  "era": "清代",
+                  "description": "收藏有蒲松龄的珍贵手稿和遗物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "潍坊市",
+          "museums": [
+            {
+              "name": "潍坊市博物馆",
+              "level": 1,
+              "address": "山东省潍坊市奎文区东风东街",
+              "lng": 119.162,
+              "lat": 36.706,
+              "description": "以大汶口文化文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "大汶口文化薄胎高柄杯",
+                  "era": "大汶口文化",
+                  "description": "潍坊地区出土的新石器时代陶器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "青州市博物馆",
+              "level": 1,
+              "address": "山东省潍坊市青州市范公亭西路1号",
+              "lng": 118.476,
+              "lat": 36.684,
+              "description": "以龙兴寺佛教造像闻名于世的县级博物馆。",
+              "treasures": [
+                {
+                  "name": "龙兴寺佛教造像",
+                  "era": "北齐",
+                  "description": "1996年青州龙兴寺出土的400余尊佛教造像，被评为当年全国十大考古发现之一。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "临朐县博物馆",
+              "level": 1,
+              "address": "山东省潍坊市临朐县",
+              "lng": 118.539,
+              "lat": 36.512,
+              "description": "以临朐出土的古化石和文物为特色。",
+              "treasures": [
+                {
+                  "name": "山旺化石",
+                  "era": "中新世",
+                  "description": "临朐山旺出土的珍贵古生物化石群。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "烟台市",
+          "museums": [
+            {
+              "name": "张裕酒文化博物馆",
+              "level": 1,
+              "address": "山东省烟台市芝罘区大马路56号",
+              "lng": 121.397,
+              "lat": 37.54,
+              "description": "以中国葡萄酒工业发源地张裕公司为主题的博物馆。",
+              "treasures": [
+                {
+                  "name": "百年酒窖与历史文物",
+                  "era": "近代",
+                  "description": "保存有1894年至今的百年地下酒窖和张裕公司历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "枣庄市",
+          "museums": [
+            {
+              "name": "枣庄市博物馆",
+              "level": 1,
+              "address": "山东省枣庄市薛城区",
+              "lng": 117.263,
+              "lat": 34.795,
+              "description": "枣庄市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "滕州出土青铜器",
+                  "era": "商周",
+                  "description": "枣庄地区出土的商周青铜器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "滕州市博物馆",
+              "level": 1,
+              "address": "山东省枣庄市滕州市",
+              "lng": 117.165,
+              "lat": 35.113,
+              "description": "以北辛文化和薛国文物为特色。",
+              "treasures": [
+                {
+                  "name": "北辛文化遗物",
+                  "era": "新石器时代",
+                  "description": "滕州北辛遗址出土的新石器时代文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "济宁市",
+          "museums": [
+            {
+              "name": "孔子博物馆",
+              "level": 1,
+              "address": "山东省济宁市曲阜市",
+              "lng": 116.987,
+              "lat": 35.592,
+              "description": "以孔子和儒家文化为主题的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "孔府档案",
+                  "era": "明清",
+                  "description": "收藏有大量孔府历代档案，是研究儒家文化的珍贵文献。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "邹城博物馆",
+              "level": 1,
+              "address": "山东省济宁市邹城市",
+              "lng": 116.973,
+              "lat": 35.405,
+              "description": "以邾国文物和孟子文化为特色。",
+              "treasures": [
+                {
+                  "name": "邾国青铜器",
+                  "era": "春秋",
+                  "description": "邹城地区出土的邾国青铜器精品。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "日照市",
+          "museums": [
+            {
+              "name": "日照市博物馆",
+              "level": 1,
+              "address": "山东省日照市东港区",
+              "lng": 119.462,
+              "lat": 35.416,
+              "description": "日照市综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "莒文化遗物",
+                  "era": "新石器时代",
+                  "description": "日照地区出土的新石器时代文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

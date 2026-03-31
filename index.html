@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国博物馆旅行地图</title>
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdn.bootcdn.net/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; overflow: hidden; background: #1a1a2e; }
+
+#map { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+
+/* 顶部标题栏 */
+.header {
+  position: fixed; top: 0; left: 0; right: 0; height: 56px; z-index: 1000;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  display: flex; align-items: center; padding: 0 20px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.header h1 {
+  font-size: 20px; color: #e8d5b7; letter-spacing: 3px; font-weight: 500;
+  background: linear-gradient(90deg, #e8d5b7, #f5c842, #e8d5b7);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.header .subtitle { font-size: 12px; color: rgba(255,255,255,0.5); margin-left: 16px; }
+.header .author {
+  font-size: 12px; color: rgba(245,200,66,0.6); margin-left: 12px;
+  font-style: italic; letter-spacing: 1px;
+}
+.header .stats {
+  margin-left: auto; display: flex; gap: 20px; font-size: 13px; color: rgba(255,255,255,0.7);
+}
+.header .stats span { color: #f5c842; font-weight: 600; font-size: 16px; }
+
+/* 左侧面板 */
+.sidebar {
+  position: fixed; top: 56px; left: 0; width: 320px; bottom: 0; z-index: 999;
+  background: rgba(22, 33, 62, 0.95); backdrop-filter: blur(10px);
+  overflow-y: auto; border-right: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.3s ease;
+}
+.sidebar.collapsed { transform: translateX(-320px); }
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 2px; }
+
+.sidebar-toggle {
+  position: fixed; top: 66px; left: 320px; z-index: 1000;
+  width: 28px; height: 48px; background: rgba(22, 33, 62, 0.95);
+  border: 1px solid rgba(255,255,255,0.1); border-left: none;
+  border-radius: 0 6px 6px 0; cursor: pointer; color: rgba(255,255,255,0.6);
+  display: flex; align-items: center; justify-content: center; font-size: 14px;
+  transition: all 0.3s ease;
+}
+.sidebar.collapsed + .sidebar-toggle { left: 0; }
+
+/* 筛选区域 */
+.filter-section { padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.filter-title { font-size: 12px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
+
+.level-filter { display: flex; gap: 8px; margin-bottom: 12px; }
+.level-btn {
+  flex: 1; padding: 8px 12px; border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px; background: transparent; color: rgba(255,255,255,0.6);
+  font-size: 13px; cursor: pointer; text-align: center; transition: all 0.2s;
+}
+.level-btn.active { background: rgba(245, 200, 66, 0.15); border-color: #f5c842; color: #f5c842; }
+.level-btn:hover { border-color: rgba(255,255,255,0.3); }
+.level-btn .count { display: block; font-size: 18px; font-weight: 700; margin-bottom: 2px; }
+
+/* 区域列表 */
+.region-list { padding: 8px; }
+.region-item {
+  margin-bottom: 4px; border-radius: 10px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.region-header {
+  display: flex; align-items: center; padding: 12px 14px; cursor: pointer;
+  transition: background 0.2s; gap: 10px;
+}
+.region-header:hover { background: rgba(255,255,255,0.04); }
+.region-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.region-name { font-size: 14px; color: rgba(255,255,255,0.85); font-weight: 500; }
+.region-count { margin-left: auto; font-size: 12px; color: rgba(255,255,255,0.4); }
+.region-arrow { color: rgba(255,255,255,0.3); font-size: 12px; transition: transform 0.2s; }
+.region-item.expanded .region-arrow { transform: rotate(90deg); }
+
+.province-list { display: none; padding: 0 8px 8px; }
+.region-item.expanded .province-list { display: block; }
+.province-item {
+  padding: 8px 12px; border-radius: 6px; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 13px; color: rgba(255,255,255,0.6); transition: all 0.15s;
+}
+.province-item:hover { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.9); }
+.province-item.active { background: rgba(245, 200, 66, 0.1); color: #f5c842; }
+.province-count { font-size: 11px; opacity: 0.6; }
+
+/* 搜索框 */
+.search-box {
+  padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.search-input {
+  width: 100%; padding: 10px 14px; border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.04);
+  color: rgba(255,255,255,0.8); font-size: 13px; outline: none;
+  transition: border-color 0.2s;
+}
+.search-input::placeholder { color: rgba(255,255,255,0.3); }
+.search-input:focus { border-color: rgba(245, 200, 66, 0.4); }
+
+/* 博物馆详情弹窗 */
+.museum-popup { max-width: 360px; }
+.popup-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+.popup-level {
+  display: inline-block; padding: 2px 8px; border-radius: 4px;
+  font-size: 11px; font-weight: 600; white-space: nowrap; flex-shrink: 0;
+}
+.popup-level.l1 { background: #f5c842; color: #1a1a2e; }
+.popup-level.l2 { background: #5dade2; color: #fff; }
+.popup-name { font-size: 16px; font-weight: 600; color: #1a1a2e; line-height: 1.3; }
+.popup-address { font-size: 12px; color: #888; margin-bottom: 8px; }
+.popup-desc { font-size: 13px; color: #444; line-height: 1.6; margin-bottom: 12px; }
+.popup-treasures { border-top: 1px solid #eee; padding-top: 10px; }
+.popup-treasures h4 { font-size: 13px; color: #b8860b; margin-bottom: 8px; display: flex; align-items: center; gap: 4px; }
+.treasure-item { margin-bottom: 10px; padding: 10px; background: #fdf6e3; border-radius: 8px; border-left: 3px solid #f5c842; }
+.treasure-img { width: 100%; max-height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 6px; cursor: pointer; transition: opacity 0.2s; background: #f0e6d0; }
+.treasure-img:hover { opacity: 0.9; }
+.treasure-img-placeholder { width: 100%; height: 60px; background: linear-gradient(135deg, #f5f0e0, #ede4d0); border-radius: 6px; margin-bottom: 6px; display: flex; align-items: center; justify-content: center; color: #c4a96a; font-size: 11px; }
+.treasure-name { font-size: 13px; font-weight: 600; color: #8b6914; }
+.treasure-era { font-size: 11px; color: #b8860b; margin-left: 6px; }
+.treasure-desc { font-size: 12px; color: #666; line-height: 1.5; margin-top: 4px; }
+.img-fullscreen { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10000; background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.img-fullscreen img { max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 4px; }
+.img-fullscreen .close-hint { position: absolute; top: 20px; right: 20px; color: rgba(255,255,255,0.6); font-size: 14px; }
+
+/* 地图标记样式 - 水滴pin */
+.museum-pin {
+  position: relative; cursor: pointer;
+  transition: transform 0.2s cubic-bezier(.4,2,.6,1), filter 0.2s;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
+}
+.museum-pin:hover { transform: scale(1.35) translateY(-3px); filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); z-index: 9999 !important; }
+.museum-pin svg { display: block; }
+/* 一级博物馆光晕 */
+.museum-pin.level1::after {
+  content: ''; position: absolute; top: 50%; left: 50%;
+  width: 28px; height: 28px; border-radius: 50%;
+  transform: translate(-50%, -60%);
+  background: radial-gradient(circle, rgba(245,200,66,0.35) 0%, transparent 70%);
+  animation: pulse-glow 2.5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes pulse-glow {
+  0%, 100% { transform: translate(-50%,-60%) scale(1); opacity: 0.6; }
+  50% { transform: translate(-50%,-60%) scale(1.5); opacity: 0; }
+}
+
+/* Leaflet 弹窗覆盖 */
+.leaflet-popup-content-wrapper { border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
+.leaflet-popup-content { margin: 14px 16px; max-height: 400px; overflow-y: auto; }
+.leaflet-popup-content::-webkit-scrollbar { width: 4px; }
+.leaflet-popup-content::-webkit-scrollbar-thumb { background: #ddd; border-radius: 2px; }
+
+/* 城市标签 */
+.city-label {
+  background: none !important; border: none !important; box-shadow: none !important;
+  font-size: 11px; color: rgba(80, 80, 80, 0.85); font-weight: 500;
+  white-space: nowrap; pointer-events: none; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+  letter-spacing: 0.5px;
+}
+.city-label.provincial-capital {
+  font-size: 13px; font-weight: 700; color: rgba(40, 40, 40, 0.9);
+  text-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
+}
+.city-dot {
+  width: 5px; height: 5px; border-radius: 50%; background: rgba(80,80,80,0.5);
+  border: 1px solid rgba(255,255,255,0.8); position: absolute;
+}
+.city-dot.capital { width: 7px; height: 7px; background: rgba(40,40,40,0.7); }
+/* 省名标签 */
+.province-label {
+  background: none !important; border: none !important; box-shadow: none !important;
+  font-size: 13px; color: rgba(100, 80, 60, 0.35); font-weight: 700;
+  white-space: nowrap; pointer-events: none; letter-spacing: 4px;
+}
+
+/* 图例 */
+.legend {
+  position: fixed; bottom: 20px; right: 20px; z-index: 1000;
+  background: rgba(22, 33, 62, 0.92); backdrop-filter: blur(10px);
+  padding: 14px 18px; border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.legend-title { font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 8px; letter-spacing: 1px; }
+.legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.legend-dot { border-radius: 50%; border: 2px solid rgba(255,255,255,0.6); }
+.legend-dot.l1 { width: 14px; height: 14px; }
+.legend-dot.l2 { width: 10px; height: 10px; }
+.legend-label { font-size: 12px; color: rgba(255,255,255,0.7); }
+.legend-author {
+  margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 11px; color: rgba(245,200,66,0.5); text-align: center;
+  font-style: italic; letter-spacing: 1px;
+}
+
+/* 加载动画 */
+.loading {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999;
+  background: #1a1a2e; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; transition: opacity 0.5s;
+}
+.loading.hidden { opacity: 0; pointer-events: none; }
+.loading-spinner {
+  width: 48px; height: 48px; border: 3px solid rgba(245,200,66,0.2);
+  border-top-color: #f5c842; border-radius: 50%; animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-text { color: #e8d5b7; margin-top: 16px; font-size: 14px; letter-spacing: 2px; }
+
+@media (max-width: 768px) {
+  .sidebar { width: 280px; }
+  .sidebar-toggle { left: 280px; }
+  .sidebar.collapsed + .sidebar-toggle { left: 0; }
+  .header .subtitle { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="loading" id="loading">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">正在加载博物馆数据...</div>
+</div>
+
+<div class="header">
+  <h1>中国博物馆旅行地图</h1>
+  <span class="subtitle">National Museum Travel Map of China</span>
+  <span class="author">by carolsq</span>
+  <div class="stats">
+    <div>一级 <span id="stat-l1">0</span> 家</div>
+    <div>二级 <span id="stat-l2">0</span> 家</div>
+    <div>共 <span id="stat-total">0</span> 家</div>
+  </div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <div class="search-box">
+    <input type="text" class="search-input" id="searchInput" placeholder="搜索博物馆、城市、镇馆之宝...">
+  </div>
+  <div class="filter-section">
+    <div class="filter-title">博物馆等级</div>
+    <div class="level-filter">
+      <button class="level-btn active" data-level="all" onclick="filterLevel('all')">
+        <span class="count" id="btn-all">0</span>全部
+      </button>
+      <button class="level-btn" data-level="1" onclick="filterLevel(1)">
+        <span class="count" id="btn-l1">0</span>一级
+      </button>
+      <button class="level-btn" data-level="2" onclick="filterLevel(2)">
+        <span class="count" id="btn-l2">0</span>二级
+      </button>
+    </div>
+  </div>
+  <div class="filter-section">
+    <div class="filter-title">区域导航</div>
+    <div class="region-list" id="regionList"></div>
+  </div>
+</div>
+<button class="sidebar-toggle" id="sidebarToggle" onclick="toggleSidebar()">◀</button>
+
+<div id="map"></div>
+
+<div class="legend">
+  <div class="legend-title">图例</div>
+  <div class="legend-item">
+    <svg width="14" height="18" viewBox="0 0 22 30"><path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z" fill="#f5c842" stroke="#b8860b" stroke-width="1"/><circle cx="11" cy="10.5" r="3" fill="#fff" opacity="0.9"/></svg>
+    <span class="legend-label">一级博物馆</span>
+  </div>
+  <div class="legend-item">
+    <svg width="10" height="13" viewBox="0 0 22 30"><path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z" fill="#5dade2" stroke="#2e86c1" stroke-width="1.5"/><circle cx="11" cy="10.5" r="2.5" fill="#fff" opacity="0.9"/></svg>
+    <span class="legend-label">二级博物馆</span>
+  </div>
+  <div class="legend-item" style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.08)">
+    <div style="width:20px;height:0;border-top:1.5px dashed rgba(120,100,80,0.5)"></div>
+    <span class="legend-label">省级行政区界</span>
+  </div>
+  <div class="legend-item">
+    <span style="font-size:11px;color:rgba(255,255,255,0.5);font-weight:600">Aa</span>
+    <span class="legend-label">城市标注（缩放显示）</span>
+  </div>
+  <div class="legend-author">Made by carolsq</div>
+</div>
+
+<script>
+// ===== 全局状态 =====
+let map, allMuseums = [], markers = [], currentLevel = 'all', currentRegion = null, currentProvince = null;
+let provinceBorderLayer = null, cityLabelLayer = null, provinceLabelLayer = null;
+
+const REGIONS = [
+  { name: '华北', provinces: ['北京','天津','河北','山西','内蒙古'], color: '#E74C3C', l1File: 'region_huabei.json', l2File: 'region_huabei_level2.json' },
+  { name: '东北', provinces: ['辽宁','吉林','黑龙江'], color: '#3498DB', l1File: 'region_dongbei.json', l2File: 'region_dongbei_level2.json' },
+  { name: '华东', provinces: ['上海','江苏','浙江','安徽','福建','江西','山东'], color: '#2ECC71', l1File: 'region_huadong.json', l2File: 'region_huadong_level2.json' },
+  { name: '华中', provinces: ['河南','湖北','湖南'], color: '#F39C12', l1File: 'region_huazhong.json', l2File: 'region_huazhong_level2.json' },
+  { name: '华南', provinces: ['广东','广西','海南'], color: '#9B59B6', l1File: 'region_huanan.json', l2File: 'region_huanan_level2.json' },
+  { name: '西南', provinces: ['重庆','四川','贵州','云南','西藏'], color: '#1ABC9C', l1File: 'region_xinan.json', l2File: 'region_xinan_level2.json' },
+  { name: '西北', provinces: ['陕西','甘肃','青海','宁夏','新疆'], color: '#E67E22', l1File: 'region_xibei.json', l2File: 'region_xibei_level2.json' }
+];
+
+// ===== 初始化地图 =====
+function initMap() {
+  map = L.map('map', {
+    center: [35.5, 104.5],
+    zoom: 5,
+    minZoom: 3,
+    maxZoom: 18,
+    zoomControl: false
+  });
+
+  L.control.zoom({ position: 'bottomleft' }).addTo(map);
+
+  // 高德地图底图（国内访问快速稳定）
+  L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+    attribution: '&copy; 高德地图',
+    maxZoom: 18,
+    subdomains: '1234'
+  }).addTo(map);
+
+  // 加载省界GeoJSON
+  loadProvinceBorders();
+  // 加载城市标签
+  loadCityLabels();
+}
+
+// ===== 省界线 =====
+async function loadProvinceBorders() {
+  try {
+    const resp = await fetch('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json');
+    const geojson = await resp.json();
+    provinceBorderLayer = L.geoJSON(geojson, {
+      style: {
+        color: 'rgba(120, 100, 80, 0.35)',
+        weight: 1.5,
+        fillColor: 'transparent',
+        fillOpacity: 0,
+        dashArray: '4 3'
+      },
+      onEachFeature: function(feature, layer) {
+        // 省名标签
+        if (feature.properties && feature.properties.name) {
+          const center = layer.getBounds().getCenter();
+          const label = L.marker(center, {
+            icon: L.divIcon({
+              className: 'province-label',
+              html: feature.properties.name,
+              iconSize: [120, 20],
+              iconAnchor: [60, 10]
+            }),
+            interactive: false
+          });
+          if (!provinceLabelLayer) provinceLabelLayer = L.layerGroup();
+          provinceLabelLayer.addLayer(label);
+        }
+      }
+    }).addTo(map);
+    if (provinceLabelLayer) provinceLabelLayer.addTo(map);
+
+    // 根据缩放级别控制省名显隐
+    map.on('zoomend', updateLabelVisibility);
+    updateLabelVisibility();
+  } catch (e) {
+    console.warn('省界数据加载失败:', e);
+  }
+}
+
+function updateLabelVisibility() {
+  const zoom = map.getZoom();
+  if (provinceLabelLayer) {
+    if (zoom >= 4 && zoom <= 7) {
+      if (!map.hasLayer(provinceLabelLayer)) map.addLayer(provinceLabelLayer);
+    } else {
+      if (map.hasLayer(provinceLabelLayer)) map.removeLayer(provinceLabelLayer);
+    }
+  }
+  if (cityLabelLayer) {
+    if (zoom >= 7) {
+      if (!map.hasLayer(cityLabelLayer)) map.addLayer(cityLabelLayer);
+    } else {
+      if (map.hasLayer(cityLabelLayer)) map.removeLayer(cityLabelLayer);
+    }
+  }
+}
+
+// ===== 城市标签 =====
+function loadCityLabels() {
+  cityLabelLayer = L.layerGroup();
+
+  // 省会城市（大标签，始终显示）和地级市（缩放到一定级别再显示）
+  const CITIES = [
+    // ---- 省会/直辖市 ----
+    {name:"北京",lat:39.917,lng:116.397,capital:true},{name:"天津",lat:39.133,lng:117.200,capital:true},
+    {name:"石家庄",lat:38.049,lng:114.488,capital:true},{name:"太原",lat:37.851,lng:112.530,capital:true},
+    {name:"呼和浩特",lat:40.830,lng:111.762,capital:true},{name:"沈阳",lat:41.796,lng:123.457,capital:true},
+    {name:"长春",lat:43.865,lng:125.345,capital:true},{name:"哈尔滨",lat:45.763,lng:126.636,capital:true},
+    {name:"上海",lat:31.230,lng:121.474,capital:true},{name:"南京",lat:32.060,lng:118.797,capital:true},
+    {name:"杭州",lat:30.254,lng:120.141,capital:true},{name:"合肥",lat:31.842,lng:117.236,capital:true},
+    {name:"福州",lat:26.091,lng:119.284,capital:true},{name:"南昌",lat:28.682,lng:115.859,capital:true},
+    {name:"济南",lat:36.648,lng:117.073,capital:true},{name:"郑州",lat:34.789,lng:113.670,capital:true},
+    {name:"武汉",lat:30.567,lng:114.371,capital:true},{name:"长沙",lat:28.209,lng:112.984,capital:true},
+    {name:"广州",lat:23.118,lng:113.320,capital:true},{name:"南宁",lat:22.815,lng:108.370,capital:true},
+    {name:"海口",lat:20.007,lng:110.374,capital:true},{name:"重庆",lat:29.559,lng:106.581,capital:true},
+    {name:"成都",lat:30.650,lng:104.034,capital:true},{name:"贵阳",lat:26.612,lng:106.602,capital:true},
+    {name:"昆明",lat:24.966,lng:102.742,capital:true},{name:"拉萨",lat:29.651,lng:91.100,capital:true},
+    {name:"西安",lat:34.262,lng:108.949,capital:true},{name:"兰州",lat:36.056,lng:103.823,capital:true},
+    {name:"西宁",lat:36.617,lng:101.757,capital:true},{name:"银川",lat:38.473,lng:106.263,capital:true},
+    {name:"乌鲁木齐",lat:43.792,lng:87.607,capital:true},
+    // ---- 重要地级市 ----
+    {name:"大连",lat:38.912,lng:121.593},{name:"青岛",lat:36.068,lng:120.383},
+    {name:"深圳",lat:22.546,lng:114.060},{name:"厦门",lat:24.447,lng:118.090},
+    {name:"苏州",lat:31.300,lng:120.629},{name:"宁波",lat:29.825,lng:121.549},
+    {name:"无锡",lat:31.565,lng:120.290},{name:"佛山",lat:23.028,lng:113.115},
+    {name:"东莞",lat:23.021,lng:113.752},{name:"温州",lat:28.001,lng:120.691},
+    {name:"泉州",lat:24.900,lng:118.609},{name:"烟台",lat:37.540,lng:121.397},
+    {name:"唐山",lat:39.632,lng:118.180},{name:"徐州",lat:34.257,lng:117.196},
+    {name:"洛阳",lat:34.624,lng:112.460},{name:"包头",lat:40.651,lng:109.849},
+    {name:"大同",lat:40.081,lng:113.322},{name:"常州",lat:31.816,lng:119.970},
+    {name:"南通",lat:32.013,lng:120.876},{name:"扬州",lat:32.394,lng:119.413},
+    {name:"潍坊",lat:36.706,lng:119.162},{name:"绍兴",lat:29.996,lng:120.570},
+    {name:"嘉兴",lat:30.749,lng:120.759},{name:"金华",lat:29.079,lng:119.650},
+    {name:"珠海",lat:22.271,lng:113.577},{name:"汕头",lat:23.354,lng:116.681},
+    {name:"中山",lat:22.516,lng:113.393},{name:"桂林",lat:25.261,lng:110.210},
+    {name:"柳州",lat:24.315,lng:109.411},{name:"保定",lat:38.874,lng:115.465},
+    {name:"邯郸",lat:36.615,lng:114.490},{name:"秦皇岛",lat:39.935,lng:119.596},
+    {name:"鞍山",lat:41.110,lng:122.994},{name:"丹东",lat:40.131,lng:124.378},
+    {name:"吉林",lat:43.843,lng:126.553},{name:"大庆",lat:46.596,lng:125.085},
+    {name:"齐齐哈尔",lat:47.342,lng:123.955},{name:"锦州",lat:41.096,lng:121.127},
+    {name:"荆州",lat:30.361,lng:112.191},{name:"宜昌",lat:30.692,lng:111.316},
+    {name:"襄阳",lat:32.009,lng:112.144},{name:"岳阳",lat:29.357,lng:113.129},
+    {name:"衡阳",lat:26.893,lng:112.571},{name:"韶关",lat:24.810,lng:113.597},
+    {name:"梅州",lat:24.294,lng:116.127},{name:"湛江",lat:21.271,lng:110.359},
+    {name:"绵阳",lat:31.468,lng:104.742},{name:"自贡",lat:29.352,lng:104.779},
+    {name:"德阳",lat:31.130,lng:104.399},{name:"泸州",lat:28.872,lng:105.442},
+    {name:"宝鸡",lat:34.354,lng:107.150},{name:"延安",lat:36.600,lng:109.476},
+    {name:"咸阳",lat:34.339,lng:108.712},{name:"天水",lat:34.580,lng:105.725},
+    {name:"遵义",lat:27.722,lng:106.722},{name:"大理",lat:25.594,lng:100.170},
+    {name:"曲靖",lat:25.490,lng:103.797},{name:"赤峰",lat:42.262,lng:118.936},
+    {name:"鄂尔多斯",lat:39.608,lng:109.824},{name:"呼伦贝尔",lat:49.215,lng:119.761},
+    {name:"景德镇",lat:29.292,lng:117.209},{name:"九江",lat:29.705,lng:116.003},
+    {name:"赣州",lat:25.831,lng:114.935},{name:"安阳",lat:36.107,lng:114.359},
+    {name:"开封",lat:34.792,lng:114.358},{name:"南阳",lat:33.004,lng:112.534},
+    {name:"三门峡",lat:34.785,lng:111.201},{name:"随州",lat:31.722,lng:113.383},
+    {name:"吐鲁番",lat:42.942,lng:89.184},{name:"喀什",lat:39.467,lng:75.989},
+    {name:"敦煌",lat:40.036,lng:94.806},{name:"武威",lat:37.928,lng:102.637},
+    {name:"固原",lat:36.016,lng:106.244},{name:"日照",lat:35.416,lng:119.462},
+    {name:"泰安",lat:36.190,lng:117.129},{name:"淄博",lat:36.803,lng:118.049},
+    {name:"临沂",lat:35.104,lng:118.356},{name:"济宁",lat:35.414,lng:116.587},
+    {name:"枣庄",lat:34.856,lng:117.324},{name:"威海",lat:37.513,lng:122.120},
+    {name:"连云港",lat:34.596,lng:119.221},{name:"淮安",lat:33.597,lng:119.021},
+    {name:"盐城",lat:33.379,lng:120.162},{name:"镇江",lat:32.197,lng:119.430}
+  ];
+
+  for (const c of CITIES) {
+    const cls = c.capital ? 'city-label provincial-capital' : 'city-label';
+    const marker = L.marker([c.lat, c.lng], {
+      icon: L.divIcon({
+        className: cls,
+        html: c.name,
+        iconSize: [80, 16],
+        iconAnchor: [40, 8]
+      }),
+      interactive: false,
+      zIndexOffset: -1000
+    });
+    cityLabelLayer.addLayer(marker);
+  }
+  // 初始不添加，根据缩放级别控制
+}
+
+// ===== 加载数据 =====
+async function loadData() {
+  const promises = [];
+  for (const region of REGIONS) {
+    promises.push(
+      fetch('data/' + region.l1File).then(r => r.json()).then(d => ({ region: region.name, color: region.color, data: d })).catch(e => { console.warn('加载失败:', region.l1File, e); return null; }),
+      fetch('data/' + region.l2File).then(r => r.json()).then(d => ({ region: region.name, color: region.color, data: d })).catch(e => { console.warn('加载失败:', region.l2File, e); return null; })
+    );
+  }
+  const results = await Promise.all(promises);
+
+  for (const result of results) {
+    if (!result || !result.data || !result.data.provinces) continue;
+    const { region, color, data } = result;
+    for (const province of data.provinces) {
+      for (const city of (province.cities || [])) {
+        for (const museum of (city.museums || [])) {
+          allMuseums.push({
+            ...museum,
+            region, province: province.name, city: city.name, color
+          });
+        }
+      }
+    }
+  }
+  console.log('数据加载完成，共', allMuseums.length, '家博物馆');
+}
+
+// ===== 创建标记 =====
+function createMarker(m) {
+  const isL1 = m.level === 1;
+  const w = isL1 ? 22 : 14;
+  const h = isL1 ? 30 : 19;
+  // 一级：金色渐变；二级：区域色浅化
+  const fill1 = isL1 ? '#f5c842' : m.color;
+  const fill2 = isL1 ? '#d4a017' : adjustColor(m.color, 0.7);
+  const stroke = isL1 ? '#b8860b' : adjustColor(m.color, 0.5);
+  const dotR = isL1 ? 3 : 2;
+  const gid = 'g' + Math.random().toString(36).slice(2,8);
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
+    <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${fill1}"/>
+      <stop offset="100%" stop-color="${fill2}"/>
+    </linearGradient></defs>
+    <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
+      fill="url(#${gid})" stroke="${stroke}" stroke-width="1"/>
+    <circle cx="11" cy="10.5" r="${dotR}" fill="#fff" opacity="0.9"/>
+  </svg>`;
+
+  const icon = L.divIcon({
+    className: '',
+    html: `<div class="museum-pin level${m.level}">${svg}</div>`,
+    iconSize: [w, h],
+    iconAnchor: [w/2, h],
+    popupAnchor: [0, -h + 4]
+  });
+
+  const marker = L.marker([m.lat, m.lng], { icon }).on('click', () => showMuseumPopup(m, marker));
+  marker._museumData = m;
+  return marker;
+}
+
+function adjustColor(hex, factor) {
+  const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+  const nr = Math.round(r + (255-r) * (1-factor)), ng = Math.round(g + (255-g) * (1-factor)), nb = Math.round(b + (255-b) * (1-factor));
+  return `rgb(${nr},${ng},${nb})`;
+}
+
+// ===== 弹窗内容 =====
+function showMuseumPopup(m, marker) {
+  let treasuresHtml = '';
+  if (m.treasures && m.treasures.length > 0) {
+    treasuresHtml = `<div class="popup-treasures"><h4>🏆 镇馆之宝（${m.treasures.length}件）</h4>`;
+    for (const t of m.treasures) {
+      let imgHtml = '';
+      if (t.imageUrl) {
+        imgHtml = `<img class="treasure-img" src="${t.imageUrl}" alt="${t.name}" loading="lazy" onclick="showFullImage(this.src, '${t.name.replace(/'/g, "\\'")}');" onerror="this.style.display='none'">`;
+      }
+      treasuresHtml += `<div class="treasure-item">${imgHtml}<span class="treasure-name">${t.name}</span><span class="treasure-era">[ ${t.era} ]</span><div class="treasure-desc">${t.description}</div></div>`;
+    }
+    treasuresHtml += `</div>`;
+  }
+
+  const html = `<div class="museum-popup">
+    <div class="popup-header">
+      <span class="popup-level ${m.level===1?'l1':'l2'}">${m.level===1?'一级':'二级'}</span>
+      <span class="popup-name">${m.name}</span>
+    </div>
+    <div class="popup-address">📍 ${m.address}</div>
+    <div class="popup-desc">${m.description}</div>
+    ${treasuresHtml}
+  </div>`;
+
+  marker.bindPopup(html, { maxWidth: 380, maxHeight: 450 }).openPopup();
+}
+
+// ===== 图片全屏 =====
+function showFullImage(src, name) {
+  const overlay = document.createElement('div');
+  overlay.className = 'img-fullscreen';
+  overlay.innerHTML = `<img src="${src}" alt="${name}"><div class="close-hint">点击任意处关闭</div>`;
+  overlay.onclick = () => overlay.remove();
+  document.body.appendChild(overlay);
+}
+
+// ===== 渲染标记 =====
+function renderMarkers() {
+  for (const m of markers) map.removeLayer(m);
+  markers = [];
+
+  const filtered = allMuseums.filter(m => {
+    if (currentLevel !== 'all' && m.level !== currentLevel) return false;
+    if (currentProvince && m.province !== currentProvince) return false;
+    if (currentRegion && !currentProvince && m.region !== currentRegion) return false;
+    return true;
+  });
+
+  // 模糊搜索过滤
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  let finalList = filtered;
+  if (query) {
+    const keywords = query.split(/\s+/);
+    finalList = filtered.filter(m => {
+      const searchStr = [
+        m.name, m.province, m.city, m.address, m.description,
+        ...(m.treasures || []).map(t => t.name)
+      ].join(' ').toLowerCase();
+      return keywords.every(kw => searchStr.includes(kw));
+    });
+  }
+
+  for (const m of finalList) {
+    const marker = createMarker(m);
+    marker.addTo(map);
+    markers.push(marker);
+  }
+
+  updateStats(finalList);
+}
+
+// ===== 更新统计 =====
+function updateStats(list) {
+  const l1 = list ? list.filter(m => m.level === 1).length : allMuseums.filter(m => m.level === 1).length;
+  const l2 = list ? list.filter(m => m.level === 2).length : allMuseums.filter(m => m.level === 2).length;
+  document.getElementById('stat-l1').textContent = l1;
+  document.getElementById('stat-l2').textContent = l2;
+  document.getElementById('stat-total').textContent = l1 + l2;
+}
+
+// ===== 筛选功能 =====
+function filterLevel(level) {
+  currentLevel = level;
+  document.querySelectorAll('.level-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.level === String(level));
+  });
+  renderMarkers();
+}
+
+// ===== 区域导航 =====
+function buildRegionNav() {
+  const container = document.getElementById('regionList');
+  let html = '';
+
+  // "全部"选项
+  html += `<div class="region-item"><div class="region-header" onclick="selectAll()">
+    <div class="region-dot" style="background:linear-gradient(135deg,#f5c842,#e74c3c)"></div>
+    <span class="region-name">全部区域</span>
+    <span class="region-count">${allMuseums.length}家</span>
+  </div></div>`;
+
+  for (const region of REGIONS) {
+    const rMuseums = allMuseums.filter(m => m.region === region.name);
+    const provinces = region.provinces;
+
+    let provinceHtml = '';
+    for (const p of provinces) {
+      const count = allMuseums.filter(m => m.province === p).length;
+      if (count === 0) continue;
+      provinceHtml += `<div class="province-item" data-province="${p}" onclick="selectProvince('${p}','${region.name}')">
+        <span>${p}</span><span class="province-count">${count}家</span>
+      </div>`;
+    }
+
+    html += `<div class="region-item" data-region="${region.name}">
+      <div class="region-header" onclick="toggleRegion(this.parentElement)">
+        <div class="region-dot" style="background:${region.color}"></div>
+        <span class="region-name">${region.name}</span>
+        <span class="region-count">${rMuseums.length}家</span>
+        <span class="region-arrow">▶</span>
+      </div>
+      <div class="province-list">${provinceHtml}</div>
+    </div>`;
+  }
+
+  container.innerHTML = html;
+}
+
+function toggleRegion(el) {
+  const wasExpanded = el.classList.contains('expanded');
+  document.querySelectorAll('.region-item').forEach(i => i.classList.remove('expanded'));
+  if (!wasExpanded) {
+    el.classList.add('expanded');
+    // 选中该区域
+    const regionName = el.dataset.region;
+    if (regionName) {
+      currentRegion = regionName;
+      currentProvince = null;
+      renderMarkers();
+      // 飞到该区域
+      const rMuseums = allMuseums.filter(m => m.region === regionName);
+      if (rMuseums.length) {
+        const bounds = L.latLngBounds(rMuseums.map(m => [m.lat, m.lng]));
+        map.flyToBounds(bounds, { padding: [60, 60], maxZoom: 8 });
+      }
+    }
+  }
+}
+
+function selectProvince(province, region) {
+  currentProvince = province;
+  currentRegion = region;
+  document.querySelectorAll('.province-item').forEach(i => i.classList.remove('active'));
+  document.querySelector(`.province-item[data-province="${province}"]`)?.classList.add('active');
+  renderMarkers();
+
+  const pMuseums = allMuseums.filter(m => m.province === province);
+  if (pMuseums.length) {
+    const bounds = L.latLngBounds(pMuseums.map(m => [m.lat, m.lng]));
+    map.flyToBounds(bounds, { padding: [60, 60], maxZoom: 10 });
+  }
+}
+
+function selectAll() {
+  currentRegion = null;
+  currentProvince = null;
+  document.querySelectorAll('.province-item').forEach(i => i.classList.remove('active'));
+  renderMarkers();
+  map.flyTo([35.5, 104.5], 5);
+}
+
+// ===== 侧边栏 =====
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('collapsed');
+  document.getElementById('sidebarToggle').textContent = sidebar.classList.contains('collapsed') ? '▶' : '◀';
+}
+
+// ===== 搜索 =====
+let searchTimer;
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('searchInput').addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => renderMarkers(), 300);
+  });
+});
+
+// ===== 启动 =====
+async function init() {
+  try {
+    initMap();
+    await loadData();
+
+    // 更新按钮计数
+    const l1Count = allMuseums.filter(m => m.level === 1).length;
+    const l2Count = allMuseums.filter(m => m.level === 2).length;
+    document.getElementById('btn-all').textContent = allMuseums.length;
+    document.getElementById('btn-l1').textContent = l1Count;
+    document.getElementById('btn-l2').textContent = l2Count;
+
+    buildRegionNav();
+    renderMarkers();
+  } catch (e) {
+    console.error('初始化失败:', e);
+  }
+  // 无论成功失败都关闭加载动画
+  document.getElementById('loading').classList.add('hidden');
+}
+
+// 10秒超时保底：无论如何都关闭loading
+setTimeout(() => {
+  const el = document.getElementById('loading');
+  if (el && !el.classList.contains('hidden')) {
+    el.classList.add('hidden');
+    console.warn('加载超时，强制关闭loading');
+  }
+}, 10000);
+
+init();
+</script>
+</body>
+</html>

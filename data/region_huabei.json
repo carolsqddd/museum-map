@@ -1,0 +1,1091 @@
+{
+  "region": "华北",
+  "provinces": [
+    {
+      "name": "北京",
+      "cities": [
+        {
+          "name": "北京市",
+          "museums": [
+            {
+              "name": "故宫博物院",
+              "level": 1,
+              "address": "北京市东城区景山前街4号",
+              "lng": 116.397,
+              "lat": 39.917,
+              "description": "中国最大的古代文化艺术博物馆，明清两代皇宫，世界五大宫殿之首。",
+              "treasures": [
+                {
+                  "name": "清明上河图",
+                  "era": "北宋",
+                  "description": "张择端所作，描绘北宋都城汴京清明时节的繁华景象，绢本设色，纵24.8厘米，横528厘米，中国十大传世名画之一。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Along_the_River_7-119-3.jpg/400px-Along_the_River_7-119-3.jpg"
+                },
+                {
+                  "name": "千里江山图",
+                  "era": "北宋",
+                  "description": "王希孟十八岁时所作，纵51.5厘米，横1191.5厘米，以矿物质石青、石绿为主色调，画面气势恢宏，是青绿山水画的巅峰之作。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Wang_Ximeng._A_Thousand_Li_of_Rivers_and_Mountains._%28Complete%2C_51.5x1191.5_cm%29._1113._Palace_Museum%2C_Beijing.jpg/400px-Wang_Ximeng._A_Thousand_Li_of_Rivers_and_Mountains._%28Complete%2C_51.5x1191.5_cm%29._1113._Palace_Museum%2C_Beijing.jpg"
+                },
+                {
+                  "name": "五牛图",
+                  "era": "唐代",
+                  "description": "韩滉所作，纸本设色，是目前所见最早作于纸上的绘画，描绘五头牛各具姿态，笔法简朴，被誉为\"镇国之宝\"。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Five_Oxen.jpg/400px-Five_Oxen.jpg"
+                },
+                {
+                  "name": "平复帖",
+                  "era": "西晋",
+                  "description": "陆机所作，是目前存世最早的名人墨迹真迹。纵23.7厘米，横20.6厘米，共9行84字，用秃笔写于麻纸上。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Erta_Pingfu.jpg/400px-Terra_Pingfu.jpg"
+                },
+                {
+                  "name": "韩熙载夜宴图",
+                  "era": "五代",
+                  "description": "顾闳中奉南唐后主李煜之命所画，描绘了韩熙载家开宴行乐的场景，是中国画史上的经典名作。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Han_Xizai%27s_Night_Revels_1.jpg/400px-Han_Xizai%27s_Night_Revels_1.jpg"
+                },
+                {
+                  "name": "青玉大禹治水图山子",
+                  "era": "清代",
+                  "description": "清代乾隆年间制作，重约5350千克，高224厘米，是中国玉器宝库中用料最宏、雕琢最精、器形最巨的玉雕工艺品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "掐丝珐琅缠枝莲纹象耳炉",
+                  "era": "元代",
+                  "description": "元代宫廷珐琅器精品，通体施天蓝色珐琅釉，炉颈部和腹部装饰缠枝莲纹，色泽浑厚谐调，富丽典雅。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "各种釉彩大瓶",
+                  "era": "清代",
+                  "description": "清乾隆年间烧制，通高86.4厘米，集17种釉彩于一身，被称为\"瓷母\"，代表了清代制瓷工艺的最高水平。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%E5%90%84%E7%A7%8D%E9%87%89%E5%BD%A9%E5%A4%A7%E7%93%B6.jpg/400px-%E5%90%84%E7%A7%8D%E9%87%89%E5%BD%A9%E5%A4%A7%E7%93%B6.jpg"
+                },
+                {
+                  "name": "金瓯永固杯",
+                  "era": "清代",
+                  "description": "乾隆年间制作，金质，嵌珍珠和宝石，是清代皇帝每年元旦开笔仪式的专用酒杯，寓意国家政权永固。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Gold_Cup_Jinou_Yonggu.jpg/400px-Gold_Cup_Jinou_Yonggu.jpg"
+                },
+                {
+                  "name": "郎窑红釉穿带直口瓶",
+                  "era": "清代",
+                  "description": "康熙年间景德镇烧制，釉色鲜红如宝石，是郎窑红瓷器中难得一见的珍品，数百窑难烧成一件。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国国家博物馆",
+              "level": 1,
+              "address": "北京市东城区东长安街16号",
+              "lng": 116.407,
+              "lat": 39.904,
+              "description": "世界上单体建筑面积最大的博物馆，馆藏文物超过140万件。",
+              "treasures": [
+                {
+                  "name": "后母戊鼎",
+                  "era": "商代",
+                  "description": "1939年河南安阳出土，高133厘米，重832.84千克，是已知中国古代最重的青铜器，被誉为\"青铜之王\"。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/HouMuWuDingFullView.jpg/400px-HouMuWuDingFullView.jpg"
+                },
+                {
+                  "name": "四羊方尊",
+                  "era": "商代",
+                  "description": "1938年湖南宁乡出土，高58.6厘米，重34.6千克，现存商代青铜方尊中体型最大者，铸造工艺登峰造极。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/SiYangFangZun.jpg/400px-SiYangFangZun.jpg"
+                },
+                {
+                  "name": "大盂鼎",
+                  "era": "西周",
+                  "description": "高101.9厘米，重153.5千克，铭文291字，记载了周康王训诰盂的内容，是西周早期青铜礼器重器。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "利簋",
+                  "era": "西周",
+                  "description": "又名\"武王征商簋\"，铭文32字记载了武王伐纣在甲子日获胜的史实，是迄今能确知的最早的西周青铜器。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "虢季子白盘",
+                  "era": "西周",
+                  "description": "内底铭文111字，是西周金文中的绝品。长137.2厘米，是目前所见西周时期最大的水器。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "鹳鱼石斧图彩陶缸",
+                  "era": "新石器时代",
+                  "description": "1978年河南临汝出土，缸外壁绘有鹳鸟衔鱼和石斧图，是迄今中国发现最早、面积最大的一幅陶画。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "陶鹰鼎",
+                  "era": "新石器时代",
+                  "description": "仰韶文化时期，高35.8厘米，以伫足站立的雄鹰造型，将鼎形器物与动物美感巧妙融为一体，是远古时期不可多得的雕塑珍品。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pottery_ding_in_eagle_shape.jpg/400px-Pottery_ding_in_eagle_shape.jpg"
+                },
+                {
+                  "name": "九龙九凤冠",
+                  "era": "明代",
+                  "description": "明孝端皇后凤冠，冠上饰九条金龙、九只凤凰，嵌有上百颗宝石和珍珠，是中国历史上最经典的皇后凤冠。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "红山文化玉龙",
+                  "era": "新石器时代",
+                  "description": "1971年内蒙古赤峰出土，高26厘米，墨绿色岫岩玉雕成C形龙，被誉为\"中华第一龙\"。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jade_dragon_%28C-dragon%29_of_Hongshan_Culture%2C_National_Museum_of_China.jpg/400px-Jade_dragon_%28C-dragon%29_of_Hongshan_Culture%2C_National_Museum_of_China.jpg"
+                },
+                {
+                  "name": "击鼓说唱俑",
+                  "era": "东汉",
+                  "description": "1957年四川成都出土，陶俑张口嬉笑、手持鼓棒，神态诙谐生动，被称为\"汉代第一俑\"。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Storyteller%2C_Eastern_Han.jpg/400px-Storyteller%2C_Eastern_Han.jpg"
+                }
+              ]
+            },
+            {
+              "name": "首都博物馆",
+              "level": 1,
+              "address": "北京市西城区复兴门外大街16号",
+              "lng": 116.339,
+              "lat": 39.905,
+              "description": "北京地区大型综合性博物馆，以丰富的文物藏品展示北京历史文化。",
+              "treasures": [
+                {
+                  "name": "西周伯矩鬲",
+                  "era": "西周",
+                  "description": "1975年北京房山出土，全身以牛首为主要装饰，主体纹饰皆为高浮雕，是燕国青铜器的代表作。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "元青花凤首扁壶",
+                  "era": "元代",
+                  "description": "壶身呈扁圆形，壶口作凤首状，通体绘青花纹饰，是元代青花瓷中罕见的精品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "战国青铜编钟",
+                  "era": "战国",
+                  "description": "北京延庆出土的战国青铜编钟，展现了北京地区战国时期的音乐文化。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "明永乐铜鎏金释迦牟尼佛坐像",
+                  "era": "明代",
+                  "description": "永乐宫廷造像精品，通体鎏金，工艺精湛，是明代宫廷佛教艺术的代表。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "班簋",
+                  "era": "西周",
+                  "description": "西周穆王时期青铜器，铭文173字，记载了毛班的祖先在历代周王时的主要功绩。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国科学技术馆",
+              "level": 1,
+              "address": "北京市朝阳区北辰东路5号",
+              "lng": 116.395,
+              "lat": 39.99,
+              "description": "中国唯一的国家级综合性科技馆，以科普展览教育为主。",
+              "treasures": [
+                {
+                  "name": "神舟飞船返回舱（实物）",
+                  "era": "现代",
+                  "description": "展示中国载人航天的辉煌成就，包括神舟系列飞船返回舱等珍贵航天实物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国人民革命军事博物馆",
+              "level": 1,
+              "address": "北京市海淀区复兴路9号",
+              "lng": 116.317,
+              "lat": 39.908,
+              "description": "中国第一个综合类军事博物馆，收藏34万多件文物。",
+              "treasures": [
+                {
+                  "name": "铜鎏金弩机",
+                  "era": "汉代",
+                  "description": "精密的青铜弩机装置，体现了中国古代兵器制造的高超技艺。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国地质博物馆",
+              "level": 1,
+              "address": "北京市西城区西四羊肉胡同15号",
+              "lng": 116.365,
+              "lat": 39.927,
+              "description": "创建于1916年，是中国历史最悠久的自然科学博物馆之一。",
+              "treasures": [
+                {
+                  "name": "巨型山东龙化石",
+                  "era": "白垩纪",
+                  "description": "世界上最大的鸭嘴龙化石之一，展示了中国丰富的古生物资源。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国航空博物馆",
+              "level": 1,
+              "address": "北京市昌平区大汤山脚下",
+              "lng": 116.348,
+              "lat": 40.194,
+              "description": "亚洲最大的航空珍品荟萃地，收藏飞机200多架。",
+              "treasures": [
+                {
+                  "name": "毛泽东座机",
+                  "era": "现代",
+                  "description": "里-2型飞机，编号8205，是毛泽东等领导人乘坐的专用飞机。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "北京鲁迅博物馆",
+              "level": 1,
+              "address": "北京市西城区阜成门内大街宫门口二条19号",
+              "lng": 116.35,
+              "lat": 39.924,
+              "description": "鲁迅在北京最后居住的故居，收藏鲁迅手稿等珍贵文物。",
+              "treasures": [
+                {
+                  "name": "鲁迅手稿",
+                  "era": "近代",
+                  "description": "包括大量鲁迅亲笔手稿、书信等珍贵文献资料。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "北京自然博物馆",
+              "level": 1,
+              "address": "北京市东城区天桥南大街126号",
+              "lng": 116.396,
+              "lat": 39.883,
+              "description": "中国第一座大型自然历史博物馆。",
+              "treasures": [
+                {
+                  "name": "黄河象化石",
+                  "era": "更新世",
+                  "description": "1973年出土于甘肃，完整度极高的古象化石骨架，长8米、高4米。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国人民抗日战争纪念馆",
+              "level": 1,
+              "address": "北京市丰台区卢沟桥宛平城内",
+              "lng": 116.219,
+              "lat": 39.849,
+              "description": "全面反映中国人民抗日战争历史的大型综合性专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "\"卢沟桥事变\"相关文物",
+                  "era": "近代",
+                  "description": "包括七七事变相关历史文物与影像资料，记录中华民族全面抗战的开始。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "周口店遗址博物馆",
+              "level": 1,
+              "address": "北京市房山区周口店大街1号",
+              "lng": 115.929,
+              "lat": 39.724,
+              "description": "在周口店遗址基础上建立的博物馆，世界文化遗产。",
+              "treasures": [
+                {
+                  "name": "北京人头盖骨（复制品）",
+                  "era": "旧石器时代",
+                  "description": "距今约70万年的古人类化石，是人类进化史的重要证据。原件已在二战中遗失。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国农业博物馆",
+              "level": 1,
+              "address": "北京市朝阳区东三环北路16号",
+              "lng": 116.461,
+              "lat": 39.947,
+              "description": "中国唯一的国家级农业博物馆。",
+              "treasures": [
+                {
+                  "name": "二十四节气相关文物",
+                  "era": "历代",
+                  "description": "系统展示中国农耕文明发展历程的珍贵文物与资料。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "恭王府博物馆",
+              "level": 1,
+              "address": "北京市西城区柳荫街甲14号",
+              "lng": 116.382,
+              "lat": 39.937,
+              "description": "清代规模最大的王府建筑群，现存王府中保存最完整的。",
+              "treasures": [
+                {
+                  "name": "\"福\"字碑",
+                  "era": "清代",
+                  "description": "传为康熙御笔书写的\"福\"字，暗含\"多子、多才、多田、多寿、多福\"，被誉为\"天下第一福\"。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国印刷博物馆",
+              "level": 1,
+              "address": "北京市大兴区兴华北路25号",
+              "lng": 116.329,
+              "lat": 39.737,
+              "description": "世界上最大的印刷专业博物馆。",
+              "treasures": [
+                {
+                  "name": "宋代毕昇活字印刷复原模型",
+                  "era": "宋代",
+                  "description": "系统展示中国四大发明之一——印刷术的发展历程。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国电影博物馆",
+              "level": 1,
+              "address": "北京市朝阳区南影路9号",
+              "lng": 116.512,
+              "lat": 39.979,
+              "description": "世界最大的国家级专业电影博物馆。",
+              "treasures": [
+                {
+                  "name": "中国第一部电影资料",
+                  "era": "近代",
+                  "description": "收藏有中国电影百年发展历程的珍贵影像、胶片和放映设备。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "北京汽车博物馆",
+              "level": 1,
+              "address": "北京市丰台区南四环西路126号",
+              "lng": 116.322,
+              "lat": 39.833,
+              "description": "中国第一座汽车博物馆。",
+              "treasures": [
+                {
+                  "name": "红旗CA72轿车",
+                  "era": "现代",
+                  "description": "中国第一辆自主设计制造的高级轿车，见证了中国汽车工业的发展。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "清华大学艺术博物馆",
+              "level": 1,
+              "address": "北京市海淀区清华大学校内",
+              "lng": 116.327,
+              "lat": 40.0,
+              "description": "国内最大的高校博物馆之一。",
+              "treasures": [
+                {
+                  "name": "战国彩绘陶俑",
+                  "era": "战国",
+                  "description": "极为罕见的战国彩绘陶俑，色彩鲜艳、形象生动。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国华侨历史博物馆",
+              "level": 1,
+              "address": "北京市东城区北新桥三条东口",
+              "lng": 116.416,
+              "lat": 39.94,
+              "description": "全面展示华侨华人历史与贡献的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "华侨历史文献与实物",
+                  "era": "近现代",
+                  "description": "系统收藏海外华侨华人的历史文物与珍贵档案。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国妇女儿童博物馆",
+              "level": 1,
+              "address": "北京市东城区北极阁路9号",
+              "lng": 116.413,
+              "lat": 39.923,
+              "description": "中国第一家以妇女儿童为主题的国家级专题博物馆。",
+              "treasures": [
+                {
+                  "name": "中国妇女运动历史文物",
+                  "era": "近现代",
+                  "description": "系统展示中国妇女儿童在社会发展中的重要贡献。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国海关博物馆",
+              "level": 1,
+              "address": "北京市东城区建国门内大街6号",
+              "lng": 116.422,
+              "lat": 39.907,
+              "description": "国家级行业博物馆，展示中国海关发展历史。",
+              "treasures": [
+                {
+                  "name": "海关罚没文物",
+                  "era": "历代",
+                  "description": "包括海关历年查获的走私文物精品，是爱国主义教育的重要载体。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "民族文化宫",
+              "level": 1,
+              "address": "北京市西城区复兴门内大街49号",
+              "lng": 116.356,
+              "lat": 39.907,
+              "description": "中国56个民族文化的荟萃之地。",
+              "treasures": [
+                {
+                  "name": "少数民族服饰与器物",
+                  "era": "历代",
+                  "description": "收藏有各民族珍贵文物约5万件。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "民航博物馆",
+              "level": 1,
+              "address": "北京市朝阳区首都机场辅路200号",
+              "lng": 116.579,
+              "lat": 40.055,
+              "description": "中国民用航空专题博物馆。",
+              "treasures": [
+                {
+                  "name": "中国民航历史文物",
+                  "era": "近现代",
+                  "description": "展示中国民用航空事业的发展历程与重要里程碑。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国现代文学馆",
+              "level": 1,
+              "address": "北京市朝阳区文学馆路45号",
+              "lng": 116.486,
+              "lat": 39.949,
+              "description": "中国第一座专业的现代文学博物馆。",
+              "treasures": [
+                {
+                  "name": "作家手稿与书信",
+                  "era": "近现代",
+                  "description": "收藏有大量中国现当代著名作家的手稿、书信和遗物。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国铁道博物馆",
+              "level": 1,
+              "address": "北京市朝阳区酒仙桥北路1号",
+              "lng": 116.494,
+              "lat": 39.978,
+              "description": "中国铁路系统唯一的国家级专业博物馆。",
+              "treasures": [
+                {
+                  "name": "\"毛泽东号\"机车",
+                  "era": "现代",
+                  "description": "中国铁路历史上最著名的机车之一，展示中国铁路发展的辉煌历程。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国园林博物馆",
+              "level": 1,
+              "address": "北京市丰台区射击场路15号",
+              "lng": 116.271,
+              "lat": 39.86,
+              "description": "中国第一座以园林为主题的国家级博物馆。",
+              "treasures": [
+                {
+                  "name": "圆明园文物",
+                  "era": "清代",
+                  "description": "收藏有圆明园相关文物及历代园林珍品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "香山革命纪念馆",
+              "level": 1,
+              "address": "北京市海淀区香山公园东南",
+              "lng": 116.186,
+              "lat": 39.991,
+              "description": "展示中共中央在香山期间领导全国各族人民完成民族独立和人民解放的历史。",
+              "treasures": [
+                {
+                  "name": "开国大典相关文物",
+                  "era": "近代",
+                  "description": "收藏有中华人民共和国成立前夕的珍贵历史文物和档案。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "天津",
+      "cities": [
+        {
+          "name": "天津市",
+          "museums": [
+            {
+              "name": "天津博物馆",
+              "level": 1,
+              "address": "天津市河西区平江道62号",
+              "lng": 117.221,
+              "lat": 39.088,
+              "description": "综合性历史艺术类博物馆，馆藏文物20万件。",
+              "treasures": [
+                {
+                  "name": "清乾隆款珐琅彩芍药雉鸡纹玉壶春瓶",
+                  "era": "清代",
+                  "description": "高16.3厘米，乾隆御制珐琅彩瓷器孤品，瓶身绘芍药雉鸡图，题诗\"青扶承露蕊，红妥出阑枝\"，溥仪出宫时唯一带走的瓷器。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "西周太保鼎",
+                  "era": "西周",
+                  "description": "梁山七器中唯一留在国内的一件，内壁铸\"大保铸\"三字，为西周重臣召公奭所用礼器。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "雪景寒林图",
+                  "era": "北宋",
+                  "description": "范宽所作，绢本水墨画，纵193.5厘米，横160.3厘米，描绘秦陇山川雪后景色，是范宽留存大陆的唯一作品。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Fan_Kuan_-_Travelers_Among_Mountains_and_Streams_-_Google_Art_Project.jpg/400px-Fan_Kuan_-_Travelers_Among_Mountains_and_Streams_-_Google_Art_Project.jpg"
+                },
+                {
+                  "name": "西周夔纹禁",
+                  "era": "西周",
+                  "description": "高23厘米，长126厘米，扁平立体长方形，传世仅两件，是中国青铜器中的稀世珍宝。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "隋白釉龙柄联腹传瓶",
+                  "era": "隋代",
+                  "description": "高18.5厘米，造型新颖独特，瓶底刻有铭文，是目前发现的唯一刻有铭文的传瓶。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "明万历款掐丝珐琅缠枝莲纹大吉葫芦瓶",
+                  "era": "明代",
+                  "description": "明代宫廷掐丝珐琅精品，葫芦造型寓意吉祥，通体装饰缠枝莲纹。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "清乾隆款翠玉白菜式花插",
+                  "era": "清代",
+                  "description": "以整块翡翠雕成白菜形花插，色泽翠绿通透，雕工精细。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "天津自然博物馆",
+              "level": 1,
+              "address": "天津市河西区友谊路31号",
+              "lng": 117.223,
+              "lat": 39.083,
+              "description": "中国创建最早的自然博物馆之一。",
+              "treasures": [
+                {
+                  "name": "披毛犀化石",
+                  "era": "更新世",
+                  "description": "保存极为完整的披毛犀化石骨架，是该馆最具代表性的标本之一。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "周恩来邓颖超纪念馆",
+              "level": 1,
+              "address": "天津市南开区水上公园西路9号",
+              "lng": 117.16,
+              "lat": 39.094,
+              "description": "纪念周恩来和邓颖超的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "周恩来、邓颖超相关遗物",
+                  "era": "近代",
+                  "description": "收藏有周恩来和邓颖超的珍贵遗物、文献和照片。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "平津战役纪念馆",
+              "level": 1,
+              "address": "天津市红桥区平津道8号",
+              "lng": 117.159,
+              "lat": 39.149,
+              "description": "全面展示平津战役历史的专题纪念馆。",
+              "treasures": [
+                {
+                  "name": "平津战役历史文物",
+                  "era": "近代",
+                  "description": "收藏有大量平津战役期间的武器装备、文件和历史照片。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "河北",
+      "cities": [
+        {
+          "name": "石家庄市",
+          "museums": [
+            {
+              "name": "河北博物院",
+              "level": 1,
+              "address": "河北省石家庄市长安区东大街4号",
+              "lng": 114.488,
+              "lat": 38.049,
+              "description": "河北省最大的综合性博物馆，收藏文物15万件。",
+              "treasures": [
+                {
+                  "name": "刘胜金缕玉衣",
+                  "era": "西汉",
+                  "description": "1968年河北满城出土，由2498片玉片和1100克金丝编缀而成，是中国首次发现保存完整的金缕玉衣。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jade_burial_suit_of_Liu_Sheng%2C_Hebei_Provincial_Museum.jpg/400px-Jade_burial_suit_of_Liu_Sheng%2C_Hebei_Provincial_Museum.jpg"
+                },
+                {
+                  "name": "长信宫灯",
+                  "era": "西汉",
+                  "description": "满城汉墓出土，通体鎏金，宫女持灯造型，灯体设计可调节光照方向和亮度，被誉为\"中华第一灯\"。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Changxin_Palace_lamp_2.jpg/400px-Changxin_Palace_lamp_2.jpg"
+                },
+                {
+                  "name": "中山王铁足铜鼎",
+                  "era": "战国",
+                  "description": "1977年平山县出土，高51.5厘米，铭文469字，是铭文最多的战国青铜器，也是最大的铁足铜鼎。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "错金银四龙四凤铜方案",
+                  "era": "战国",
+                  "description": "平山县中山国王墓出土，底部由四条蟠龙和四只凤鸟支撑，错金银工艺精美绝伦，是国宝级文物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "透雕龙凤纹铜铺首",
+                  "era": "战国",
+                  "description": "1966年易县燕下都出土，长74.5厘米，重21.5千克，是中国目前发现的最大的战国铜铺首。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "错金博山炉",
+                  "era": "西汉",
+                  "description": "满城汉墓出土，炉体呈山形，错以金丝纹饰，被称为\"史上最豪华的香薰\"。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "元青花釉里红镂雕开光盖罐",
+                  "era": "元代",
+                  "description": "世界仅存4件同类器物之一，集青花、釉里红、镂雕、贴花于一体，是元代瓷器极品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "透雕双龙高钮谷纹白玉璧",
+                  "era": "西汉",
+                  "description": "满城汉墓出土，玉质温润，透雕双龙纹样精美，是汉代玉璧艺术珍品。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "西柏坡纪念馆",
+              "level": 1,
+              "address": "河北省石家庄市平山县西柏坡镇",
+              "lng": 113.92,
+              "lat": 38.308,
+              "description": "全国著名红色旅游景点，展示党中央在西柏坡的光辉历史。",
+              "treasures": [
+                {
+                  "name": "七届二中全会历史文物",
+                  "era": "近代",
+                  "description": "收藏有大量革命历史文物、文件和照片。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "山西",
+      "cities": [
+        {
+          "name": "太原市",
+          "museums": [
+            {
+              "name": "山西博物院",
+              "level": 1,
+              "address": "山西省太原市万柏林区滨河西路",
+              "lng": 112.53,
+              "lat": 37.851,
+              "description": "山西省最大的综合性博物馆，馆藏文物40万件。",
+              "treasures": [
+                {
+                  "name": "晋侯鸟尊",
+                  "era": "西周",
+                  "description": "2000年曲沃晋侯墓地出土，造型为凤鸟回眸，背上驮一小鸟，是首批禁止出国（境）展览文物。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Bird-shaped_Zun.jpg/400px-Bird-shaped_Zun.jpg"
+                },
+                {
+                  "name": "龙形觥",
+                  "era": "商代",
+                  "description": "浑源出土，通体作龙形，前端为龙首，器身饰有精美的兽面纹和夔龙纹，是商代青铜器的精品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "兽形觥",
+                  "era": "商代",
+                  "description": "造型为四足兽形，器身布满精美纹饰，展现了商代高超的青铜铸造技术。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "赵卿墓鸟尊",
+                  "era": "春秋",
+                  "description": "太原赵卿墓出土的春秋晚期青铜鸟尊，造型优美，装饰精美。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "侯马盟书",
+                  "era": "春秋",
+                  "description": "1965年侯马出土的春秋盟誓遗物，用毛笔将盟辞书写在玉石片上，是研究春秋晚期盟誓制度的珍贵实物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "北齐娄睿墓壁画",
+                  "era": "北齐",
+                  "description": "太原出土，描绘出行、宴饮等场景，色彩鲜艳，是北朝绘画艺术的杰出代表。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "木板漆画",
+                  "era": "北魏",
+                  "description": "大同司马金龙墓出土，漆画内容取材于列女故事，是北魏漆器艺术的杰出代表。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "中国煤炭博物馆",
+              "level": 1,
+              "address": "山西省太原市万柏林区迎泽西大街2号",
+              "lng": 112.53,
+              "lat": 37.867,
+              "description": "中国唯一的国家级煤炭行业博物馆。",
+              "treasures": [
+                {
+                  "name": "煤炭形成演化标本",
+                  "era": "地质时期",
+                  "description": "系统展示煤炭的形成过程和采掘历史。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "长治市",
+          "museums": [
+            {
+              "name": "八路军太行纪念馆",
+              "level": 1,
+              "address": "山西省长治市武乡县太行街363号",
+              "lng": 112.829,
+              "lat": 36.843,
+              "description": "全面展示八路军抗战历史的大型革命纪念馆。",
+              "treasures": [
+                {
+                  "name": "百团大战相关文物",
+                  "era": "近代",
+                  "description": "收藏有大量八路军在太行山区作战的武器装备和历史文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "大同市",
+          "museums": [
+            {
+              "name": "大同市博物馆",
+              "level": 1,
+              "address": "山西省大同市御东新区太和路",
+              "lng": 113.322,
+              "lat": 40.081,
+              "description": "以北魏文物为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "北魏司马金龙墓漆画屏风",
+                  "era": "北魏",
+                  "description": "出土于大同石家寨司马金龙墓，漆画内容丰富，是北魏漆器艺术的杰出代表。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "临汾市",
+          "museums": [
+            {
+              "name": "山西省自然博物馆",
+              "level": 1,
+              "address": "山西省太原市滨河西路",
+              "lng": 112.514,
+              "lat": 37.843,
+              "description": "展示山西自然资源和地质矿产的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "山西恐龙化石",
+                  "era": "侏罗纪",
+                  "description": "山西出土的珍贵恐龙化石标本。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "内蒙古",
+      "cities": [
+        {
+          "name": "呼和浩特市",
+          "museums": [
+            {
+              "name": "内蒙古博物院",
+              "level": 1,
+              "address": "内蒙古自治区呼和浩特市新城区新华东街27号",
+              "lng": 111.762,
+              "lat": 40.83,
+              "description": "内蒙古最大的综合性博物馆，草原文化特色鲜明。",
+              "treasures": [
+                {
+                  "name": "匈奴金冠",
+                  "era": "战国",
+                  "description": "鄂尔多斯出土，金片锤打而成，饰以鹰和狼噬羊图案，是中国目前发现唯一的匈奴贵族金冠。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "鹰顶金冠饰",
+                  "era": "战国",
+                  "description": "金冠顶端立一展翅雄鹰，冠带饰虎、马、羊等动物纹样，是草原文化的标志性文物。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "战国鄂尔多斯式青铜短剑",
+                  "era": "战国",
+                  "description": "鄂尔多斯地区出土的典型草原青铜兵器，柄首多饰动物纹样。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "辽代三彩鸳鸯壶",
+                  "era": "辽代",
+                  "description": "造型为一对鸳鸯，施三彩釉，是辽代陶瓷艺术的精品。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "匈奴青铜虎鹿咬斗纹牌饰",
+                  "era": "战国至汉",
+                  "description": "表现虎噬鹿的生动场景，是北方草原动物纹样青铜器的典型代表。",
+                  "imageUrl": ""
+                },
+                {
+                  "name": "查干诺尔龙化石",
+                  "era": "白垩纪",
+                  "description": "内蒙古锡林郭勒盟出土的完整恐龙化石骨架，长约26米。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "呼和浩特博物院",
+              "level": 1,
+              "address": "内蒙古自治区呼和浩特市回民区通道北路62号",
+              "lng": 111.654,
+              "lat": 40.812,
+              "description": "展示呼和浩特地区历史文化的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "辽代白瓷辟雍砚",
+                  "era": "辽代",
+                  "description": "珍贵的辽代白瓷文物，体现了辽代制瓷工艺的成就。",
+                  "imageUrl": ""
+                }
+              ]
+            },
+            {
+              "name": "内蒙古自然博物馆",
+              "level": 1,
+              "address": "内蒙古自治区呼和浩特市赛罕区南二环路13号",
+              "lng": 111.746,
+              "lat": 40.778,
+              "description": "展示内蒙古自然资源与生态环境的专题博物馆。",
+              "treasures": [
+                {
+                  "name": "查干诺尔龙化石",
+                  "era": "白垩纪",
+                  "description": "内蒙古出土的大型恐龙化石，完整度高。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "鄂尔多斯市",
+          "museums": [
+            {
+              "name": "鄂尔多斯博物馆",
+              "level": 1,
+              "address": "内蒙古自治区鄂尔多斯市康巴什区",
+              "lng": 109.824,
+              "lat": 39.608,
+              "description": "以鄂尔多斯青铜器为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "鄂尔多斯式青铜器",
+                  "era": "春秋至汉代",
+                  "description": "具有浓郁草原文化特色的青铜器群，是北方游牧文化的代表。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "赤峰市",
+          "museums": [
+            {
+              "name": "赤峰博物馆",
+              "level": 1,
+              "address": "内蒙古自治区赤峰市新城区富河街",
+              "lng": 118.936,
+              "lat": 42.262,
+              "description": "以红山文化和契丹辽文化为特色的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "红山文化玉龙",
+                  "era": "新石器时代",
+                  "description": "赤峰地区出土的红山文化玉器，是中华龙文化的重要源头。",
+                  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jade_dragon_%28C-dragon%29_of_Hongshan_Culture%2C_National_Museum_of_China.jpg/400px-Jade_dragon_%28C-dragon%29_of_Hongshan_Culture%2C_National_Museum_of_China.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "包头市",
+          "museums": [
+            {
+              "name": "包头博物馆",
+              "level": 1,
+              "address": "内蒙古自治区包头市昆都仑区阿尔丁大街25号",
+              "lng": 109.849,
+              "lat": 40.651,
+              "description": "展示包头地区历史文化的综合性博物馆。",
+              "treasures": [
+                {
+                  "name": "战国青铜器",
+                  "era": "战国",
+                  "description": "包头地区出土的珍贵青铜器文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "呼伦贝尔市",
+          "museums": [
+            {
+              "name": "呼伦贝尔博物院",
+              "level": 1,
+              "address": "内蒙古自治区呼伦贝尔市海拉尔区胜利大街",
+              "lng": 119.761,
+              "lat": 49.215,
+              "description": "展示呼伦贝尔草原历史文化和民族风情的博物馆。",
+              "treasures": [
+                {
+                  "name": "鲜卑民族文物",
+                  "era": "魏晋",
+                  "description": "展示鲜卑族在呼伦贝尔草原的历史遗存。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "阿拉善盟",
+          "museums": [
+            {
+              "name": "阿拉善博物馆",
+              "level": 1,
+              "address": "内蒙古自治区阿拉善盟阿拉善左旗",
+              "lng": 105.729,
+              "lat": 38.832,
+              "description": "展示阿拉善地区历史文化和自然景观的博物馆。",
+              "treasures": [
+                {
+                  "name": "居延汉简（复制品）",
+                  "era": "汉代",
+                  "description": "阿拉善地区出土的珍贵汉代简牍文物。",
+                  "imageUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

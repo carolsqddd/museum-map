@@ -1,0 +1,123 @@
+{
+  "title": "中国博物馆旅行地图 - 数据索引",
+  "description": "以国家一级和二级博物馆为核心，按七大区域、省份、地级市组织的中国博物馆数据",
+  "dataVersion": "2024.12",
+  "totalMuseums": {
+    "level1": 215,
+    "level2": 191,
+    "total": 406
+  },
+  "regions": [
+    {
+      "name": "华北",
+      "files": {
+        "level1": "region_huabei.json",
+        "level2": "region_huabei_level2.json"
+      },
+      "provinces": ["北京", "天津", "河北", "山西", "内蒙古"],
+      "museumCount": {"level1": 45, "level2": 37},
+      "color": "#E74C3C"
+    },
+    {
+      "name": "东北",
+      "files": {
+        "level1": "region_dongbei.json",
+        "level2": "region_dongbei_level2.json"
+      },
+      "provinces": ["辽宁", "吉林", "黑龙江"],
+      "museumCount": {"level1": 16, "level2": 23},
+      "color": "#3498DB"
+    },
+    {
+      "name": "华东",
+      "files": {
+        "level1": "region_huadong.json",
+        "level2": "region_huadong_level2.json"
+      },
+      "provinces": ["上海", "江苏", "浙江", "安徽", "福建", "江西", "山东"],
+      "museumCount": {"level1": 81, "level2": 40},
+      "color": "#2ECC71"
+    },
+    {
+      "name": "华中",
+      "files": {
+        "level1": "region_huazhong.json",
+        "level2": "region_huazhong_level2.json"
+      },
+      "provinces": ["河南", "湖北", "湖南"],
+      "museumCount": {"level1": 15, "level2": 29},
+      "color": "#F39C12"
+    },
+    {
+      "name": "华南",
+      "files": {
+        "level1": "region_huanan.json",
+        "level2": "region_huanan_level2.json"
+      },
+      "provinces": ["广东", "广西", "海南"],
+      "museumCount": {"level1": 19, "level2": 14},
+      "color": "#9B59B6"
+    },
+    {
+      "name": "西南",
+      "files": {
+        "level1": "region_xinan.json",
+        "level2": "region_xinan_level2.json"
+      },
+      "provinces": ["重庆", "四川", "贵州", "云南", "西藏"],
+      "museumCount": {"level1": 18, "level2": 22},
+      "color": "#1ABC9C"
+    },
+    {
+      "name": "西北",
+      "files": {
+        "level1": "region_xibei.json",
+        "level2": "region_xibei_level2.json"
+      },
+      "provinces": ["陕西", "甘肃", "青海", "宁夏", "新疆"],
+      "museumCount": {"level1": 21, "level2": 26},
+      "color": "#E67E22"
+    }
+  ],
+  "dataStructure": {
+    "region": "区域名称",
+    "level": "博物馆等级（1=一级，2=二级）",
+    "provinces": [
+      {
+        "name": "省份名称",
+        "cities": [
+          {
+            "name": "地级市名称",
+            "museums": [
+              {
+                "name": "博物馆名称",
+                "level": "博物馆等级",
+                "address": "详细地址",
+                "lng": "经度",
+                "lat": "纬度",
+                "description": "博物馆简介",
+                "treasures": [
+                  {
+                    "name": "镇馆之宝名称",
+                    "era": "年代",
+                    "description": "文物描述"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "数据来源：国家文物局、中国博物馆协会公布的第一至第五批国家一级、二级博物馆名单",
+    "截至2024年，全国共有327家国家一级博物馆、约450家国家二级博物馆",
+    "本数据集收录了215家一级博物馆和191家二级博物馆",
+    "一级博物馆数据在 region_xxx.json 文件中",
+    "二级博物馆数据在 region_xxx_level2.json 文件中",
+    "使用时可合并同一区域的一级和二级数据",
+    "经纬度数据为近似值，实际使用时建议通过地理编码API获取精确坐标",
+    "镇馆之宝信息来源于各博物馆官网及权威文博资料"
+  ]
+}
