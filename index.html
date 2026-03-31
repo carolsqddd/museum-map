@@ -241,7 +241,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
   <span class="author">by carolsq</span>
   <div class="stats">
     <div>一级 <span id="stat-l1">0</span> 家</div>
-    <div>二级 <span id="stat-l2">0</span> 家</div>
     <div>共 <span id="stat-total">0</span> 家</div>
   </div>
 </div>
@@ -258,9 +257,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
       </button>
       <button class="level-btn" data-level="1" onclick="filterLevel(1)">
         <span class="count" id="btn-l1">0</span>一级
-      </button>
-      <button class="level-btn" data-level="2" onclick="filterLevel(2)">
-        <span class="count" id="btn-l2">0</span>二级
       </button>
     </div>
   </div>
@@ -279,10 +275,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
     <svg width="14" height="18" viewBox="0 0 22 30"><path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z" fill="#f5c842" stroke="#b8860b" stroke-width="1"/><circle cx="11" cy="10.5" r="3" fill="#fff" opacity="0.9"/></svg>
     <span class="legend-label">一级博物馆</span>
   </div>
-  <div class="legend-item">
-    <svg width="10" height="13" viewBox="0 0 22 30"><path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z" fill="#5dade2" stroke="#2e86c1" stroke-width="1.5"/><circle cx="11" cy="10.5" r="2.5" fill="#fff" opacity="0.9"/></svg>
-    <span class="legend-label">二级博物馆</span>
-  </div>
   <div class="legend-item" style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.08)">
     <div style="width:20px;height:0;border-top:1.5px dashed rgba(120,100,80,0.5)"></div>
     <span class="legend-label">省级行政区界</span>
@@ -300,13 +292,13 @@ let map, allMuseums = [], markers = [], currentLevel = 'all', currentRegion = nu
 let provinceBorderLayer = null, cityLabelLayer = null, provinceLabelLayer = null;
 
 const REGIONS = [
-  { name: '华北', provinces: ['北京','天津','河北','山西','内蒙古'], color: '#E74C3C', l1File: 'region_huabei.json', l2File: 'region_huabei_level2.json' },
-  { name: '东北', provinces: ['辽宁','吉林','黑龙江'], color: '#3498DB', l1File: 'region_dongbei.json', l2File: 'region_dongbei_level2.json' },
-  { name: '华东', provinces: ['上海','江苏','浙江','安徽','福建','江西','山东'], color: '#2ECC71', l1File: 'region_huadong.json', l2File: 'region_huadong_level2.json' },
-  { name: '华中', provinces: ['河南','湖北','湖南'], color: '#F39C12', l1File: 'region_huazhong.json', l2File: 'region_huazhong_level2.json' },
-  { name: '华南', provinces: ['广东','广西','海南'], color: '#9B59B6', l1File: 'region_huanan.json', l2File: 'region_huanan_level2.json' },
-  { name: '西南', provinces: ['重庆','四川','贵州','云南','西藏'], color: '#1ABC9C', l1File: 'region_xinan.json', l2File: 'region_xinan_level2.json' },
-  { name: '西北', provinces: ['陕西','甘肃','青海','宁夏','新疆'], color: '#E67E22', l1File: 'region_xibei.json', l2File: 'region_xibei_level2.json' }
+  { name: '华北', provinces: ['北京','天津','河北','山西','内蒙古'], color: '#E74C3C', l1File: 'region_huabei.json' },
+  { name: '东北', provinces: ['辽宁','吉林','黑龙江'], color: '#3498DB', l1File: 'region_dongbei.json' },
+  { name: '华东', provinces: ['上海','江苏','浙江','安徽','福建','江西','山东'], color: '#2ECC71', l1File: 'region_huadong.json' },
+  { name: '华中', provinces: ['河南','湖北','湖南'], color: '#F39C12', l1File: 'region_huazhong.json' },
+  { name: '华南', provinces: ['广东','广西','海南'], color: '#9B59B6', l1File: 'region_huanan.json' },
+  { name: '西南', provinces: ['重庆','四川','贵州','云南','西藏'], color: '#1ABC9C', l1File: 'region_xinan.json' },
+  { name: '西北', provinces: ['陕西','甘肃','青海','宁夏','新疆'], color: '#E67E22', l1File: 'region_xibei.json' }
 ];
 
 // ===== 初始化地图 =====
@@ -483,8 +475,7 @@ async function loadData() {
   const promises = [];
   for (const region of REGIONS) {
     promises.push(
-      fetch('data/' + region.l1File).then(r => r.json()).then(d => ({ region: region.name, color: region.color, data: d })).catch(e => { console.warn('加载失败:', region.l1File, e); return null; }),
-      fetch('data/' + region.l2File).then(r => r.json()).then(d => ({ region: region.name, color: region.color, data: d })).catch(e => { console.warn('加载失败:', region.l2File, e); return null; })
+      fetch('data/' + region.l1File).then(r => r.json()).then(d => ({ region: region.name, color: region.color, data: d })).catch(e => { console.warn('加载失败:', region.l1File, e); return null; })
     );
   }
   const results = await Promise.all(promises);
@@ -564,7 +555,7 @@ function showMuseumPopup(m, marker) {
 
   const html = `<div class="museum-popup">
     <div class="popup-header">
-      <span class="popup-level ${m.level===1?'l1':'l2'}">${m.level===1?'一级':'二级'}</span>
+      <span class="popup-level l1">一级</span>
       <span class="popup-name">${m.name}</span>
     </div>
     <div class="popup-address">📍 ${m.address}</div>
@@ -622,10 +613,8 @@ function renderMarkers() {
 // ===== 更新统计 =====
 function updateStats(list) {
   const l1 = list ? list.filter(m => m.level === 1).length : allMuseums.filter(m => m.level === 1).length;
-  const l2 = list ? list.filter(m => m.level === 2).length : allMuseums.filter(m => m.level === 2).length;
   document.getElementById('stat-l1').textContent = l1;
-  document.getElementById('stat-l2').textContent = l2;
-  document.getElementById('stat-total').textContent = l1 + l2;
+  document.getElementById('stat-total').textContent = l1;
 }
 
 // ===== 筛选功能 =====
@@ -742,11 +731,8 @@ async function init() {
     await loadData();
 
     // 更新按钮计数
-    const l1Count = allMuseums.filter(m => m.level === 1).length;
-    const l2Count = allMuseums.filter(m => m.level === 2).length;
     document.getElementById('btn-all').textContent = allMuseums.length;
-    document.getElementById('btn-l1').textContent = l1Count;
-    document.getElementById('btn-l2').textContent = l2Count;
+    document.getElementById('btn-l1').textContent = allMuseums.filter(m => m.level === 1).length;
 
     buildRegionNav();
     renderMarkers();
