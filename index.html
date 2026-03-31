@@ -884,7 +884,10 @@ function buildRegionNav() {
       }
 
       let cityHtml = '';
-      for (const [cityName, cityMuseums] of Object.entries(cityMap)) {
+      const cityEntries = Object.entries(cityMap);
+      const singleCity = cityEntries.length === 1;
+
+      for (const [cityName, cityMuseums] of cityEntries) {
         const museumsHtml = cityMuseums.map(m =>
           `<div class="museum-nav-item${isVisited(m.name) ? ' nav-visited' : ''}" data-museum="${encodeURIComponent(m.name)}" onclick="focusMuseum('${encodeURIComponent(m.name)}',event)" title="${m.name}">
             <div class="museum-nav-dot"></div>
@@ -892,7 +895,12 @@ function buildRegionNav() {
             <div class="nav-visited-dot"></div>
           </div>`
         ).join('');
-        cityHtml += `<div class="city-group" id="city-${encodeURIComponent(p)}-${encodeURIComponent(cityName)}">
+
+        if (singleCity) {
+          // 只有一个城市时，直接展开不显示城市头部，避免重复
+          cityHtml += `<div class="museum-nav-list" style="display:block;border-left:none;margin-left:0;padding-left:4px">${museumsHtml}</div>`;
+        } else {
+          cityHtml += `<div class="city-group" id="city-${encodeURIComponent(p)}-${encodeURIComponent(cityName)}">
           <div class="city-header" onclick="toggleCity(this.parentElement,'${p}','${region.name}',event)">
             <div class="city-name-text">
               <div class="city-dot-nav"></div>
@@ -905,6 +913,7 @@ function buildRegionNav() {
           </div>
           <div class="museum-nav-list">${museumsHtml}</div>
         </div>`;
+        }
       }
 
       provinceHtml += `<div class="province-item" data-province="${p}" id="prov-${encodeURIComponent(p)}">
