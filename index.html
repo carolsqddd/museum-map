@@ -101,15 +101,47 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 /* 搜索框 */
 .search-box {
   padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: relative;
 }
 .search-input {
   width: 100%; padding: 10px 14px; border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.04);
   color: rgba(255,255,255,0.8); font-size: 13px; outline: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s; box-sizing: border-box;
 }
 .search-input::placeholder { color: rgba(255,255,255,0.3); }
 .search-input:focus { border-color: rgba(245, 200, 66, 0.4); }
+
+/* 搜索下拉列表 */
+.search-dropdown {
+  position: absolute; left: 16px; right: 16px; top: calc(100% - 4px);
+  background: #1e2235; border: 1px solid rgba(245,200,66,0.25);
+  border-radius: 0 0 10px 10px; max-height: 320px; overflow-y: auto;
+  z-index: 9999; box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  display: none;
+}
+.search-dropdown.visible { display: block; }
+.dropdown-item {
+  padding: 9px 14px; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: background 0.15s; display: flex; align-items: center; gap: 8px;
+}
+.dropdown-item:last-child { border-bottom: none; }
+.dropdown-item:hover, .dropdown-item.active { background: rgba(245,200,66,0.12); }
+.dropdown-item-name { font-size: 13px; color: rgba(255,255,255,0.9); font-weight: 500; flex: 1; min-width: 0; }
+.dropdown-item-name em { color: #f5c842; font-style: normal; }
+.dropdown-item-sub { font-size: 11px; color: rgba(255,255,255,0.4); white-space: nowrap; }
+.dropdown-item-badge {
+  font-size: 10px; padding: 1px 5px; border-radius: 3px;
+  background: rgba(245,200,66,0.2); color: #f5c842; white-space: nowrap; flex-shrink: 0;
+}
+.dropdown-empty {
+  padding: 14px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.3);
+}
+.dropdown-section-title {
+  padding: 6px 14px 4px; font-size: 11px; color: rgba(255,255,255,0.3);
+  font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
+  background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.05);
+}
 
 /* 博物馆详情弹窗 */
 .museum-popup { max-width: 360px; }
@@ -247,7 +279,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 
 <div class="sidebar" id="sidebar">
   <div class="search-box">
-    <input type="text" class="search-input" id="searchInput" placeholder="搜索博物馆、城市、镇馆之宝...">
+    <input type="text" class="search-input" id="searchInput" placeholder="搜索博物馆、城市、镇馆之宝..." autocomplete="off">
+    <div class="search-dropdown" id="searchDropdown"></div>
   </div>
   <div class="filter-section">
     <div class="filter-title">博物馆等级</div>
@@ -310,6 +343,7 @@ function initMap() {
     maxZoom: 18,
     zoomControl: false
   });
+  window._map = map;
 
   L.control.zoom({ position: 'bottomleft' }).addTo(map);
 
@@ -579,6 +613,7 @@ function showFullImage(src, name) {
 function renderMarkers() {
   for (const m of markers) map.removeLayer(m);
   markers = [];
+  window._markerMap = {};
 
   const filtered = allMuseums.filter(m => {
     if (currentLevel !== 'all' && m.level !== currentLevel) return false;
@@ -587,24 +622,18 @@ function renderMarkers() {
     return true;
   });
 
-  // 模糊搜索过滤
-  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  // 模糊搜索过滤（支持拼音）
+  const query = document.getElementById('searchInput').value.trim();
   let finalList = filtered;
   if (query) {
-    const keywords = query.split(/\s+/);
-    finalList = filtered.filter(m => {
-      const searchStr = [
-        m.name, m.province, m.city, m.address, m.description,
-        ...(m.treasures || []).map(t => t.name)
-      ].join(' ').toLowerCase();
-      return keywords.every(kw => searchStr.includes(kw));
-    });
+    finalList = filtered.filter(m => fuzzyMatch(m, query).match);
   }
 
   for (const m of finalList) {
     const marker = createMarker(m);
     marker.addTo(map);
     markers.push(marker);
+    window._markerMap[m.name] = marker;
   }
 
   updateStats(finalList);
@@ -715,13 +744,156 @@ function toggleSidebar() {
   document.getElementById('sidebarToggle').textContent = sidebar.classList.contains('collapsed') ? '▶' : '◀';
 }
 
+// ===== 拼音映射表（常用汉字首字母） =====
+const PINYIN_MAP = {"博":"bo","物":"wu","馆":"guan","省":"sheng","市":"shi","区":"qu","县":"xian","院":"yuan","纪":"ji","念":"nian","遗":"yi","址":"zhi","自":"zi","然":"ran","历":"li","史":"shi","文":"wen","化":"hua","艺":"yi","术":"shu","科":"ke","技":"ji","军":"jun","事":"shi","革":"ge","命":"ming","红":"hong","色":"se","旅":"lv","游":"you","国":"guo","家":"jia","级":"ji","一":"yi","二":"er","三":"san","四":"si","五":"wu","六":"liu","七":"qi","八":"ba","九":"jiu","十":"shi","中":"zhong","国":"guo","人":"ren","民":"min","北":"bei","南":"nan","东":"dong","西":"xi","上":"shang","下":"xia","大":"da","小":"xiao","新":"xin","古":"gu","老":"lao","现":"xian","代":"dai","宫":"gong","殿":"dian","寺":"si","庙":"miao","楼":"lou","塔":"ta","城":"cheng","墙":"qiang","桥":"qiao","园":"yuan","山":"shan","湖":"hu","海":"hai","河":"he","江":"jiang","川":"chuan","岛":"dao","湾":"wan","港":"gang","沙":"sha","坡":"po","坝":"ba","陵":"ling","墓":"mu","坑":"keng","堆":"dui","洞":"dong","窟":"ku","窑":"yao","井":"jing","盐":"yan","矿":"kuang","油":"you","铁":"tie","铜":"tong","金":"jin","银":"yin","玉":"yu","瓷":"ci","陶":"tao","器":"qi","画":"hua","书":"shu","法":"fa","诗":"shi","歌":"ge","舞":"wu","戏":"xi","曲":"qu","影":"ying","音":"yin","乐":"yue","丝":"si","绸":"chou","茶":"cha","酒":"jiu","食":"shi","农":"nong","林":"lin","牧":"mu","渔":"yu","猎":"lie","战":"zhan","役":"yi","起":"qi","义":"yi","烈":"lie","英":"ying","雄":"xiong","将":"jiang","帅":"shuai","王":"wang","侯":"hou","公":"gong","伯":"bo","侯":"hou","子":"zi","男":"nan","女":"nv","帝":"di","皇":"huang","后":"hou","妃":"fei","太":"tai","子":"zi","亲":"qin","师":"shi","祖":"zu","宗":"zong","族":"zu","民":"min","汉":"han","满":"man","蒙":"meng","藏":"zang","苗":"miao","彝":"yi","壮":"zhuang","侗":"dong","瑶":"yao","白":"bai","土":"tu","家":"jia","哈":"ha","尼":"ni","傣":"dai","黎":"li","佤":"wa","拉":"la","祜":"hu","傈":"li","僳":"su","仡":"ge","佬":"lao","仫":"mu","仑":"lun","布":"bu","依":"yi","毛":"mao","南":"nan","故":"gu","宫":"gong","天":"tian","安":"an","门":"men","长":"chang","城":"cheng","颐":"yi","和":"he","圆":"yuan","明":"ming","清":"qing","汉":"han","唐":"tang","宋":"song","元":"yuan","秦":"qin","周":"zhou","商":"shang","夏":"xia","三":"san","国":"guo","两":"liang","晋":"jin","隋":"sui","五":"wu","代":"dai","辽":"liao","金":"jin","西":"xi","夏":"xia","吐":"tu","蕃":"bo","南":"nan","诏":"zhao","大":"da","理":"li","遵":"zun","义":"yi","延":"yan","安":"an","西":"xi","柏":"bai","坡":"po","井":"jing","冈":"gang","瑞":"rui","沂":"yi","蒙":"meng","抗":"kang","美":"mei","援":"yuan","朝":"chao","鸦":"ya","片":"pian","辛":"xin","亥":"hai","淮":"huai","海":"hai","平":"ping","津":"jin","渡":"du","江":"jiang","赤":"chi","水":"shui","娄":"lou","山":"shan","四":"si","平":"ping","冀":"ji","中":"zhong","原":"yuan","解":"jie","放":"fang","雨":"yu","花":"hua","台":"tai","龙":"long","华":"hua","邱":"qiu","莱":"lai","芜":"wu","湖":"hu","佛":"fo","祖":"zu","陈":"chen","嘉":"jia","庚":"geng","孙":"sun","林":"lin","则":"ze","徐":"xu","虎":"hu","门":"men","销":"xiao","烟":"yan","海":"hai","珠":"zhu","黄":"huang","浦":"pu","浦":"pu","东":"dong","方":"fang","明":"ming","珠":"zhu","外":"wai","滩":"tan","弄":"nong","堂":"tang","田":"tian","子":"zi","坊":"fang","里":"li","弄":"long"};
+
+// 获取汉字拼音首字母串
+function getPinyinInitials(str) {
+  return (str||'').split('').map(c => PINYIN_MAP[c] || c).join('');
+}
+
+// 高亮匹配文本
+function highlight(text, query) {
+  if (!query) return text;
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return text.replace(new RegExp(escaped, 'gi'), m => `<em>${m}</em>`);
+}
+
+// 模糊匹配：支持子串、拼音首字母、分词
+function fuzzyMatch(museum, query) {
+  const q = query.toLowerCase().trim();
+  if (!q) return { match: true, score: 0 };
+  
+  const fields = [
+    museum.name,
+    museum.province,
+    museum.city,
+    museum.address || '',
+    museum.description || '',
+    ...(museum.treasures || []).map(t => t.name)
+  ];
+  const fullText = fields.join(' ').toLowerCase();
+  const pinyinText = getPinyinInitials(fields.slice(0, 4).join('')).toLowerCase();
+  
+  // 关键词分词（空格分割）
+  const keywords = q.split(/\s+/);
+  
+  let score = 0;
+  for (const kw of keywords) {
+    if (fullText.includes(kw)) {
+      // 名称匹配加分更高
+      if (museum.name.toLowerCase().includes(kw)) score += 10;
+      else score += 3;
+    } else if (pinyinText.includes(kw)) {
+      score += 1;
+    } else {
+      return { match: false, score: 0 };
+    }
+  }
+  return { match: true, score };
+}
+
+// ===== 搜索下拉列表 =====
+let dropdownActiveIndex = -1;
+let dropdownItems = [];
+
+function showDropdown(query) {
+  const dropdown = document.getElementById('searchDropdown');
+  if (!query.trim()) {
+    dropdown.classList.remove('visible');
+    dropdownItems = [];
+    return;
+  }
+
+  const results = [];
+  for (const m of allMuseums) {
+    const { match, score } = fuzzyMatch(m, query);
+    if (match) results.push({ museum: m, score });
+  }
+  results.sort((a, b) => b.score - a.score);
+
+  dropdownItems = results.slice(0, 12);
+  dropdownActiveIndex = -1;
+
+  if (dropdownItems.length === 0) {
+    dropdown.innerHTML = `<div class="dropdown-empty">未找到相关博物馆</div>`;
+  } else {
+    const q = query.toLowerCase().trim();
+    dropdown.innerHTML = dropdownItems.map((r, i) => {
+      const m = r.museum;
+      const highlightedName = highlight(m.name, q);
+      return `<div class="dropdown-item" data-index="${i}" onmousedown="selectDropdownItem(${i})">
+        <div style="flex:1;min-width:0">
+          <div class="dropdown-item-name">${highlightedName}</div>
+          <div class="dropdown-item-sub">${m.province} · ${m.city}</div>
+        </div>
+        <div class="dropdown-item-badge">一级</div>
+      </div>`;
+    }).join('');
+  }
+  dropdown.classList.add('visible');
+}
+
+function selectDropdownItem(index) {
+  const item = dropdownItems[index];
+  if (!item) return;
+  const m = item.museum;
+  document.getElementById('searchInput').value = m.name;
+  document.getElementById('searchDropdown').classList.remove('visible');
+  // 定位到该博物馆
+  if (window._map) {
+    window._map.setView([m.lat, m.lng], 12);
+  }
+  // 打开弹窗
+  if (window._markerMap && window._markerMap[m.name]) {
+    window._markerMap[m.name].openPopup();
+  }
+  renderMarkers();
+}
+
+function hideDropdown() {
+  setTimeout(() => {
+    document.getElementById('searchDropdown').classList.remove('visible');
+  }, 150);
+}
+
 // ===== 搜索 =====
 let searchTimer;
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('searchInput').addEventListener('input', () => {
+  const input = document.getElementById('searchInput');
+  input.addEventListener('input', () => {
     clearTimeout(searchTimer);
-    searchTimer = setTimeout(() => renderMarkers(), 300);
+    const q = input.value.trim();
+    searchTimer = setTimeout(() => {
+      showDropdown(q);
+      renderMarkers();
+    }, 200);
   });
+  input.addEventListener('keydown', (e) => {
+    const dropdown = document.getElementById('searchDropdown');
+    const items = dropdown.querySelectorAll('.dropdown-item');
+    if (!dropdown.classList.contains('visible')) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      dropdownActiveIndex = Math.min(dropdownActiveIndex + 1, items.length - 1);
+      items.forEach((el, i) => el.classList.toggle('active', i === dropdownActiveIndex));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      dropdownActiveIndex = Math.max(dropdownActiveIndex - 1, -1);
+      items.forEach((el, i) => el.classList.toggle('active', i === dropdownActiveIndex));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (dropdownActiveIndex >= 0) {
+        selectDropdownItem(dropdownActiveIndex);
+      } else {
+        dropdown.classList.remove('visible');
+        renderMarkers();
+      }
+    } else if (e.key === 'Escape') {
+      dropdown.classList.remove('visible');
+    }
+  });
+  input.addEventListener('blur', hideDropdown);
 });
 
 // ===== 启动 =====
