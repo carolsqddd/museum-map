@@ -98,6 +98,45 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 .province-item.active { background: rgba(245, 200, 66, 0.1); color: #f5c842; }
 .province-count { font-size: 11px; opacity: 0.6; }
 
+/* 城市层 */
+.city-list { display: none; padding: 0 0 4px 8px; }
+.province-item.expanded .city-list { display: block; }
+.province-item.expanded > .province-item-row { color: rgba(255,255,255,0.9); }
+.province-item-row {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; gap: 4px;
+}
+.province-arrow { font-size: 10px; color: rgba(255,255,255,0.3); transition: transform 0.2s; flex-shrink: 0; }
+.province-item.expanded .province-arrow { transform: rotate(90deg); }
+
+.city-group { margin-bottom: 2px; }
+.city-header {
+  padding: 5px 10px; border-radius: 5px; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12px; color: rgba(255,255,255,0.45); transition: all 0.15s;
+}
+.city-header:hover { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.75); }
+.city-header.active { color: rgba(245,200,66,0.8); }
+.city-name-text { display: flex; align-items: center; gap: 5px; }
+.city-dot-nav { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,0.25); flex-shrink: 0; }
+.city-museum-count { font-size: 10px; opacity: 0.6; }
+.city-arrow { font-size: 9px; color: rgba(255,255,255,0.2); transition: transform 0.2s; }
+.city-group.expanded .city-arrow { transform: rotate(90deg); }
+.city-group.expanded .city-header { color: rgba(255,255,255,0.8); }
+
+/* 博物馆条目 */
+.museum-nav-list { display: none; padding: 2px 0 4px 14px; }
+.city-group.expanded .museum-nav-list { display: block; }
+.museum-nav-item {
+  padding: 5px 10px; border-radius: 5px; cursor: pointer;
+  font-size: 12px; color: rgba(255,255,255,0.5); transition: all 0.15s;
+  display: flex; align-items: center; gap: 6px; line-height: 1.4;
+}
+.museum-nav-item:hover { background: rgba(245,200,66,0.1); color: #f5c842; }
+.museum-nav-item.active { background: rgba(245,200,66,0.15); color: #f5c842; font-weight: 500; }
+.museum-nav-dot { width: 4px; height: 4px; border-radius: 50%; background: #f5c842; flex-shrink: 0; opacity: 0.6; }
+.museum-nav-item:hover .museum-nav-dot, .museum-nav-item.active .museum-nav-dot { opacity: 1; }
+
 /* 搜索框 */
 .search-box {
   padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -673,10 +712,48 @@ function buildRegionNav() {
 
     let provinceHtml = '';
     for (const p of provinces) {
-      const count = allMuseums.filter(m => m.province === p).length;
-      if (count === 0) continue;
-      provinceHtml += `<div class="province-item" data-province="${p}" onclick="selectProvince('${p}','${region.name}')">
-        <span>${p}</span><span class="province-count">${count}家</span>
+      const pMuseums = allMuseums.filter(m => m.province === p);
+      if (pMuseums.length === 0) continue;
+
+      // 按城市分组
+      const cityMap = {};
+      for (const m of pMuseums) {
+        if (!cityMap[m.city]) cityMap[m.city] = [];
+        cityMap[m.city].push(m);
+      }
+
+      let cityHtml = '';
+      for (const [cityName, cityMuseums] of Object.entries(cityMap)) {
+        const museumsHtml = cityMuseums.map(m =>
+          `<div class="museum-nav-item" data-museum="${encodeURIComponent(m.name)}" onclick="focusMuseum('${encodeURIComponent(m.name)}',event)">
+            <div class="museum-nav-dot"></div>
+            <span>${m.name}</span>
+          </div>`
+        ).join('');
+        cityHtml += `<div class="city-group" id="city-${encodeURIComponent(p)}-${encodeURIComponent(cityName)}">
+          <div class="city-header" onclick="toggleCity(this.parentElement,'${p}','${region.name}',event)">
+            <div class="city-name-text">
+              <div class="city-dot-nav"></div>
+              <span>${cityName}</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:4px">
+              <span class="city-museum-count">${cityMuseums.length}家</span>
+              <span class="city-arrow">▶</span>
+            </div>
+          </div>
+          <div class="museum-nav-list">${museumsHtml}</div>
+        </div>`;
+      }
+
+      provinceHtml += `<div class="province-item" data-province="${p}" id="prov-${encodeURIComponent(p)}">
+        <div class="province-item-row" onclick="toggleProvince(this.parentElement,'${p}','${region.name}')">
+          <span>${p}</span>
+          <div style="display:flex;align-items:center;gap:4px">
+            <span class="province-count">${pMuseums.length}家</span>
+            <span class="province-arrow">▶</span>
+          </div>
+        </div>
+        <div class="city-list">${cityHtml}</div>
       </div>`;
     }
 
@@ -699,20 +776,72 @@ function toggleRegion(el) {
   document.querySelectorAll('.region-item').forEach(i => i.classList.remove('expanded'));
   if (!wasExpanded) {
     el.classList.add('expanded');
-    // 选中该区域
     const regionName = el.dataset.region;
     if (regionName) {
       currentRegion = regionName;
       currentProvince = null;
       renderMarkers();
-      // 飞到该区域
       const rMuseums = allMuseums.filter(m => m.region === regionName);
       if (rMuseums.length) {
         const bounds = L.latLngBounds(rMuseums.map(m => [m.lat, m.lng]));
         map.flyToBounds(bounds, { padding: [60, 60], maxZoom: 8 });
       }
     }
+  } else {
+    currentRegion = null; currentProvince = null;
+    renderMarkers();
   }
+}
+
+function toggleProvince(el, province, region) {
+  const wasExpanded = el.classList.contains('expanded');
+  // 收起同级所有省
+  el.closest('.province-list').querySelectorAll('.province-item').forEach(i => i.classList.remove('expanded', 'active'));
+  if (!wasExpanded) {
+    el.classList.add('expanded', 'active');
+    currentProvince = province;
+    currentRegion = region;
+    renderMarkers();
+    const pMuseums = allMuseums.filter(m => m.province === province);
+    if (pMuseums.length) {
+      const bounds = L.latLngBounds(pMuseums.map(m => [m.lat, m.lng]));
+      map.flyToBounds(bounds, { padding: [60, 60], maxZoom: 10 });
+    }
+  } else {
+    currentProvince = null;
+    renderMarkers();
+  }
+}
+
+function toggleCity(el, province, region, e) {
+  e.stopPropagation();
+  const wasExpanded = el.classList.contains('expanded');
+  // 收起同省下其他城市
+  el.closest('.city-list').querySelectorAll('.city-group').forEach(i => i.classList.remove('expanded'));
+  el.closest('.city-list').querySelectorAll('.city-header').forEach(i => i.classList.remove('active'));
+  if (!wasExpanded) {
+    el.classList.add('expanded');
+    el.querySelector('.city-header').classList.add('active');
+  }
+}
+
+function focusMuseum(encodedName, e) {
+  e.stopPropagation();
+  const name = decodeURIComponent(encodedName);
+  const m = allMuseums.find(x => x.name === name);
+  if (!m) return;
+
+  // 高亮选中
+  document.querySelectorAll('.museum-nav-item').forEach(i => i.classList.remove('active'));
+  e.currentTarget.classList.add('active');
+
+  // 飞到该馆并打开弹窗
+  map.flyTo([m.lat, m.lng], 14, { animate: true, duration: 0.8 });
+  setTimeout(() => {
+    if (window._markerMap && window._markerMap[m.name]) {
+      window._markerMap[m.name].openPopup();
+    }
+  }, 900);
 }
 
 function selectProvince(province, region) {
@@ -721,7 +850,6 @@ function selectProvince(province, region) {
   document.querySelectorAll('.province-item').forEach(i => i.classList.remove('active'));
   document.querySelector(`.province-item[data-province="${province}"]`)?.classList.add('active');
   renderMarkers();
-
   const pMuseums = allMuseums.filter(m => m.province === province);
   if (pMuseums.length) {
     const bounds = L.latLngBounds(pMuseums.map(m => [m.lat, m.lng]));
@@ -732,7 +860,10 @@ function selectProvince(province, region) {
 function selectAll() {
   currentRegion = null;
   currentProvince = null;
-  document.querySelectorAll('.province-item').forEach(i => i.classList.remove('active'));
+  document.querySelectorAll('.province-item').forEach(i => i.classList.remove('active', 'expanded'));
+  document.querySelectorAll('.region-item').forEach(i => i.classList.remove('expanded'));
+  document.querySelectorAll('.city-group').forEach(i => i.classList.remove('expanded'));
+  document.querySelectorAll('.museum-nav-item').forEach(i => i.classList.remove('active'));
   renderMarkers();
   map.flyTo([35.5, 104.5], 5);
 }
