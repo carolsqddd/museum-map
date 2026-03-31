@@ -196,6 +196,59 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 .popup-desc { font-size: 13px; color: #444; line-height: 1.6; margin-bottom: 12px; }
 .popup-treasures { border-top: 1px solid #eee; padding-top: 10px; }
 .popup-treasures h4 { font-size: 13px; color: #b8860b; margin-bottom: 8px; display: flex; align-items: center; gap: 4px; }
+
+/* 点亮按钮 */
+.popup-visit-btn {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  width: 100%; padding: 9px 0; margin-top: 12px; border-radius: 8px;
+  font-size: 13px; font-weight: 600; cursor: pointer; border: none;
+  transition: all 0.2s; letter-spacing: 0.3px;
+}
+.popup-visit-btn.unvisited {
+  background: rgba(245,200,66,0.12); color: #b8860b;
+  border: 1.5px dashed rgba(245,200,66,0.4);
+}
+.popup-visit-btn.unvisited:hover { background: rgba(245,200,66,0.22); border-style: solid; }
+.popup-visit-btn.visited {
+  background: linear-gradient(135deg,#43c96a,#2ea84e);
+  color: #fff; border: 1.5px solid #2ea84e;
+  box-shadow: 0 2px 8px rgba(46,168,78,0.3);
+}
+.popup-visit-btn.visited:hover { background: linear-gradient(135deg,#3ab55e,#268c42); }
+
+/* 已点亮地图标记 */
+.museum-pin.visited-pin svg path { filter: none; }
+
+/* 统计栏点亮数 */
+.stat-visited-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: rgba(46,168,78,0.15); color: #43c96a;
+  padding: 2px 8px; border-radius: 12px; font-size: 12px;
+}
+
+/* 点亮筛选按钮 */
+.visited-filter-btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 7px 12px; border-radius: 8px; cursor: pointer;
+  font-size: 12px; font-weight: 500; border: 1.5px solid rgba(67,201,106,0.25);
+  background: rgba(67,201,106,0.07); color: rgba(67,201,106,0.8);
+  transition: all 0.2s; margin-top: 8px; width: 100%; box-sizing: border-box;
+}
+.visited-filter-btn:hover { background: rgba(67,201,106,0.15); border-color: rgba(67,201,106,0.5); }
+.visited-filter-btn.active { background: rgba(67,201,106,0.2); border-color: #43c96a; color: #43c96a; }
+.visited-filter-btn .vf-count {
+  margin-left: auto; background: rgba(67,201,106,0.2); color: #43c96a;
+  padding: 1px 6px; border-radius: 10px; font-size: 11px;
+}
+
+/* 区域导航点亮标记 */
+.museum-nav-item .nav-visited-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: #43c96a;
+  flex-shrink: 0; display: none;
+}
+.museum-nav-item.nav-visited .nav-visited-dot { display: block; }
+.museum-nav-item.nav-visited { color: rgba(67,201,106,0.8) !important; }
+.museum-nav-item.nav-visited .museum-nav-dot { background: #43c96a; }
 .treasure-item { margin-bottom: 10px; padding: 10px; background: #fdf6e3; border-radius: 8px; border-left: 3px solid #f5c842; }
 .treasure-img { width: 100%; max-height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 6px; cursor: pointer; transition: opacity 0.2s; background: #f0e6d0; }
 .treasure-img:hover { opacity: 0.9; }
@@ -313,6 +366,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
   <div class="stats">
     <div>一级 <span id="stat-l1">0</span> 家</div>
     <div>共 <span id="stat-total">0</span> 家</div>
+    <div class="stat-visited-badge">✓ 已点亮 <span id="stat-visited">0</span> 家</div>
   </div>
 </div>
 
@@ -331,6 +385,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
         <span class="count" id="btn-l1">0</span>一级
       </button>
     </div>
+    <button class="visited-filter-btn" id="visitedFilterBtn" onclick="toggleVisitedFilter()">
+      ✓ 只看已点亮
+      <span class="vf-count" id="btn-visited">0</span>
+    </button>
   </div>
   <div class="filter-section">
     <div class="filter-title">区域导航</div>
@@ -571,30 +629,81 @@ async function loadData() {
 }
 
 // ===== 创建标记 =====
+// ===== 点亮功能 =====
+const VISITED_KEY = 'museum_visited_v1';
+let visitedSet = new Set(JSON.parse(localStorage.getItem(VISITED_KEY) || '[]'));
+let showOnlyVisited = false;
+
+function isVisited(name) { return visitedSet.has(name); }
+
+function toggleVisit(name) {
+  if (visitedSet.has(name)) {
+    visitedSet.delete(name);
+  } else {
+    visitedSet.add(name);
+  }
+  localStorage.setItem(VISITED_KEY, JSON.stringify([...visitedSet]));
+  // 重绘标记、统计、导航点亮状态
+  renderMarkers();
+  updateNavVisited();
+  updateVisitedCount();
+}
+
+function toggleVisitedFilter() {
+  showOnlyVisited = !showOnlyVisited;
+  document.getElementById('visitedFilterBtn').classList.toggle('active', showOnlyVisited);
+  renderMarkers();
+}
+
+function updateVisitedCount() {
+  const n = visitedSet.size;
+  document.getElementById('stat-visited').textContent = n;
+  document.getElementById('btn-visited').textContent = n;
+}
+
+// 更新导航树中的点亮标记
+function updateNavVisited() {
+  document.querySelectorAll('.museum-nav-item').forEach(el => {
+    const enc = el.dataset.museum;
+    if (!enc) return;
+    const name = decodeURIComponent(enc);
+    el.classList.toggle('nav-visited', visitedSet.has(name));
+  });
+}
+
 function createMarker(m) {
-  const isL1 = m.level === 1;
-  const w = isL1 ? 22 : 14;
-  const h = isL1 ? 30 : 19;
-  // 一级：金色渐变；二级：区域色浅化
-  const fill1 = isL1 ? '#f5c842' : m.color;
-  const fill2 = isL1 ? '#d4a017' : adjustColor(m.color, 0.7);
-  const stroke = isL1 ? '#b8860b' : adjustColor(m.color, 0.5);
-  const dotR = isL1 ? 3 : 2;
+  const visited = isVisited(m.name);
+  const w = 22, h = 30;
   const gid = 'g' + Math.random().toString(36).slice(2,8);
 
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
-    <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="${fill1}"/>
-      <stop offset="100%" stop-color="${fill2}"/>
-    </linearGradient></defs>
-    <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
-      fill="url(#${gid})" stroke="${stroke}" stroke-width="1"/>
-    <circle cx="11" cy="10.5" r="${dotR}" fill="#fff" opacity="0.9"/>
-  </svg>`;
+  let svg;
+  if (visited) {
+    // 已点亮：绿色标记，内有勾
+    svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
+      <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#5de87a"/>
+        <stop offset="100%" stop-color="#27ae60"/>
+      </linearGradient></defs>
+      <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
+        fill="url(#${gid})" stroke="#1e8449" stroke-width="1"/>
+      <path d="M7 10.5l2.5 2.5 5.5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>`;
+  } else {
+    // 未点亮：金色标记
+    svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
+      <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#f5c842"/>
+        <stop offset="100%" stop-color="#d4a017"/>
+      </linearGradient></defs>
+      <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
+        fill="url(#${gid})" stroke="#b8860b" stroke-width="1"/>
+      <circle cx="11" cy="10.5" r="3" fill="#fff" opacity="0.9"/>
+    </svg>`;
+  }
 
   const icon = L.divIcon({
     className: '',
-    html: `<div class="museum-pin level${m.level}">${svg}</div>`,
+    html: `<div class="museum-pin${visited ? ' visited-pin' : ''}">${svg}</div>`,
     iconSize: [w, h],
     iconAnchor: [w/2, h],
     popupAnchor: [0, -h + 4]
@@ -626,6 +735,13 @@ function showMuseumPopup(m, marker) {
     treasuresHtml += `</div>`;
   }
 
+  const visited = isVisited(m.name);
+  const encodedName = encodeURIComponent(m.name);
+  const visitBtn = `<button class="popup-visit-btn ${visited ? 'visited' : 'unvisited'}" id="visit-btn-${encodedName}"
+    onclick="toggleVisit('${m.name.replace(/'/g,"\\'")}');updatePopupBtn('${encodedName}')">
+    ${visited ? '✓ 已点亮此馆' : '☆ 标记为已去过'}
+  </button>`;
+
   const html = `<div class="museum-popup">
     <div class="popup-header">
       <span class="popup-level l1">一级</span>
@@ -634,9 +750,20 @@ function showMuseumPopup(m, marker) {
     <div class="popup-address">📍 ${m.address}</div>
     <div class="popup-desc">${m.description}</div>
     ${treasuresHtml}
+    ${visitBtn}
   </div>`;
 
   marker.bindPopup(html, { maxWidth: 380, maxHeight: 450 }).openPopup();
+}
+
+// 点击点亮按钮后更新弹窗按钮状态（不重新渲染整个弹窗）
+function updatePopupBtn(encodedName) {
+  const name = decodeURIComponent(encodedName);
+  const btn = document.getElementById('visit-btn-' + encodedName);
+  if (!btn) return;
+  const visited = isVisited(name);
+  btn.className = `popup-visit-btn ${visited ? 'visited' : 'unvisited'}`;
+  btn.innerHTML = visited ? '✓ 已点亮此馆' : '☆ 标记为已去过';
 }
 
 // ===== 图片全屏 =====
@@ -656,6 +783,7 @@ function renderMarkers() {
 
   const filtered = allMuseums.filter(m => {
     if (currentLevel !== 'all' && m.level !== currentLevel) return false;
+    if (showOnlyVisited && !isVisited(m.name)) return false;
     if (currentProvince && m.province !== currentProvince) return false;
     if (currentRegion && !currentProvince && m.region !== currentRegion) return false;
     return true;
@@ -668,7 +796,10 @@ function renderMarkers() {
     finalList = filtered.filter(m => fuzzyMatch(m, query).match);
   }
 
-  for (const m of finalList) {
+  // 已点亮的标记放在上层（zIndex更高）
+  const unvisited = finalList.filter(m => !isVisited(m.name));
+  const visited = finalList.filter(m => isVisited(m.name));
+  for (const m of [...unvisited, ...visited]) {
     const marker = createMarker(m);
     marker.addTo(map);
     markers.push(marker);
@@ -680,10 +811,12 @@ function renderMarkers() {
 
 // ===== 更新统计 =====
 function updateStats(list) {
-  const l1 = list ? list.filter(m => m.level === 1).length : allMuseums.filter(m => m.level === 1).length;
-  document.getElementById('stat-l1').textContent = l1;
-  document.getElementById('stat-total').textContent = l1;
+  const total = list ? list.length : allMuseums.length;
+  document.getElementById('stat-l1').textContent = total;
+  document.getElementById('stat-total').textContent = total;
+  updateVisitedCount();
 }
+
 
 // ===== 筛选功能 =====
 function filterLevel(level) {
@@ -725,9 +858,10 @@ function buildRegionNav() {
       let cityHtml = '';
       for (const [cityName, cityMuseums] of Object.entries(cityMap)) {
         const museumsHtml = cityMuseums.map(m =>
-          `<div class="museum-nav-item" data-museum="${encodeURIComponent(m.name)}" onclick="focusMuseum('${encodeURIComponent(m.name)}',event)">
+          `<div class="museum-nav-item${isVisited(m.name) ? ' nav-visited' : ''}" data-museum="${encodeURIComponent(m.name)}" onclick="focusMuseum('${encodeURIComponent(m.name)}',event)">
             <div class="museum-nav-dot"></div>
             <span>${m.name}</span>
+            <div class="nav-visited-dot"></div>
           </div>`
         ).join('');
         cityHtml += `<div class="city-group" id="city-${encodeURIComponent(p)}-${encodeURIComponent(cityName)}">
@@ -1038,6 +1172,8 @@ async function init() {
     document.getElementById('btn-l1').textContent = allMuseums.filter(m => m.level === 1).length;
 
     buildRegionNav();
+    updateNavVisited();
+    updateVisitedCount();
     renderMarkers();
   } catch (e) {
     console.error('初始化失败:', e);
