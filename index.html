@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
 <title>中国博物馆旅行地图</title>
 <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <script src="https://cdn.bootcdn.net/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -757,7 +758,8 @@ function showMuseumPopup(m, marker) {
     for (const t of m.treasures) {
       let imgHtml = '';
       if (t.imageUrl) {
-        imgHtml = `<img class="treasure-img" src="${t.imageUrl}" alt="${t.name}" loading="lazy" onclick="showFullImage(this.src, '${t.name.replace(/'/g, "\\'")}');" onerror="this.style.display='none'">`;
+        imgHtml = `<img class="treasure-img" src="${t.imageUrl}" alt="${t.name}" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" onclick="showFullImage(this.src, '${t.name.replace(/'/g, "\\'")}');" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling&&this.nextElementSibling.classList.contains('treasure-img-placeholder')&&(this.nextElementSibling.style.display='flex');">
+        <div class="treasure-img-placeholder" style="display:none">📷 暂无图片</div>`;
       }
       treasuresHtml += `<div class="treasure-item">${imgHtml}<span class="treasure-name">${t.name}</span><span class="treasure-era">[ ${t.era} ]</span><div class="treasure-desc">${t.description}</div></div>`;
     }
@@ -799,7 +801,7 @@ function updatePopupBtn(encodedName) {
 function showFullImage(src, name) {
   const overlay = document.createElement('div');
   overlay.className = 'img-fullscreen';
-  overlay.innerHTML = `<img src="${src}" alt="${name}"><div class="close-hint">点击任意处关闭</div>`;
+  overlay.innerHTML = `<img src="${src}" alt="${name}" referrerpolicy="no-referrer"><div class="close-hint">点击任意处关闭</div>`;
   overlay.onclick = () => overlay.remove();
   document.body.appendChild(overlay);
 }
