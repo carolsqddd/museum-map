@@ -758,7 +758,7 @@ function showMuseumPopup(m, marker) {
     for (const t of m.treasures) {
       let imgHtml = '';
       if (t.imageUrl) {
-        imgHtml = `<img class="treasure-img" src="${t.imageUrl}" alt="${t.name}" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" onclick="showFullImage(this.src, '${t.name.replace(/'/g, "\\'")}');" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling&&this.nextElementSibling.classList.contains('treasure-img-placeholder')&&(this.nextElementSibling.style.display='flex');">
+        imgHtml = `<img class="treasure-img" src="${t.imageUrl}" alt="${t.name}" loading="lazy" referrerpolicy="no-referrer" onclick="showFullImage(this.src, '${t.name.replace(/'/g, "\\'")}');" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling&&this.nextElementSibling.classList.contains('treasure-img-placeholder')&&(this.nextElementSibling.style.display='flex');">
         <div class="treasure-img-placeholder" style="display:none">📷 暂无图片</div>`;
       }
       treasuresHtml += `<div class="treasure-item">${imgHtml}<span class="treasure-name">${t.name}</span><span class="treasure-era">[ ${t.era} ]</span><div class="treasure-desc">${t.description}</div></div>`;
