@@ -3,9 +3,9 @@
   "description": "以国家一级博物馆为核心，按七大区域、省份、地级市组织的中国博物馆数据",
   "dataVersion": "2025.03",
   "totalMuseums": {
-    "level1": 300,
+    "level1": 301,
     "level2": 0,
-    "total": 300
+    "total": 301
   },
   "regions": [
     {
@@ -70,6 +70,15 @@
       "provinces": ["陕西", "甘肃", "青海", "宁夏", "新疆"],
       "museumCount": {"level1": 38},
       "color": "#E67E22"
+    },
+    {
+      "name": "台湾",
+      "files": {
+        "level1": "region_taiwan.json"
+      },
+      "provinces": ["台湾"],
+      "museumCount": {"level1": 1},
+      "color": "#E91E8C"
     }
   ],
   "dataStructure": {
