@@ -297,6 +297,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 }
 .museum-pin:hover { transform: scale(1.35) translateY(-3px); filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); z-index: 9999 !important; }
 .museum-pin svg { display: block; }
+/* 二级博物馆小圆点 */
+.museum-dot {
+  transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
+}
+.museum-dot:hover { transform: scale(1.8); box-shadow: 0 2px 8px rgba(0,0,0,0.5) !important; z-index: 9999 !important; }
 /* 一级博物馆光晕 */
 .museum-pin.level1::after {
   content: ''; position: absolute; top: 50%; left: 50%;
@@ -524,8 +529,8 @@ async function loadProvinceBorders() {
     }).addTo(map);
     if (provinceLabelLayer) provinceLabelLayer.addTo(map);
 
-    // 根据缩放级别控制省名显隐
-    map.on('zoomend', updateLabelVisibility);
+    // 根据缩放级别控制省名显隐和二级博物馆显示
+    map.on('zoomend', () => { updateLabelVisibility(); renderMarkers(); });
     updateLabelVisibility();
   } catch (e) {
     console.warn('省界数据加载失败:', e);
@@ -707,47 +712,58 @@ function updateNavVisited() {
 
 function createMarker(m) {
   const visited = isVisited(m.name);
-  const w = 22, h = 30;
+  const isL1 = m.level === 1;
   const gid = 'g' + Math.random().toString(36).slice(2,8);
 
-  let svg;
-  if (visited) {
-    // 已点亮：绿色标记，内有勾
-    svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
-      <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#5de87a"/>
-        <stop offset="100%" stop-color="#27ae60"/>
-      </linearGradient></defs>
-      <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
-        fill="url(#${gid})" stroke="#1e8449" stroke-width="1"/>
-      <path d="M7 10.5l2.5 2.5 5.5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    </svg>`;
+  let html, iconSize, iconAnchor, popupAnchor;
+
+  if (isL1) {
+    // 一级博物馆：水滴 pin
+    const w = 20, h = 27;
+    let svg;
+    if (visited) {
+      svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
+        <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#5de87a"/><stop offset="100%" stop-color="#27ae60"/>
+        </linearGradient></defs>
+        <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
+          fill="url(#${gid})" stroke="#1e8449" stroke-width="1"/>
+        <path d="M7 10.5l2.5 2.5 5.5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>`;
+    } else {
+      svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
+        <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f5c842"/><stop offset="100%" stop-color="#d4a017"/>
+        </linearGradient></defs>
+        <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
+          fill="url(#${gid})" stroke="#b8860b" stroke-width="1"/>
+        <circle cx="11" cy="10.5" r="3" fill="#fff" opacity="0.9"/>
+      </svg>`;
+    }
+    html = `<div class="museum-pin${visited ? ' visited-pin' : ''}">${svg}</div>`;
+    iconSize = [w, h];
+    iconAnchor = [w/2, h];
+    popupAnchor = [0, -h + 4];
   } else {
-    // 未点亮：按等级着色
-    const isL1 = m.level === 1;
-    const c1 = isL1 ? '#f5c842' : '#5dade2';
-    const c2 = isL1 ? '#d4a017' : '#2e86c1';
-    const cs = isL1 ? '#b8860b' : '#1a5276';
-    svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
-      <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="${c1}"/>
-        <stop offset="100%" stop-color="${c2}"/>
-      </linearGradient></defs>
-      <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
-        fill="url(#${gid})" stroke="${cs}" stroke-width="1"/>
-      <circle cx="11" cy="10.5" r="3" fill="#fff" opacity="0.9"/>
-    </svg>`;
+    // 二级博物馆：小圆点
+    const s = 10;
+    const color = visited ? '#27ae60' : '#5dade2';
+    const border = visited ? '#1e8449' : '#2e86c1';
+    html = `<div class="museum-dot${visited ? ' visited-dot' : ''}" style="width:${s}px;height:${s}px;border-radius:50%;background:${color};border:1.5px solid ${border};box-shadow:0 1px 3px rgba(0,0,0,0.3);cursor:pointer;"></div>`;
+    iconSize = [s, s];
+    iconAnchor = [s/2, s/2];
+    popupAnchor = [0, -s/2];
   }
 
   const icon = L.divIcon({
     className: '',
-    html: `<div class="museum-pin${visited ? ' visited-pin' : ''}">${svg}</div>`,
-    iconSize: [w, h],
-    iconAnchor: [w/2, h],
-    popupAnchor: [0, -h + 4]
+    html: html,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
   });
 
-  const marker = L.marker([m.lat, m.lng], { icon }).on('click', () => showMuseumPopup(m, marker));
+  const marker = L.marker([m.lat, m.lng], { icon, zIndexOffset: isL1 ? 100 : 0 }).on('click', () => showMuseumPopup(m, marker));
   marker._museumData = m;
   return marker;
 }
@@ -836,8 +852,13 @@ function renderMarkers() {
   }
 
   // 已点亮的标记放在上层（zIndex更高）
-  const unvisited = finalList.filter(m => !isVisited(m.name));
-  const visited = finalList.filter(m => isVisited(m.name));
+  // 低缩放级别时隐藏二级博物馆圆点，除非用户主动筛选了二级
+  const zoom = map.getZoom();
+  const showL2 = currentLevel === 2 || zoom >= 7;
+  const displayList = showL2 ? finalList : finalList.filter(m => m.level === 1);
+
+  const unvisited = displayList.filter(m => !isVisited(m.name));
+  const visited = displayList.filter(m => isVisited(m.name));
   for (const m of [...unvisited, ...visited]) {
     const marker = createMarker(m);
     marker.addTo(map);
