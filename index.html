@@ -851,9 +851,9 @@ function renderMarkers() {
   }
 
   // 已点亮的标记放在上层（zIndex更高）
-  // 低缩放级别时隐藏二级博物馆圆点，除非用户主动筛选了二级
+  // 低缩放级别且未选"全部"/"二级"时隐藏二级博物馆
   const zoom = map.getZoom();
-  const showL2 = currentLevel === 2 || zoom >= 7;
+  const showL2 = currentLevel === 'all' || currentLevel === 2 || zoom >= 7;
   const displayList = showL2 ? finalList : finalList.filter(m => m.level === 1);
 
   const unvisited = displayList.filter(m => !isVisited(m.name));
