@@ -206,6 +206,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "广州十三行博物馆",
+              "level": 2,
+              "address": "广东广州市",
+              "lng": 113.234,
+              "lat": 23.098,
+              "description": "以十三行商贸文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "南越文王墓博物馆",
+              "level": 2,
+              "address": "广东广州市",
+              "lng": 113.263,
+              "lat": 23.142,
+              "description": "以南越国文物为特色。",
+              "treasures": []
+            },
+            {
+              "name": "广州市番禺博物馆",
+              "level": 2,
+              "address": "广东广州市",
+              "lng": 113.346,
+              "lat": 22.942,
+              "description": "以番禺历史和岭南水乡文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -227,6 +254,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "深圳南山博物馆",
+              "level": 2,
+              "address": "广东深圳市",
+              "lng": 113.924,
+              "lat": 22.531,
+              "description": "展示南山地区历史和改革开放史。",
+              "treasures": []
             }
           ]
         },
@@ -248,6 +284,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "梅州市博物馆",
+              "level": 2,
+              "address": "广东梅州市",
+              "lng": 116.117,
+              "lat": 24.289,
+              "description": "以客家文化为特色的综合性博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -269,6 +314,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "东莞市博物馆",
+              "level": 2,
+              "address": "广东东莞市",
+              "lng": 113.746,
+              "lat": 23.02,
+              "description": "展示东莞地区历史和岭南文化。",
+              "treasures": []
+            },
+            {
+              "name": "东莞可园博物馆",
+              "level": 2,
+              "address": "广东东莞市",
+              "lng": 113.749,
+              "lat": 23.025,
+              "description": "以岭南园林文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -290,6 +353,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "中山市博物馆",
+              "level": 2,
+              "address": "广东中山市",
+              "lng": 113.382,
+              "lat": 22.517,
+              "description": "以孙中山故里文化和中山历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -311,6 +383,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "阳江市博物馆",
+              "level": 2,
+              "address": "广东阳江市",
+              "lng": 111.975,
+              "lat": 21.858,
+              "description": "以南海Ⅰ号沉船文物为特色。",
+              "treasures": []
             }
           ]
         },
@@ -332,6 +413,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "佛山市博物馆",
+              "level": 2,
+              "address": "广东佛山市",
+              "lng": 113.122,
+              "lat": 23.022,
+              "description": "以佛山陶瓷和岭南文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "佛山南风古灶博物馆",
+              "level": 2,
+              "address": "广东佛山市",
+              "lng": 113.097,
+              "lat": 23.027,
+              "description": "展示石湾陶瓷文化的活态博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "佛山顺德博物馆",
+              "level": 2,
+              "address": "广东佛山市",
+              "lng": 113.291,
+              "lat": 22.805,
+              "description": "以顺德文化和岭南美食文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -353,6 +461,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "开平市碉楼博物馆",
+              "level": 2,
+              "address": "广东江门市",
+              "lng": 112.698,
+              "lat": 22.376,
+              "description": "以开平碉楼世界遗产为特色。",
+              "treasures": []
             }
           ]
         },
@@ -374,6 +491,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "惠州市博物馆",
+              "level": 2,
+              "address": "广东惠州市",
+              "lng": 114.416,
+              "lat": 23.112,
+              "description": "展示惠州地区历史和东江文化。",
+              "treasures": []
             }
           ]
         },
@@ -395,6 +521,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "湛江市博物馆",
+              "level": 2,
+              "address": "广东湛江市",
+              "lng": 110.359,
+              "lat": 21.27,
+              "description": "展示雷州文化和湛江历史。",
+              "treasures": []
             }
           ]
         },
@@ -437,6 +572,150 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "珠海市博物馆",
+              "level": 2,
+              "address": "广东珠海市",
+              "lng": 113.576,
+              "lat": 22.271,
+              "description": "展示珠海地区历史和海洋文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "汕头市",
+          "museums": [
+            {
+              "name": "汕头市博物馆",
+              "level": 2,
+              "address": "广东汕头市",
+              "lng": 116.681,
+              "lat": 23.354,
+              "description": "以潮汕文化和侨批文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "肇庆市",
+          "museums": [
+            {
+              "name": "肇庆市博物馆",
+              "level": 2,
+              "address": "广东肇庆市",
+              "lng": 112.465,
+              "lat": 23.047,
+              "description": "以端砚文化和肇庆历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "韶关市",
+          "museums": [
+            {
+              "name": "韶关市博物馆",
+              "level": 2,
+              "address": "广东韶关市",
+              "lng": 113.597,
+              "lat": 24.811,
+              "description": "以南岭文化和马坝人遗址文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "清远市",
+          "museums": [
+            {
+              "name": "清远市博物馆",
+              "level": 2,
+              "address": "广东清远市",
+              "lng": 113.051,
+              "lat": 23.682,
+              "description": "展示清远地区历史和飞来峡文化。",
+              "treasures": []
+            },
+            {
+              "name": "连州博物馆",
+              "level": 2,
+              "address": "广东清远市",
+              "lng": 112.377,
+              "lat": 24.781,
+              "description": "以连州地下河文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "茂名市",
+          "museums": [
+            {
+              "name": "茂名市博物馆",
+              "level": 2,
+              "address": "广东茂名市",
+              "lng": 110.919,
+              "lat": 21.659,
+              "description": "展示茂名地区历史和冼夫人文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "揭阳市",
+          "museums": [
+            {
+              "name": "揭阳市博物馆",
+              "level": 2,
+              "address": "广东揭阳市",
+              "lng": 116.372,
+              "lat": 23.55,
+              "description": "以潮汕文化和揭阳历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "河源市",
+          "museums": [
+            {
+              "name": "河源市博物馆",
+              "level": 2,
+              "address": "广东河源市",
+              "lng": 114.698,
+              "lat": 23.746,
+              "description": "以恐龙蛋化石和客家文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "汕尾市",
+          "museums": [
+            {
+              "name": "汕尾市博物馆",
+              "level": 2,
+              "address": "广东汕尾市",
+              "lng": 115.375,
+              "lat": 22.786,
+              "description": "以海陆丰红色文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "云浮市",
+          "museums": [
+            {
+              "name": "云浮市博物馆",
+              "level": 2,
+              "address": "广东云浮市",
+              "lng": 112.044,
+              "lat": 22.916,
+              "description": "以石艺文化和云浮历史为特色。",
+              "treasures": []
             }
           ]
         }
@@ -493,6 +772,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "南宁市博物馆",
+              "level": 2,
+              "address": "广西南宁市",
+              "lng": 108.366,
+              "lat": 22.817,
+              "description": "展示南宁地区历史和壮族文化。",
+              "treasures": []
             }
           ]
         },
@@ -514,6 +802,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "兴安县博物馆",
+              "level": 2,
+              "address": "广西桂林市",
+              "lng": 110.671,
+              "lat": 25.611,
+              "description": "以灵渠文化和兴安历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "灵川县博物馆",
+              "level": 2,
+              "address": "广西桂林市",
+              "lng": 110.326,
+              "lat": 25.41,
+              "description": "以灵川历史和桂北文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -556,6 +862,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "柳州市博物馆",
+              "level": 2,
+              "address": "广西柳州市",
+              "lng": 109.411,
+              "lat": 24.314,
+              "description": "以柳州白莲洞遗址文物和壮族文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "柳州工业博物馆",
+              "level": 2,
+              "address": "广西柳州市",
+              "lng": 109.422,
+              "lat": 24.329,
+              "description": "展示柳州工业发展历程。",
+              "treasures": []
             }
           ]
         },
@@ -619,6 +943,122 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "北海市",
+          "museums": [
+            {
+              "name": "北海市博物馆",
+              "level": 2,
+              "address": "广西北海市",
+              "lng": 109.119,
+              "lat": 21.473,
+              "description": "以海上丝绸之路和合浦汉墓文物为特色。",
+              "treasures": []
+            },
+            {
+              "name": "合浦县博物馆",
+              "level": 2,
+              "address": "广西北海市",
+              "lng": 109.207,
+              "lat": 21.66,
+              "description": "以海上丝路始发港和汉墓文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "玉林市",
+          "museums": [
+            {
+              "name": "玉林市博物馆",
+              "level": 2,
+              "address": "广西玉林市",
+              "lng": 110.154,
+              "lat": 22.654,
+              "description": "展示玉林地区历史文化的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "钦州市",
+          "museums": [
+            {
+              "name": "钦州市博物馆",
+              "level": 2,
+              "address": "广西钦州市",
+              "lng": 108.624,
+              "lat": 21.967,
+              "description": "以坭兴陶文化和钦州历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "来宾市",
+          "museums": [
+            {
+              "name": "来宾市博物馆",
+              "level": 2,
+              "address": "广西来宾市",
+              "lng": 109.23,
+              "lat": 23.734,
+              "description": "展示来宾地区壮族文化。",
+              "treasures": []
+            },
+            {
+              "name": "象州县博物馆",
+              "level": 2,
+              "address": "广西来宾市",
+              "lng": 109.705,
+              "lat": 23.973,
+              "description": "以壮族铜鼓文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "崇左市",
+          "museums": [
+            {
+              "name": "崇左市博物馆",
+              "level": 2,
+              "address": "广西崇左市",
+              "lng": 107.365,
+              "lat": 22.404,
+              "description": "以花山岩画和壮族文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "防城港市",
+          "museums": [
+            {
+              "name": "防城港市博物馆",
+              "level": 2,
+              "address": "广西防城港市",
+              "lng": 108.345,
+              "lat": 21.614,
+              "description": "展示防城港海洋文化和边境文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "贺州市",
+          "museums": [
+            {
+              "name": "贺州市博物馆",
+              "level": 2,
+              "address": "广西贺州市",
+              "lng": 111.567,
+              "lat": 24.403,
+              "description": "以潇贺古道文化为特色。",
+              "treasures": []
             }
           ]
         }
@@ -685,6 +1125,99 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "海口市博物馆",
+              "level": 2,
+              "address": "海南海口市",
+              "lng": 110.35,
+              "lat": 20.019,
+              "description": "展示海口地区历史和海洋文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "五指山市",
+          "museums": [
+            {
+              "name": "海南省民族博物馆",
+              "level": 2,
+              "address": "海南五指山市",
+              "lng": 109.517,
+              "lat": 18.775,
+              "description": "展示海南少数民族历史文化的专题博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "三亚市",
+          "museums": [
+            {
+              "name": "三亚市博物馆",
+              "level": 2,
+              "address": "海南三亚市",
+              "lng": 109.508,
+              "lat": 18.247,
+              "description": "以崖州文化和南海文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "琼海市",
+          "museums": [
+            {
+              "name": "琼海市博物馆",
+              "level": 2,
+              "address": "海南琼海市",
+              "lng": 110.474,
+              "lat": 19.246,
+              "description": "以红色娘子军文化和琼海历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "儋州市",
+          "museums": [
+            {
+              "name": "儋州市博物馆",
+              "level": 2,
+              "address": "海南儋州市",
+              "lng": 109.576,
+              "lat": 19.521,
+              "description": "以东坡文化和儋州历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "文昌市",
+          "museums": [
+            {
+              "name": "文昌市博物馆",
+              "level": 2,
+              "address": "海南文昌市",
+              "lng": 110.797,
+              "lat": 19.543,
+              "description": "以华侨文化和航天文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "陵水县",
+          "museums": [
+            {
+              "name": "陵水县博物馆",
+              "level": 2,
+              "address": "海南陵水县",
+              "lng": 110.037,
+              "lat": 18.505,
+              "description": "以黎族文化和陵水历史为特色。",
+              "treasures": []
             }
           ]
         }

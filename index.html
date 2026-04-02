@@ -393,7 +393,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
   <span class="subtitle">National Museum Travel Map of China</span>
   <span class="author">by carolsq</span>
   <div class="stats">
-    <div>一级 <span id="stat-l1">0</span> 家</div>
+    <div>一级 <span id="stat-l1">0</span></div>
+    <div>二级 <span id="stat-l2">0</span></div>
     <div>共 <span id="stat-total">0</span> 家</div>
     <div class="stat-visited-badge">✓ 已点亮 <span id="stat-visited">0</span> 家</div>
   </div>
@@ -412,6 +413,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
       </button>
       <button class="level-btn" data-level="1" onclick="filterLevel(1)">
         <span class="count" id="btn-l1">0</span>一级
+      </button>
+      <button class="level-btn" data-level="2" onclick="filterLevel(2)">
+        <span class="count" id="btn-l2">0</span>二级
       </button>
     </div>
     <button class="visited-filter-btn" id="visitedFilterBtn" onclick="toggleVisitedFilter()">
@@ -719,14 +723,18 @@ function createMarker(m) {
       <path d="M7 10.5l2.5 2.5 5.5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
     </svg>`;
   } else {
-    // 未点亮：金色标记
+    // 未点亮：按等级着色
+    const isL1 = m.level === 1;
+    const c1 = isL1 ? '#f5c842' : '#5dade2';
+    const c2 = isL1 ? '#d4a017' : '#2e86c1';
+    const cs = isL1 ? '#b8860b' : '#1a5276';
     svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
       <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#f5c842"/>
-        <stop offset="100%" stop-color="#d4a017"/>
+        <stop offset="0%" stop-color="${c1}"/>
+        <stop offset="100%" stop-color="${c2}"/>
       </linearGradient></defs>
       <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
-        fill="url(#${gid})" stroke="#b8860b" stroke-width="1"/>
+        fill="url(#${gid})" stroke="${cs}" stroke-width="1"/>
       <circle cx="11" cy="10.5" r="3" fill="#fff" opacity="0.9"/>
     </svg>`;
   }
@@ -775,7 +783,7 @@ function showMuseumPopup(m, marker) {
 
   const html = `<div class="museum-popup">
     <div class="popup-header">
-      <span class="popup-level l1">一级</span>
+      <span class="popup-level ${m.level === 1 ? 'l1' : 'l2'}">${m.level === 1 ? '一级' : '二级'}</span>
       <span class="popup-name">${m.name}</span>
     </div>
     <div class="popup-address">📍 ${m.address}</div>
@@ -842,9 +850,10 @@ function renderMarkers() {
 
 // ===== 更新统计 =====
 function updateStats(list) {
-  const total = list ? list.length : allMuseums.length;
-  document.getElementById('stat-l1').textContent = total;
-  document.getElementById('stat-total').textContent = total;
+  const src = list || allMuseums;
+  document.getElementById('stat-l1').textContent = src.filter(m => m.level === 1).length;
+  document.getElementById('stat-l2').textContent = src.filter(m => m.level === 2).length;
+  document.getElementById('stat-total').textContent = src.length;
   updateVisitedCount();
 }
 
@@ -1210,6 +1219,7 @@ async function init() {
     // 更新按钮计数
     document.getElementById('btn-all').textContent = allMuseums.length;
     document.getElementById('btn-l1').textContent = allMuseums.filter(m => m.level === 1).length;
+    document.getElementById('btn-l2').textContent = allMuseums.filter(m => m.level === 2).length;
 
     buildRegionNav();
     updateNavVisited();

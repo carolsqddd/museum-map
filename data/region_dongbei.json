@@ -130,6 +130,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "沈阳科学宫",
+              "level": 2,
+              "address": "辽宁沈阳市",
+              "lng": 123.428,
+              "lat": 41.792,
+              "description": "沈阳市大型现代化科普教育场馆。",
+              "treasures": []
+            },
+            {
+              "name": "沈阳工业博物馆",
+              "level": 2,
+              "address": "辽宁沈阳市",
+              "lng": 123.46,
+              "lat": 41.794,
+              "description": "展示沈阳工业发展历程。",
+              "treasures": []
+            },
+            {
+              "name": "辽宁省博物馆沈阳分馆",
+              "level": 2,
+              "address": "辽宁沈阳市",
+              "lng": 123.455,
+              "lat": 41.74,
+              "description": "展示辽宁历史和满族文化。",
+              "treasures": []
             }
           ]
         },
@@ -167,6 +194,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "大连自然博物馆",
+              "level": 2,
+              "address": "辽宁大连市",
+              "lng": 121.697,
+              "lat": 38.878,
+              "description": "中国最早的自然博物馆之一，以海洋生物标本著称。",
+              "treasures": []
+            },
+            {
+              "name": "大连现代博物馆",
+              "level": 2,
+              "address": "辽宁大连市",
+              "lng": 121.614,
+              "lat": 38.912,
+              "description": "展示大连近现代发展史。",
+              "treasures": []
             }
           ]
         },
@@ -188,6 +233,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "丹东市博物馆",
+              "level": 2,
+              "address": "辽宁丹东市",
+              "lng": 124.383,
+              "lat": 40.124,
+              "description": "展示丹东地区历史和抗美援朝文物的博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -209,6 +263,173 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "鞍山市博物馆",
+              "level": 2,
+              "address": "辽宁鞍山市",
+              "lng": 122.995,
+              "lat": 41.108,
+              "description": "以岫岩玉文物为特色的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "抚顺市",
+          "museums": [
+            {
+              "name": "抚顺市博物馆",
+              "level": 2,
+              "address": "辽宁抚顺市",
+              "lng": 123.957,
+              "lat": 41.88,
+              "description": "收藏展示抚顺地区历史文化的综合性博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "锦州市",
+          "museums": [
+            {
+              "name": "锦州市博物馆",
+              "level": 2,
+              "address": "辽宁锦州市",
+              "lng": 121.127,
+              "lat": 41.095,
+              "description": "展示辽西走廊历史文化的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "营口市",
+          "museums": [
+            {
+              "name": "营口市博物馆",
+              "level": 2,
+              "address": "辽宁营口市",
+              "lng": 122.235,
+              "lat": 40.667,
+              "description": "以辽河文明和营口近代开埠文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "本溪市",
+          "museums": [
+            {
+              "name": "本溪市博物馆",
+              "level": 2,
+              "address": "辽宁本溪市",
+              "lng": 123.77,
+              "lat": 41.294,
+              "description": "以本溪水洞和本溪地区历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "辽阳市",
+          "museums": [
+            {
+              "name": "辽阳市博物馆",
+              "level": 2,
+              "address": "辽宁辽阳市",
+              "lng": 123.172,
+              "lat": 41.268,
+              "description": "以辽阳壁画墓和辽东历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "朝阳市",
+          "museums": [
+            {
+              "name": "朝阳市博物馆",
+              "level": 2,
+              "address": "辽宁朝阳市",
+              "lng": 120.451,
+              "lat": 41.576,
+              "description": "以红山文化和古生物化石为特色。",
+              "treasures": []
+            },
+            {
+              "name": "北票市博物馆",
+              "level": 2,
+              "address": "辽宁朝阳市",
+              "lng": 120.771,
+              "lat": 41.8,
+              "description": "以鸟化石和北票历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "葫芦岛市",
+          "museums": [
+            {
+              "name": "葫芦岛市博物馆",
+              "level": 2,
+              "address": "辽宁葫芦岛市",
+              "lng": 120.837,
+              "lat": 40.711,
+              "description": "展示葫芦岛地区历史的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "兴城古城博物馆",
+              "level": 2,
+              "address": "辽宁葫芦岛市",
+              "lng": 120.726,
+              "lat": 40.623,
+              "description": "展示明代兴城古城文物。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "铁岭市",
+          "museums": [
+            {
+              "name": "铁岭市博物馆",
+              "level": 2,
+              "address": "辽宁铁岭市",
+              "lng": 123.844,
+              "lat": 42.286,
+              "description": "以铁岭地区历史和辽北文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "阜新市",
+          "museums": [
+            {
+              "name": "阜新市博物馆",
+              "level": 2,
+              "address": "辽宁阜新市",
+              "lng": 121.648,
+              "lat": 42.012,
+              "description": "以查海遗址文物和阜新历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "盘锦市",
+          "museums": [
+            {
+              "name": "盘锦市博物馆",
+              "level": 2,
+              "address": "辽宁盘锦市",
+              "lng": 122.07,
+              "lat": 41.12,
+              "description": "以辽河文化和红海滩文化为特色。",
+              "treasures": []
             }
           ]
         }
@@ -297,6 +518,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "长春电影博物馆",
+              "level": 2,
+              "address": "吉林长春市",
+              "lng": 125.336,
+              "lat": 43.864,
+              "description": "展示中国电影工业发展史。",
+              "treasures": []
             }
           ]
         },
@@ -339,6 +569,117 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "延吉市",
+          "museums": [
+            {
+              "name": "延边朝鲜族自治州博物馆",
+              "level": 2,
+              "address": "吉林延吉市",
+              "lng": 129.513,
+              "lat": 42.891,
+              "description": "展示朝鲜族历史文化的综合博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "图们江博物馆",
+              "level": 2,
+              "address": "吉林延吉市",
+              "lng": 129.005,
+              "lat": 42.938,
+              "description": "展示图们江流域历史文化。",
+              "treasures": []
+            },
+            {
+              "name": "敦化市博物馆",
+              "level": 2,
+              "address": "吉林延吉市",
+              "lng": 128.232,
+              "lat": 43.372,
+              "description": "以渤海国上京龙泉府遗址为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "通化市",
+          "museums": [
+            {
+              "name": "通化市博物馆",
+              "level": 2,
+              "address": "吉林通化市",
+              "lng": 125.936,
+              "lat": 41.73,
+              "description": "展示通化地区历史和高句丽文化的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "集安博物馆",
+              "level": 2,
+              "address": "吉林通化市",
+              "lng": 126.194,
+              "lat": 41.126,
+              "description": "以高句丽文化遗产为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "白城市",
+          "museums": [
+            {
+              "name": "白城市博物馆",
+              "level": 2,
+              "address": "吉林白城市",
+              "lng": 122.841,
+              "lat": 45.619,
+              "description": "展示白城地区历史和辽金文化的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "松原市",
+          "museums": [
+            {
+              "name": "松原市博物馆",
+              "level": 2,
+              "address": "吉林松原市",
+              "lng": 124.823,
+              "lat": 45.142,
+              "description": "以查干湖文化和松嫩平原历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "辽源市",
+          "museums": [
+            {
+              "name": "辽源市博物馆",
+              "level": 2,
+              "address": "吉林辽源市",
+              "lng": 125.145,
+              "lat": 42.888,
+              "description": "展示辽源地区历史的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "白山市",
+          "museums": [
+            {
+              "name": "白山市博物馆",
+              "level": 2,
+              "address": "吉林白山市",
+              "lng": 126.414,
+              "lat": 41.944,
+              "description": "以长白山文化和白山历史为特色。",
+              "treasures": []
             }
           ]
         }
@@ -427,6 +768,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "哈尔滨市博物馆",
+              "level": 2,
+              "address": "黑龙江哈尔滨市",
+              "lng": 126.534,
+              "lat": 45.803,
+              "description": "展示哈尔滨城市发展历史的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "侵华日军第七三一部队罪证陈列馆",
+              "level": 2,
+              "address": "黑龙江哈尔滨市",
+              "lng": 126.617,
+              "lat": 45.601,
+              "description": "展示731部队罪证的纪念性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "阿城金上京历史博物馆",
+              "level": 2,
+              "address": "黑龙江哈尔滨市",
+              "lng": 126.958,
+              "lat": 45.538,
+              "description": "以金代上京文物为特色。",
+              "treasures": []
             }
           ]
         },
@@ -506,6 +874,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "五大连池地质博物馆",
+              "level": 2,
+              "address": "黑龙江黑河市",
+              "lng": 126.163,
+              "lat": 48.756,
+              "description": "以火山地质和五大连池文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -527,6 +904,127 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "佳木斯市",
+          "museums": [
+            {
+              "name": "佳木斯市博物馆",
+              "level": 2,
+              "address": "黑龙江佳木斯市",
+              "lng": 130.362,
+              "lat": 46.8,
+              "description": "展示三江平原历史文化的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "鸡西市",
+          "museums": [
+            {
+              "name": "鸡西市博物馆",
+              "level": 2,
+              "address": "黑龙江鸡西市",
+              "lng": 130.969,
+              "lat": 45.3,
+              "description": "展示鸡西地区历史和煤炭文化的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "双鸭山市",
+          "museums": [
+            {
+              "name": "双鸭山市博物馆",
+              "level": 2,
+              "address": "黑龙江双鸭山市",
+              "lng": 131.157,
+              "lat": 46.646,
+              "description": "展示双鸭山地区历史和挹娄文化的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "绥化市",
+          "museums": [
+            {
+              "name": "绥化市博物馆",
+              "level": 2,
+              "address": "黑龙江绥化市",
+              "lng": 126.992,
+              "lat": 46.653,
+              "description": "展示绥化地区历史的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "伊春市",
+          "museums": [
+            {
+              "name": "伊春市博物馆",
+              "level": 2,
+              "address": "黑龙江伊春市",
+              "lng": 128.899,
+              "lat": 47.727,
+              "description": "以小兴安岭森林文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "七台河市",
+          "museums": [
+            {
+              "name": "七台河市博物馆",
+              "level": 2,
+              "address": "黑龙江七台河市",
+              "lng": 131.003,
+              "lat": 45.77,
+              "description": "展示七台河地区历史的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "鹤岗市",
+          "museums": [
+            {
+              "name": "鹤岗市博物馆",
+              "level": 2,
+              "address": "黑龙江鹤岗市",
+              "lng": 130.297,
+              "lat": 47.332,
+              "description": "展示鹤岗地区历史和煤矿文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "大兴安岭地区",
+          "museums": [
+            {
+              "name": "大兴安岭博物馆",
+              "level": 2,
+              "address": "黑龙江大兴安岭地区",
+              "lng": 124.117,
+              "lat": 50.422,
+              "description": "展示大兴安岭地区林业文化。",
+              "treasures": []
+            },
+            {
+              "name": "漠河市博物馆",
+              "level": 2,
+              "address": "黑龙江大兴安岭地区",
+              "lng": 122.529,
+              "lat": 53.474,
+              "description": "以中国北极地区历史和极光文化为特色。",
+              "treasures": []
             }
           ]
         }

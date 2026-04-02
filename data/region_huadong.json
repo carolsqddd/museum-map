@@ -160,6 +160,159 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "上海自然博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.456,
+              "lat": 31.238,
+              "description": "上海重要的自然科学类博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海市历史博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.475,
+              "lat": 31.234,
+              "description": "全面反映上海城市发展历史的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海纺织博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.455,
+              "lat": 31.263,
+              "description": "展示中国纺织工业发展历程的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海公安博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.47,
+              "lat": 31.199,
+              "description": "中国首座公安专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海邮政博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.486,
+              "lat": 31.25,
+              "description": "设于上海邮政大楼内，展示中国邮政发展史。",
+              "treasures": []
+            },
+            {
+              "name": "上海电影博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.441,
+              "lat": 31.183,
+              "description": "展示上海电影百年发展历程的专业博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海琉璃艺术博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.468,
+              "lat": 31.209,
+              "description": "中国第一座以琉璃艺术为主题的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海铁路博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.459,
+              "lat": 31.252,
+              "description": "展示中国铁路发展历史的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海犹太难民纪念馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.505,
+              "lat": 31.26,
+              "description": "记录二战期间犹太难民在上海的历史。",
+              "treasures": []
+            },
+            {
+              "name": "上海消防博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.43,
+              "lat": 31.204,
+              "description": "展示上海消防发展历程的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海汽车博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.176,
+              "lat": 31.098,
+              "description": "展示汽车发展历史的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海笔墨博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.461,
+              "lat": 31.218,
+              "description": "展示中国笔墨文化的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海玻璃博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.4,
+              "lat": 31.301,
+              "description": "以玻璃艺术为主题的创意博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海建筑模型博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.496,
+              "lat": 31.234,
+              "description": "展示上海建筑发展史的专题馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海土山湾博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.432,
+              "lat": 31.189,
+              "description": "以土山湾文化和中西文化交流为特色。",
+              "treasures": []
+            },
+            {
+              "name": "上海世博会博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.478,
+              "lat": 31.187,
+              "description": "全球唯一关于世博会的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "上海观复博物馆",
+              "level": 2,
+              "address": "上海上海市",
+              "lng": 121.504,
+              "lat": 31.233,
+              "description": "以古代艺术品为特色的私人博物馆。",
+              "treasures": []
             }
           ]
         }
@@ -324,6 +477,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "南京六朝博物馆",
+              "level": 2,
+              "address": "江苏南京市",
+              "lng": 118.784,
+              "lat": 32.047,
+              "description": "中国唯一展示六朝文物的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "南京民间抗日战争博物馆",
+              "level": 2,
+              "address": "江苏南京市",
+              "lng": 118.808,
+              "lat": 32.02,
+              "description": "民间建立的抗日战争主题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "南京云锦博物馆",
+              "level": 2,
+              "address": "江苏南京市",
+              "lng": 118.766,
+              "lat": 32.047,
+              "description": "展示南京云锦非遗文化的专题博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -409,6 +589,42 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "昆山博物馆",
+              "level": 2,
+              "address": "江苏苏州市",
+              "lng": 120.981,
+              "lat": 31.385,
+              "description": "以昆曲文化和昆山历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "太仓博物馆",
+              "level": 2,
+              "address": "江苏苏州市",
+              "lng": 121.13,
+              "lat": 31.458,
+              "description": "以郑和下西洋和太仓历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "苏州昆曲博物馆",
+              "level": 2,
+              "address": "江苏苏州市",
+              "lng": 120.633,
+              "lat": 31.318,
+              "description": "展示世界非物质文化遗产昆曲的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "张家港博物馆",
+              "level": 2,
+              "address": "江苏苏州市",
+              "lng": 120.554,
+              "lat": 31.87,
+              "description": "以河阳文化和张家港历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -486,6 +702,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "无锡中国民族工商业博物馆",
+              "level": 2,
+              "address": "江苏无锡市",
+              "lng": 120.301,
+              "lat": 31.573,
+              "description": "展示中国近代民族工商业发展史。",
+              "treasures": []
+            },
+            {
+              "name": "宜兴陶瓷博物馆",
+              "level": 2,
+              "address": "江苏无锡市",
+              "lng": 119.823,
+              "lat": 31.34,
+              "description": "以紫砂文化和宜兴陶瓷为特色。",
+              "treasures": []
             }
           ]
         },
@@ -523,6 +757,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "徐州汉画像石艺术馆",
+              "level": 2,
+              "address": "江苏徐州市",
+              "lng": 117.188,
+              "lat": 34.268,
+              "description": "收藏展示汉画像石的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "邳州博物馆",
+              "level": 2,
+              "address": "江苏徐州市",
+              "lng": 117.959,
+              "lat": 34.338,
+              "description": "以大墩子遗址文物为特色。",
+              "treasures": []
             }
           ]
         },
@@ -544,6 +796,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "溧阳市博物馆",
+              "level": 2,
+              "address": "江苏常州市",
+              "lng": 119.484,
+              "lat": 31.416,
+              "description": "展示溧阳地区历史的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "常州梳篦博物馆",
+              "level": 2,
+              "address": "江苏常州市",
+              "lng": 119.974,
+              "lat": 31.778,
+              "description": "展示常州梳篦非遗文化。",
+              "treasures": []
             }
           ]
         },
@@ -565,6 +835,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "中国南通珠算博物馆",
+              "level": 2,
+              "address": "江苏南通市",
+              "lng": 120.862,
+              "lat": 32.022,
+              "description": "世界上最大的珠算专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "如皋博物馆",
+              "level": 2,
+              "address": "江苏南通市",
+              "lng": 120.564,
+              "lat": 32.37,
+              "description": "以如皋长寿文化和历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "启东市博物馆",
+              "level": 2,
+              "address": "江苏南通市",
+              "lng": 121.657,
+              "lat": 31.808,
+              "description": "以沙地文化和启东历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -644,6 +941,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "盐城中国海盐博物馆",
+              "level": 2,
+              "address": "江苏盐城市",
+              "lng": 120.163,
+              "lat": 33.347,
+              "description": "中国唯一反映海盐历史文明的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "东台市博物馆",
+              "level": 2,
+              "address": "江苏盐城市",
+              "lng": 120.32,
+              "lat": 32.868,
+              "description": "以董永传说文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -665,6 +980,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "扬州博物馆",
+              "level": 2,
+              "address": "江苏扬州市",
+              "lng": 119.413,
+              "lat": 32.395,
+              "description": "以广陵文化为特色的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "高邮市博物馆",
+              "level": 2,
+              "address": "江苏扬州市",
+              "lng": 119.443,
+              "lat": 32.781,
+              "description": "以盂城驿文化和高邮历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -686,6 +1019,52 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "丹阳市博物馆",
+              "level": 2,
+              "address": "江苏镇江市",
+              "lng": 119.607,
+              "lat": 31.991,
+              "description": "以南朝陵墓石刻为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "泰州市",
+          "museums": [
+            {
+              "name": "泰州市博物馆",
+              "level": 2,
+              "address": "江苏泰州市",
+              "lng": 119.923,
+              "lat": 32.455,
+              "description": "展示泰州地区历史文化的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "兴化市博物馆",
+              "level": 2,
+              "address": "江苏泰州市",
+              "lng": 119.852,
+              "lat": 32.91,
+              "description": "以施耐庵文化和兴化历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "宿迁市",
+          "museums": [
+            {
+              "name": "宿迁市博物馆",
+              "level": 2,
+              "address": "江苏宿迁市",
+              "lng": 118.275,
+              "lat": 33.963,
+              "description": "以项王故里文化和宿迁历史为特色。",
+              "treasures": []
             }
           ]
         }
@@ -882,6 +1261,60 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "中国扇博物馆",
+              "level": 2,
+              "address": "浙江杭州市",
+              "lng": 120.135,
+              "lat": 30.316,
+              "description": "中国第一座以扇文化为主题的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国伞博物馆",
+              "level": 2,
+              "address": "浙江杭州市",
+              "lng": 120.132,
+              "lat": 30.318,
+              "description": "以中国伞文化为主题的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国刀剪剑博物馆",
+              "level": 2,
+              "address": "浙江杭州市",
+              "lng": 120.137,
+              "lat": 30.32,
+              "description": "以刀剪剑文化为主题的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国京杭大运河博物馆",
+              "level": 2,
+              "address": "浙江杭州市",
+              "lng": 120.138,
+              "lat": 30.322,
+              "description": "展示京杭大运河杭州段历史文化。",
+              "treasures": []
+            },
+            {
+              "name": "中国湿地博物馆",
+              "level": 2,
+              "address": "浙江杭州市",
+              "lng": 120.075,
+              "lat": 30.27,
+              "description": "以湿地为主题的专业博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "建德市博物馆",
+              "level": 2,
+              "address": "浙江杭州市",
+              "lng": 119.281,
+              "lat": 29.476,
+              "description": "以新安江文化和建德历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -989,6 +1422,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "宁海县博物馆",
+              "level": 2,
+              "address": "浙江宁波市",
+              "lng": 121.429,
+              "lat": 29.288,
+              "description": "展示宁海地区历史的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "宁波帮博物馆",
+              "level": 2,
+              "address": "浙江宁波市",
+              "lng": 121.502,
+              "lat": 29.872,
+              "description": "展示宁波帮商帮文化的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "余姚市河姆渡遗址博物馆",
+              "level": 2,
+              "address": "浙江宁波市",
+              "lng": 121.365,
+              "lat": 29.96,
+              "description": "展示河姆渡文化的遗址博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -1047,6 +1507,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "海宁市博物馆",
+              "level": 2,
+              "address": "浙江嘉兴市",
+              "lng": 120.679,
+              "lat": 30.51,
+              "description": "以海宁潮文化和皮影戏为特色。",
+              "treasures": []
+            },
+            {
+              "name": "桐乡市博物馆",
+              "level": 2,
+              "address": "浙江嘉兴市",
+              "lng": 120.565,
+              "lat": 30.63,
+              "description": "以茅盾故里和乌镇文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1068,6 +1546,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "诸暨市博物馆",
+              "level": 2,
+              "address": "浙江绍兴市",
+              "lng": 120.246,
+              "lat": 29.714,
+              "description": "以西施文化和诸暨历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "上虞区博物馆",
+              "level": 2,
+              "address": "浙江绍兴市",
+              "lng": 120.868,
+              "lat": 30.033,
+              "description": "以越窑青瓷和上虞历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1110,6 +1606,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "龙泉市博物馆",
+              "level": 2,
+              "address": "浙江丽水市",
+              "lng": 119.141,
+              "lat": 28.074,
+              "description": "以龙泉青瓷和宝剑文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "松阳博物馆",
+              "level": 2,
+              "address": "浙江丽水市",
+              "lng": 119.482,
+              "lat": 28.449,
+              "description": "以古村落文化和松阳历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1131,6 +1645,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "磐安玉山古茶场博物馆",
+              "level": 2,
+              "address": "浙江金华市",
+              "lng": 120.45,
+              "lat": 29.054,
+              "description": "展示玉山古茶场非遗文化。",
+              "treasures": []
             }
           ]
         },
@@ -1152,6 +1675,61 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "台州市博物馆",
+              "level": 2,
+              "address": "浙江台州市",
+              "lng": 121.42,
+              "lat": 28.656,
+              "description": "以和合文化为特色的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "临海市博物馆",
+              "level": 2,
+              "address": "浙江台州市",
+              "lng": 121.145,
+              "lat": 28.858,
+              "description": "以台州府城文化和临海历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "湖州市",
+          "museums": [
+            {
+              "name": "湖州博物馆",
+              "level": 2,
+              "address": "浙江湖州市",
+              "lng": 120.086,
+              "lat": 30.894,
+              "description": "以钱山漾遗址出土文物为特色。",
+              "treasures": []
+            },
+            {
+              "name": "德清博物馆",
+              "level": 2,
+              "address": "浙江湖州市",
+              "lng": 119.977,
+              "lat": 30.543,
+              "description": "以良渚文化和德清瓷器为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "衢州市",
+          "museums": [
+            {
+              "name": "衢州市博物馆",
+              "level": 2,
+              "address": "浙江衢州市",
+              "lng": 118.874,
+              "lat": 28.941,
+              "description": "展示衢州地区历史和南孔文化的博物馆。",
+              "treasures": []
             }
           ]
         }
@@ -1245,6 +1823,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "芜湖市博物馆",
+              "level": 2,
+              "address": "安徽芜湖市",
+              "lng": 118.376,
+              "lat": 31.326,
+              "description": "展示芜湖地区历史和铁画艺术的博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -1266,6 +1853,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "歙县博物馆",
+              "level": 2,
+              "address": "安徽黄山市",
+              "lng": 118.415,
+              "lat": 29.861,
+              "description": "以徽州文化和歙砚为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1287,6 +1883,223 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "马鞍山市博物馆",
+              "level": 2,
+              "address": "安徽马鞍山市",
+              "lng": 118.507,
+              "lat": 31.689,
+              "description": "以六朝文物和马鞍山历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "含山县博物馆",
+              "level": 2,
+              "address": "安徽马鞍山市",
+              "lng": 118.105,
+              "lat": 31.729,
+              "description": "以凌家滩遗址文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "蚌埠市",
+          "museums": [
+            {
+              "name": "蚌埠市博物馆",
+              "level": 2,
+              "address": "安徽蚌埠市",
+              "lng": 117.389,
+              "lat": 32.917,
+              "description": "以双墩文化和淮河流域文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "亳州市",
+          "museums": [
+            {
+              "name": "亳州市博物馆",
+              "level": 2,
+              "address": "安徽亳州市",
+              "lng": 115.779,
+              "lat": 33.844,
+              "description": "以曹操故里文物和中药文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "涡阳老子博物馆",
+              "level": 2,
+              "address": "安徽亳州市",
+              "lng": 116.215,
+              "lat": 33.492,
+              "description": "以老子文化和道教历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "阜阳市",
+          "museums": [
+            {
+              "name": "阜阳市博物馆",
+              "level": 2,
+              "address": "安徽阜阳市",
+              "lng": 115.814,
+              "lat": 32.89,
+              "description": "展示阜阳地区历史文化的综合性博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "安庆市",
+          "museums": [
+            {
+              "name": "安庆博物馆",
+              "level": 2,
+              "address": "安徽安庆市",
+              "lng": 117.043,
+              "lat": 30.508,
+              "description": "以桐城派文化和安庆历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "滁州市",
+          "museums": [
+            {
+              "name": "滁州市博物馆",
+              "level": 2,
+              "address": "安徽滁州市",
+              "lng": 118.316,
+              "lat": 32.303,
+              "description": "展示滁州地区历史和欧阳修文化。",
+              "treasures": []
+            },
+            {
+              "name": "凤阳县博物馆",
+              "level": 2,
+              "address": "安徽滁州市",
+              "lng": 117.531,
+              "lat": 32.874,
+              "description": "以明皇陵和凤阳花鼓文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "六安市",
+          "museums": [
+            {
+              "name": "六安市博物馆",
+              "level": 2,
+              "address": "安徽六安市",
+              "lng": 116.507,
+              "lat": 31.735,
+              "description": "以六安瓜片文化和皖西历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "寿县博物馆",
+              "level": 2,
+              "address": "安徽六安市",
+              "lng": 116.787,
+              "lat": 32.573,
+              "description": "以楚文化和寿县历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "铜陵市",
+          "museums": [
+            {
+              "name": "铜陵市博物馆",
+              "level": 2,
+              "address": "安徽铜陵市",
+              "lng": 117.812,
+              "lat": 30.945,
+              "description": "以铜文化和铜陵历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "宣城市",
+          "museums": [
+            {
+              "name": "宣城市博物馆",
+              "level": 2,
+              "address": "安徽宣城市",
+              "lng": 118.758,
+              "lat": 30.945,
+              "description": "以宣纸文化和宣城历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "中国宣纸博物馆",
+              "level": 2,
+              "address": "安徽宣城市",
+              "lng": 118.43,
+              "lat": 30.62,
+              "description": "以宣纸非遗文化为主题的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "绩溪县博物馆",
+              "level": 2,
+              "address": "安徽宣城市",
+              "lng": 118.597,
+              "lat": 30.067,
+              "description": "以徽商文化和绩溪历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "池州市",
+          "museums": [
+            {
+              "name": "池州市博物馆",
+              "level": 2,
+              "address": "安徽池州市",
+              "lng": 117.491,
+              "lat": 30.664,
+              "description": "以杏花村文化和池州历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "淮南市",
+          "museums": [
+            {
+              "name": "淮南市博物馆",
+              "level": 2,
+              "address": "安徽淮南市",
+              "lng": 117.018,
+              "lat": 32.629,
+              "description": "以楚文化和淮南子文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "淮北市",
+          "museums": [
+            {
+              "name": "淮北市博物馆",
+              "level": 2,
+              "address": "安徽淮北市",
+              "lng": 116.794,
+              "lat": 33.955,
+              "description": "以相城文化和淮北历史为特色。",
+              "treasures": []
             }
           ]
         }
@@ -1375,6 +2188,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "福建省革命历史纪念馆",
+              "level": 2,
+              "address": "福建福州市",
+              "lng": 119.305,
+              "lat": 26.076,
+              "description": "展示福建革命历史的综合纪念馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国船政文化博物馆",
+              "level": 2,
+              "address": "福建福州市",
+              "lng": 119.418,
+              "lat": 26.009,
+              "description": "展示马尾船政文化的专题博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -1396,6 +2227,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "龙岩市博物馆",
+              "level": 2,
+              "address": "福建龙岩市",
+              "lng": 117.03,
+              "lat": 25.075,
+              "description": "以客家文化和闽西革命史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "长汀县博物馆",
+              "level": 2,
+              "address": "福建龙岩市",
+              "lng": 116.357,
+              "lat": 25.842,
+              "description": "以客家首府文化和红色文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1433,6 +2282,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "泉州博物馆",
+              "level": 2,
+              "address": "福建泉州市",
+              "lng": 118.586,
+              "lat": 24.905,
+              "description": "展示海上丝绸之路起点泉州的历史文化。",
+              "treasures": []
+            },
+            {
+              "name": "德化县陶瓷博物馆",
+              "level": 2,
+              "address": "福建泉州市",
+              "lng": 118.242,
+              "lat": 25.492,
+              "description": "以德化白瓷文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1484,6 +2351,112 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "厦门市博物馆",
+              "level": 2,
+              "address": "福建厦门市",
+              "lng": 118.089,
+              "lat": 24.48,
+              "description": "以闽台文化和厦门历史为特色的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "漳州市",
+          "museums": [
+            {
+              "name": "漳州市博物馆",
+              "level": 2,
+              "address": "福建漳州市",
+              "lng": 117.647,
+              "lat": 24.513,
+              "description": "展示漳州地区历史和闽南文化的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "莆田市",
+          "museums": [
+            {
+              "name": "莆田市博物馆",
+              "level": 2,
+              "address": "福建莆田市",
+              "lng": 119.007,
+              "lat": 25.431,
+              "description": "以妈祖文化和莆仙文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "仙游县博物馆",
+              "level": 2,
+              "address": "福建莆田市",
+              "lng": 118.692,
+              "lat": 25.362,
+              "description": "以仙游红木文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "三明市",
+          "museums": [
+            {
+              "name": "三明市博物馆",
+              "level": 2,
+              "address": "福建三明市",
+              "lng": 117.638,
+              "lat": 26.263,
+              "description": "展示闽西北客家文化的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "宁德市",
+          "museums": [
+            {
+              "name": "宁德市博物馆",
+              "level": 2,
+              "address": "福建宁德市",
+              "lng": 119.527,
+              "lat": 26.665,
+              "description": "展示闽东地区历史文化和畲族文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "南平市",
+          "museums": [
+            {
+              "name": "南平市博物馆",
+              "level": 2,
+              "address": "福建南平市",
+              "lng": 118.177,
+              "lat": 26.641,
+              "description": "以建盏文化和闽北历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "建阳区博物馆",
+              "level": 2,
+              "address": "福建南平市",
+              "lng": 118.121,
+              "lat": 27.332,
+              "description": "以建盏文化和建阳历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "武夷山茶博物馆",
+              "level": 2,
+              "address": "福建南平市",
+              "lng": 117.933,
+              "lat": 27.755,
+              "description": "以武夷岩茶文化为特色。",
+              "treasures": []
             }
           ]
         }
@@ -1616,6 +2589,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "南昌市博物馆",
+              "level": 2,
+              "address": "江西南昌市",
+              "lng": 115.858,
+              "lat": 28.683,
+              "description": "以豫章文化和南昌历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1679,6 +2661,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "萍乡市博物馆",
+              "level": 2,
+              "address": "江西萍乡市",
+              "lng": 113.852,
+              "lat": 27.623,
+              "description": "以安源工人运动文物为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1700,6 +2691,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "德安县博物馆",
+              "level": 2,
+              "address": "江西九江市",
+              "lng": 115.756,
+              "lat": 29.312,
+              "description": "以义门陈文化和德安历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1763,6 +2763,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "景德镇中国陶瓷博物馆",
+              "level": 2,
+              "address": "江西景德镇市",
+              "lng": 117.179,
+              "lat": 29.269,
+              "description": "中国第一家陶瓷专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "乐平市博物馆",
+              "level": 2,
+              "address": "江西景德镇市",
+              "lng": 117.128,
+              "lat": 28.963,
+              "description": "以古戏台文化和乐平历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1784,6 +2802,117 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "宜春市",
+          "museums": [
+            {
+              "name": "宜春市博物馆",
+              "level": 2,
+              "address": "江西宜春市",
+              "lng": 114.391,
+              "lat": 27.8,
+              "description": "展示宜春地区历史文化的综合性博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "抚州市",
+          "museums": [
+            {
+              "name": "抚州市博物馆",
+              "level": 2,
+              "address": "江西抚州市",
+              "lng": 116.358,
+              "lat": 27.948,
+              "description": "以临川文化和王安石故里文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "新余市",
+          "museums": [
+            {
+              "name": "新余市博物馆",
+              "level": 2,
+              "address": "江西新余市",
+              "lng": 114.93,
+              "lat": 27.817,
+              "description": "展示新余地区历史的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "上饶市",
+          "museums": [
+            {
+              "name": "上饶市博物馆",
+              "level": 2,
+              "address": "江西上饶市",
+              "lng": 117.971,
+              "lat": 28.454,
+              "description": "展示上饶地区历史的综合博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "铅山博物馆",
+              "level": 2,
+              "address": "江西上饶市",
+              "lng": 117.709,
+              "lat": 28.315,
+              "description": "以铅山连四纸文化和河口古镇为特色。",
+              "treasures": []
+            },
+            {
+              "name": "婺源县博物馆",
+              "level": 2,
+              "address": "江西上饶市",
+              "lng": 117.862,
+              "lat": 29.248,
+              "description": "以徽州文化和婺源历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "鹰潭市",
+          "museums": [
+            {
+              "name": "鹰潭市博物馆",
+              "level": 2,
+              "address": "江西鹰潭市",
+              "lng": 117.069,
+              "lat": 28.26,
+              "description": "以龙虎山道教文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "吉安市",
+          "museums": [
+            {
+              "name": "吉安市博物馆",
+              "level": 2,
+              "address": "江西吉安市",
+              "lng": 114.993,
+              "lat": 27.113,
+              "description": "以庐陵文化和吉安历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "遂川县博物馆",
+              "level": 2,
+              "address": "江西吉安市",
+              "lng": 114.52,
+              "lat": 26.313,
+              "description": "以井冈山区革命文化为特色。",
+              "treasures": []
             }
           ]
         }
@@ -1884,6 +3013,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "章丘区博物馆",
+              "level": 2,
+              "address": "山东济南市",
+              "lng": 117.526,
+              "lat": 36.681,
+              "description": "以城子崖遗址和龙山文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -2011,6 +3149,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "寿光市博物馆",
+              "level": 2,
+              "address": "山东潍坊市",
+              "lng": 118.737,
+              "lat": 36.855,
+              "description": "以盐业文化和寿光历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -2032,6 +3179,42 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "烟台市博物馆",
+              "level": 2,
+              "address": "山东烟台市",
+              "lng": 121.391,
+              "lat": 37.539,
+              "description": "以胶东文化和近代开埠文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "烟台莱州市博物馆",
+              "level": 2,
+              "address": "山东烟台市",
+              "lng": 119.942,
+              "lat": 37.177,
+              "description": "以莱州历史和黄金文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "蓬莱市博物馆",
+              "level": 2,
+              "address": "山东烟台市",
+              "lng": 120.758,
+              "lat": 37.81,
+              "description": "以蓬莱仙境文化和海防文物为特色。",
+              "treasures": []
+            },
+            {
+              "name": "龙口市博物馆",
+              "level": 2,
+              "address": "山东烟台市",
+              "lng": 120.478,
+              "lat": 37.646,
+              "description": "以徐福文化和龙口历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -2106,6 +3289,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "济宁市博物馆",
+              "level": 2,
+              "address": "山东济宁市",
+              "lng": 116.587,
+              "lat": 35.415,
+              "description": "以儒家文化和运河文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "曲阜孔子博物馆",
+              "level": 2,
+              "address": "山东济宁市",
+              "lng": 116.986,
+              "lat": 35.596,
+              "description": "以孔子文化和儒学文物为特色。",
+              "treasures": []
+            },
+            {
+              "name": "邹城市博物馆",
+              "level": 2,
+              "address": "山东济宁市",
+              "lng": 116.966,
+              "lat": 35.405,
+              "description": "以孟子文化和邹鲁文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -2143,6 +3353,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "沂南北寨汉墓博物馆",
+              "level": 2,
+              "address": "山东临沂市",
+              "lng": 118.465,
+              "lat": 35.552,
+              "description": "展示汉代画像石墓的遗址博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "费县博物馆",
+              "level": 2,
+              "address": "山东临沂市",
+              "lng": 117.971,
+              "lat": 35.266,
+              "description": "以颜真卿故里文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -2164,6 +3392,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "威海市博物馆",
+              "level": 2,
+              "address": "山东威海市",
+              "lng": 122.116,
+              "lat": 37.51,
+              "description": "展示威海地区历史和甲午战争文物。",
+              "treasures": []
             }
           ]
         },
@@ -2206,6 +3443,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "泰安市博物馆",
+              "level": 2,
+              "address": "山东泰安市",
+              "lng": 117.13,
+              "lat": 36.195,
+              "description": "以泰山文化为特色的综合性博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -2227,6 +3473,71 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "东营市",
+          "museums": [
+            {
+              "name": "东营市历史博物馆",
+              "level": 2,
+              "address": "山东东营市",
+              "lng": 118.674,
+              "lat": 37.434,
+              "description": "展示黄河三角洲历史文化的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "日照市",
+          "museums": [
+            {
+              "name": "日照市博物馆",
+              "level": 2,
+              "address": "山东日照市",
+              "lng": 119.461,
+              "lat": 35.416,
+              "description": "以龙山文化和日照地区文物为特色。",
+              "treasures": []
+            },
+            {
+              "name": "莒县博物馆",
+              "level": 2,
+              "address": "山东日照市",
+              "lng": 118.836,
+              "lat": 35.579,
+              "description": "以莒文化和大汶口文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "德州市",
+          "museums": [
+            {
+              "name": "德州市博物馆",
+              "level": 2,
+              "address": "山东德州市",
+              "lng": 116.307,
+              "lat": 37.454,
+              "description": "展示德州地区历史文化的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "菏泽市",
+          "museums": [
+            {
+              "name": "菏泽市博物馆",
+              "level": 2,
+              "address": "山东菏泽市",
+              "lng": 115.481,
+              "lat": 35.233,
+              "description": "以牡丹文化和菏泽历史为特色。",
+              "treasures": []
             }
           ]
         }

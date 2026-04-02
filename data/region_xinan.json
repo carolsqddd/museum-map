@@ -90,6 +90,114 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "重庆工业博物馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 106.521,
+              "lat": 29.497,
+              "description": "展示重庆工业发展历程的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "重庆建川博物馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 106.486,
+              "lat": 29.439,
+              "description": "以抗战文物为主题的博物馆群。",
+              "treasures": []
+            },
+            {
+              "name": "大足石刻博物馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 105.721,
+              "lat": 29.707,
+              "description": "依托大足石刻世界文化遗产而建。",
+              "treasures": []
+            },
+            {
+              "name": "重庆市规划展览馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 106.551,
+              "lat": 29.563,
+              "description": "展示重庆城市规划和发展的专题馆。",
+              "treasures": []
+            },
+            {
+              "name": "重庆科技馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 106.54,
+              "lat": 29.553,
+              "description": "重庆市大型现代化科普教育场馆。",
+              "treasures": []
+            },
+            {
+              "name": "白鹤梁水下博物馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 107.393,
+              "lat": 29.715,
+              "description": "世界首座水下博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "重庆大韩民国临时政府旧址",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 106.583,
+              "lat": 29.556,
+              "description": "展示韩国临时政府在重庆历史。",
+              "treasures": []
+            },
+            {
+              "name": "三峡博物馆涪陵分馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 107.4,
+              "lat": 29.703,
+              "description": "展示三峡涪陵段历史文化。",
+              "treasures": []
+            },
+            {
+              "name": "铜梁博物馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 106.054,
+              "lat": 29.844,
+              "description": "以铜梁龙舞文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "奉节白帝城博物馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 109.463,
+              "lat": 31.05,
+              "description": "以三峡文化和白帝城历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "涪陵白鹤梁博物馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 107.412,
+              "lat": 29.71,
+              "description": "以白鹤梁水下题刻为特色。",
+              "treasures": []
+            },
+            {
+              "name": "合川区博物馆",
+              "level": 2,
+              "address": "重庆重庆市",
+              "lng": 106.276,
+              "lat": 29.972,
+              "description": "以钓鱼城抗蒙文化为特色。",
+              "treasures": []
             }
           ]
         }
@@ -246,6 +354,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "彭州市博物馆",
+              "level": 2,
+              "address": "四川成都市",
+              "lng": 103.958,
+              "lat": 30.99,
+              "description": "以彭州金银器和彭州历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "邛崃市博物馆",
+              "level": 2,
+              "address": "四川成都市",
+              "lng": 103.461,
+              "lat": 30.41,
+              "description": "以邛窑陶瓷和邛崃历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "都江堰市博物馆",
+              "level": 2,
+              "address": "四川成都市",
+              "lng": 103.62,
+              "lat": 30.989,
+              "description": "以都江堰水利文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -315,6 +450,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "广汉三星堆博物馆",
+              "level": 2,
+              "address": "四川广汉市",
+              "lng": 104.199,
+              "lat": 31.0,
+              "description": "虽为一级馆但周边附属展馆为二级。",
+              "treasures": []
             }
           ]
         },
@@ -415,6 +559,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "广安邓小平故居陈列馆",
+              "level": 2,
+              "address": "四川广安市",
+              "lng": 106.633,
+              "lat": 30.456,
+              "description": "全面展示邓小平生平的专题陈列馆。",
+              "treasures": []
             }
           ]
         },
@@ -457,6 +610,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "眉山市博物馆",
+              "level": 2,
+              "address": "四川眉山市",
+              "lng": 103.831,
+              "lat": 30.049,
+              "description": "以三苏文化和眉山历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -478,6 +640,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "宜宾市博物馆",
+              "level": 2,
+              "address": "四川宜宾市",
+              "lng": 104.643,
+              "lat": 28.752,
+              "description": "以僰文化和酒文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -520,6 +691,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "甘孜州博物馆",
+              "level": 2,
+              "address": "四川甘孜州",
+              "lng": 101.962,
+              "lat": 30.049,
+              "description": "展示康巴藏族文化的博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -541,6 +721,228 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "凉山州博物馆",
+              "level": 2,
+              "address": "四川凉山州",
+              "lng": 102.258,
+              "lat": 27.882,
+              "description": "以彝族文化为特色的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "绵阳市",
+          "museums": [
+            {
+              "name": "绵阳市博物馆",
+              "level": 2,
+              "address": "四川绵阳市",
+              "lng": 104.741,
+              "lat": 31.464,
+              "description": "以绵阳地区历史和摇钱树为特色。",
+              "treasures": []
+            },
+            {
+              "name": "北川羌族民俗博物馆",
+              "level": 2,
+              "address": "四川绵阳市",
+              "lng": 104.464,
+              "lat": 31.617,
+              "description": "以羌族文化和北川历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "三台县博物馆",
+              "level": 2,
+              "address": "四川绵阳市",
+              "lng": 105.094,
+              "lat": 31.095,
+              "description": "以郪江崖墓和三台历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "乐山市",
+          "museums": [
+            {
+              "name": "乐山市博物馆",
+              "level": 2,
+              "address": "四川乐山市",
+              "lng": 103.765,
+              "lat": 29.552,
+              "description": "以乐山大佛文化和嘉州历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "德阳市",
+          "museums": [
+            {
+              "name": "德阳市博物馆",
+              "level": 2,
+              "address": "四川德阳市",
+              "lng": 104.398,
+              "lat": 31.128,
+              "description": "展示德阳地区历史和三星堆周边文化。",
+              "treasures": []
+            },
+            {
+              "name": "什邡市博物馆",
+              "level": 2,
+              "address": "四川德阳市",
+              "lng": 104.167,
+              "lat": 31.127,
+              "description": "以三星堆外围遗址文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "南充市",
+          "museums": [
+            {
+              "name": "南充市博物馆",
+              "level": 2,
+              "address": "四川南充市",
+              "lng": 106.11,
+              "lat": 30.837,
+              "description": "以三国文化和丝绸文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "阆中市博物馆",
+              "level": 2,
+              "address": "四川南充市",
+              "lng": 105.967,
+              "lat": 31.558,
+              "description": "以阆中古城和春节文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "攀枝花市",
+          "museums": [
+            {
+              "name": "攀枝花中国三线建设博物馆",
+              "level": 2,
+              "address": "四川攀枝花市",
+              "lng": 101.716,
+              "lat": 26.58,
+              "description": "全国首家三线建设主题博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "遂宁市",
+          "museums": [
+            {
+              "name": "遂宁市博物馆",
+              "level": 2,
+              "address": "四川遂宁市",
+              "lng": 105.593,
+              "lat": 30.533,
+              "description": "以宋瓷和遂宁历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "内江市",
+          "museums": [
+            {
+              "name": "内江市博物馆",
+              "level": 2,
+              "address": "四川内江市",
+              "lng": 105.066,
+              "lat": 29.58,
+              "description": "以张大千艺术和内江历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "广元市",
+          "museums": [
+            {
+              "name": "广元市博物馆",
+              "level": 2,
+              "address": "四川广元市",
+              "lng": 105.829,
+              "lat": 32.433,
+              "description": "以蜀道文化和武则天文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "雅安市",
+          "museums": [
+            {
+              "name": "雅安市博物馆",
+              "level": 2,
+              "address": "四川雅安市",
+              "lng": 103.001,
+              "lat": 29.987,
+              "description": "以茶马古道文化和雅安历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "巴中市",
+          "museums": [
+            {
+              "name": "巴中市博物馆",
+              "level": 2,
+              "address": "四川巴中市",
+              "lng": 106.745,
+              "lat": 31.867,
+              "description": "以红四方面军革命史和巴中历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "资阳市",
+          "museums": [
+            {
+              "name": "资阳市博物馆",
+              "level": 2,
+              "address": "四川资阳市",
+              "lng": 104.641,
+              "lat": 30.122,
+              "description": "以资阳人遗址为特色。",
+              "treasures": []
+            },
+            {
+              "name": "安岳石刻博物馆",
+              "level": 2,
+              "address": "四川资阳市",
+              "lng": 105.336,
+              "lat": 30.1,
+              "description": "以安岳石刻艺术为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "马尔康市",
+          "museums": [
+            {
+              "name": "阿坝州博物馆",
+              "level": 2,
+              "address": "四川马尔康市",
+              "lng": 102.221,
+              "lat": 31.905,
+              "description": "展示嘉绒藏族文化的博物馆。",
+              "treasures": []
             }
           ]
         }
@@ -603,6 +1005,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "贵州省民族博物馆",
+              "level": 2,
+              "address": "贵州贵阳市",
+              "lng": 106.721,
+              "lat": 26.567,
+              "description": "展示贵州多民族文化的专题博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -624,6 +1035,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "遵义市博物馆",
+              "level": 2,
+              "address": "贵州遵义市",
+              "lng": 106.937,
+              "lat": 27.725,
+              "description": "以遵义会议和长征文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "习水县博物馆",
+              "level": 2,
+              "address": "贵州遵义市",
+              "lng": 106.197,
+              "lat": 28.33,
+              "description": "以四渡赤水红色文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "赤水市博物馆",
+              "level": 2,
+              "address": "贵州遵义市",
+              "lng": 105.697,
+              "lat": 28.59,
+              "description": "以丹霞地貌和赤水河文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -645,6 +1083,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "镇远博物馆",
+              "level": 2,
+              "address": "贵州黔东南州",
+              "lng": 108.429,
+              "lat": 27.049,
+              "description": "以镇远古城和苗疆文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -666,6 +1113,117 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "铜仁市博物馆",
+              "level": 2,
+              "address": "贵州铜仁市",
+              "lng": 109.189,
+              "lat": 27.718,
+              "description": "展示铜仁地区历史和梵净山文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "凯里市",
+          "museums": [
+            {
+              "name": "黔东南州民族博物馆",
+              "level": 2,
+              "address": "贵州凯里市",
+              "lng": 107.981,
+              "lat": 26.567,
+              "description": "以苗族侗族文化为特色的民族博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "安顺市",
+          "museums": [
+            {
+              "name": "安顺市博物馆",
+              "level": 2,
+              "address": "贵州安顺市",
+              "lng": 105.947,
+              "lat": 26.253,
+              "description": "以屯堡文化和安顺历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "毕节市",
+          "museums": [
+            {
+              "name": "毕节市博物馆",
+              "level": 2,
+              "address": "贵州毕节市",
+              "lng": 105.285,
+              "lat": 27.302,
+              "description": "展示毕节地区历史和彝族文化。",
+              "treasures": []
+            },
+            {
+              "name": "织金县博物馆",
+              "level": 2,
+              "address": "贵州毕节市",
+              "lng": 105.77,
+              "lat": 26.663,
+              "description": "以织金洞和织金历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "六盘水市",
+          "museums": [
+            {
+              "name": "六盘水市博物馆",
+              "level": 2,
+              "address": "贵州六盘水市",
+              "lng": 104.83,
+              "lat": 26.593,
+              "description": "展示六盘水地区历史和三线建设文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "都匀市",
+          "museums": [
+            {
+              "name": "黔南州博物馆",
+              "level": 2,
+              "address": "贵州都匀市",
+              "lng": 107.519,
+              "lat": 26.259,
+              "description": "展示黔南地区少数民族文化的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "荔波县博物馆",
+              "level": 2,
+              "address": "贵州都匀市",
+              "lng": 107.886,
+              "lat": 25.412,
+              "description": "以喀斯特文化和荔波历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "兴义市",
+          "museums": [
+            {
+              "name": "黔西南州博物馆",
+              "level": 2,
+              "address": "贵州兴义市",
+              "lng": 104.897,
+              "lat": 25.092,
+              "description": "展示黔西南布依族苗族文化。",
+              "treasures": []
             }
           ]
         }
@@ -728,6 +1286,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "昆明市博物馆",
+              "level": 2,
+              "address": "云南昆明市",
+              "lng": 102.715,
+              "lat": 25.049,
+              "description": "以滇文化和昆明历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "石林彝族自治县博物馆",
+              "level": 2,
+              "address": "云南昆明市",
+              "lng": 103.271,
+              "lat": 24.771,
+              "description": "以石林地质和彝族撒尼文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -749,6 +1325,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "大理州博物馆",
+              "level": 2,
+              "address": "云南大理市",
+              "lng": 100.174,
+              "lat": 25.593,
+              "description": "以南诏大理国文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "巍山县博物馆",
+              "level": 2,
+              "address": "云南大理市",
+              "lng": 100.307,
+              "lat": 25.227,
+              "description": "以南诏发源地和巍山古城为特色。",
+              "treasures": []
             }
           ]
         },
@@ -791,6 +1385,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "楚雄州博物馆",
+              "level": 2,
+              "address": "云南楚雄市",
+              "lng": 101.546,
+              "lat": 25.033,
+              "description": "以恐龙化石和彝族文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "禄丰恐龙博物馆",
+              "level": 2,
+              "address": "云南楚雄市",
+              "lng": 102.079,
+              "lat": 25.15,
+              "description": "以禄丰恐龙化石为特色。",
+              "treasures": []
+            },
+            {
+              "name": "元谋人博物馆",
+              "level": 2,
+              "address": "云南楚雄市",
+              "lng": 101.873,
+              "lat": 25.704,
+              "description": "以元谋人遗址和古猿化石为特色。",
+              "treasures": []
             }
           ]
         },
@@ -812,6 +1433,187 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "建水县博物馆",
+              "level": 2,
+              "address": "云南红河州",
+              "lng": 102.826,
+              "lat": 23.635,
+              "description": "以建水紫陶和古城文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "蒙自市",
+          "museums": [
+            {
+              "name": "红河州博物馆",
+              "level": 2,
+              "address": "云南蒙自市",
+              "lng": 103.385,
+              "lat": 23.396,
+              "description": "以哈尼梯田文化和红河历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "曲靖市",
+          "museums": [
+            {
+              "name": "曲靖市博物馆",
+              "level": 2,
+              "address": "云南曲靖市",
+              "lng": 103.796,
+              "lat": 25.49,
+              "description": "以爨文化和曲靖历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "景洪市",
+          "museums": [
+            {
+              "name": "西双版纳州民族博物馆",
+              "level": 2,
+              "address": "云南景洪市",
+              "lng": 100.797,
+              "lat": 22.008,
+              "description": "展示傣族等少数民族文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "玉溪市",
+          "museums": [
+            {
+              "name": "玉溪市博物馆",
+              "level": 2,
+              "address": "云南玉溪市",
+              "lng": 102.543,
+              "lat": 24.352,
+              "description": "以聂耳音乐文化和玉溪历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "澄江化石地自然博物馆",
+              "level": 2,
+              "address": "云南玉溪市",
+              "lng": 102.906,
+              "lat": 24.67,
+              "description": "展示寒武纪生命大爆发化石。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "保山市",
+          "museums": [
+            {
+              "name": "保山市博物馆",
+              "level": 2,
+              "address": "云南保山市",
+              "lng": 99.167,
+              "lat": 25.112,
+              "description": "以哀牢文化和南方丝绸之路为特色。",
+              "treasures": []
+            },
+            {
+              "name": "腾冲市博物馆",
+              "level": 2,
+              "address": "云南保山市",
+              "lng": 98.49,
+              "lat": 25.02,
+              "description": "以滇西抗战和翡翠文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "文山市",
+          "museums": [
+            {
+              "name": "文山州博物馆",
+              "level": 2,
+              "address": "云南文山市",
+              "lng": 104.244,
+              "lat": 23.369,
+              "description": "展示文山地区壮族苗族文化的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "普洱市",
+          "museums": [
+            {
+              "name": "普洱市博物馆",
+              "level": 2,
+              "address": "云南普洱市",
+              "lng": 100.972,
+              "lat": 22.777,
+              "description": "以普洱茶文化为特色的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "临沧市",
+          "museums": [
+            {
+              "name": "临沧市博物馆",
+              "level": 2,
+              "address": "云南临沧市",
+              "lng": 100.089,
+              "lat": 23.877,
+              "description": "展示临沧地区佤族文化和茶文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "芒市",
+          "museums": [
+            {
+              "name": "德宏州博物馆",
+              "level": 2,
+              "address": "云南芒市",
+              "lng": 98.588,
+              "lat": 24.437,
+              "description": "展示德宏傣族景颇族文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "香格里拉市",
+          "museums": [
+            {
+              "name": "迪庆州博物馆",
+              "level": 2,
+              "address": "云南香格里拉市",
+              "lng": 99.706,
+              "lat": 27.83,
+              "description": "展示藏族文化和香格里拉历史。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "泸水市",
+          "museums": [
+            {
+              "name": "怒江州博物馆",
+              "level": 2,
+              "address": "云南泸水市",
+              "lng": 98.857,
+              "lat": 25.822,
+              "description": "展示怒江地区傈僳族文化。",
+              "treasures": []
             }
           ]
         }
@@ -907,6 +1709,48 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "山南市",
+          "museums": [
+            {
+              "name": "山南市博物馆",
+              "level": 2,
+              "address": "西藏山南市",
+              "lng": 91.766,
+              "lat": 29.236,
+              "description": "以藏文化发源地历史和雅砻文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "昌都市",
+          "museums": [
+            {
+              "name": "昌都市博物馆",
+              "level": 2,
+              "address": "西藏昌都市",
+              "lng": 97.172,
+              "lat": 31.137,
+              "description": "以卡若遗址文物和藏东文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "林芝市",
+          "museums": [
+            {
+              "name": "林芝市博物馆",
+              "level": 2,
+              "address": "西藏林芝市",
+              "lng": 94.362,
+              "lat": 29.649,
+              "description": "展示工布文化和林芝地区历史。",
+              "treasures": []
             }
           ]
         }

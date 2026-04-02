@@ -1106,6 +1106,249 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "北京天文馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.347,
+              "lat": 39.936,
+              "description": "中国第一座天文馆，建于1957年，集天文科普教育、天文观测于一体。",
+              "treasures": []
+            },
+            {
+              "name": "北京石刻艺术博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.314,
+              "lat": 39.962,
+              "description": "以收藏、研究、展示北京地区石刻文物为主的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中华航天博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.352,
+              "lat": 39.791,
+              "description": "展示中国航天事业发展历程和成就的专业博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国消防博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.389,
+              "lat": 39.97,
+              "description": "全面展示中国消防历史和消防安全知识的专业博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "孔庙和国子监博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.412,
+              "lat": 39.946,
+              "description": "依托北京孔庙和国子监建筑群而建，元明清三代最高学府所在地。",
+              "treasures": []
+            },
+            {
+              "name": "北京古代建筑博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.393,
+              "lat": 39.87,
+              "description": "中国第一座以古代建筑为主题的专题博物馆，设于先农坛内。",
+              "treasures": []
+            },
+            {
+              "name": "北京民俗博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.443,
+              "lat": 39.928,
+              "description": "坐落于东岳庙内，以北京民俗文化为主题。",
+              "treasures": []
+            },
+            {
+              "name": "北京古代钱币博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.381,
+              "lat": 39.95,
+              "description": "位于德胜门箭楼，收藏展示中国历代钱币。",
+              "treasures": []
+            },
+            {
+              "name": "中国长城博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.567,
+              "lat": 40.356,
+              "description": "全面展示长城历史文化的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国蜜蜂博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.172,
+              "lat": 39.998,
+              "description": "中国第一家以蜜蜂为主题的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "北京警察博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.403,
+              "lat": 39.914,
+              "description": "展示北京公安工作发展历程的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国紫檀博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.498,
+              "lat": 39.908,
+              "description": "中国首家以紫檀艺术为主题的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "北京艺术博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.293,
+              "lat": 39.96,
+              "description": "坐落于万寿寺内的综合性艺术博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国邮政邮票博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.422,
+              "lat": 39.919,
+              "description": "展示中国邮政和邮票文化的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "北京大钟寺古钟博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.349,
+              "lat": 39.974,
+              "description": "收藏展示古钟文物的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "北京西山大觉寺博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.142,
+              "lat": 40.046,
+              "description": "以大觉寺建筑和佛教文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "中国法院博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.391,
+              "lat": 39.935,
+              "description": "展示中国司法发展历程的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国钱币博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.38,
+              "lat": 39.921,
+              "description": "中国人民银行直属的国家级钱币博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国工艺美术馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.385,
+              "lat": 39.989,
+              "description": "中国最大的工艺美术收藏展示机构。",
+              "treasures": []
+            },
+            {
+              "name": "北京税务博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.371,
+              "lat": 39.917,
+              "description": "展示中国税收历史的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国第四纪冰川遗迹陈列馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.195,
+              "lat": 39.895,
+              "description": "展示第四纪冰川地质遗迹的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "北京南海子麋鹿苑博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.453,
+              "lat": 39.79,
+              "description": "中国首座以麋鹿为主题的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "北京辽金城垣博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.349,
+              "lat": 39.853,
+              "description": "展示辽金时期北京城垣遗址的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "中国水利博物馆北京分馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.38,
+              "lat": 39.84,
+              "description": "展示北京水利发展历程的专题馆。",
+              "treasures": []
+            },
+            {
+              "name": "北京排水科技博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.393,
+              "lat": 39.888,
+              "description": "展示北京排水系统历史。",
+              "treasures": []
+            },
+            {
+              "name": "中国妇女活动中心博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.405,
+              "lat": 39.93,
+              "description": "展示中国妇女运动史。",
+              "treasures": []
+            },
+            {
+              "name": "北京孔雀城博物馆",
+              "level": 2,
+              "address": "北京北京市",
+              "lng": 116.69,
+              "lat": 39.485,
+              "description": "展示大兴地区历史文化。",
+              "treasures": []
             }
           ]
         }
@@ -1232,6 +1475,96 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "天津科学技术馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.213,
+              "lat": 39.127,
+              "description": "天津市大型现代化综合性科普场馆。",
+              "treasures": []
+            },
+            {
+              "name": "元明清天妃宫遗址博物馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.199,
+              "lat": 39.144,
+              "description": "依托天妃宫遗址而建的考古遗址类博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "天津戏剧博物馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.194,
+              "lat": 39.133,
+              "description": "位于广东会馆内，展示天津戏曲文化。",
+              "treasures": []
+            },
+            {
+              "name": "天津美术馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.222,
+              "lat": 39.1,
+              "description": "天津市大型综合性美术馆。",
+              "treasures": []
+            },
+            {
+              "name": "天津民俗博物馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.19,
+              "lat": 39.134,
+              "description": "展示天津民俗文化的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "天津邮政博物馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.204,
+              "lat": 39.139,
+              "description": "展示天津邮政历史的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "天津金融博物馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.209,
+              "lat": 39.136,
+              "description": "展示中国近代金融发展史。",
+              "treasures": []
+            },
+            {
+              "name": "利顺德大饭店博物馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.202,
+              "lat": 39.134,
+              "description": "展示天津近代饭店文化。",
+              "treasures": []
+            },
+            {
+              "name": "天津沉香艺术博物馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.215,
+              "lat": 39.105,
+              "description": "以沉香文化为主题的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "天津李叔同故居纪念馆",
+              "level": 2,
+              "address": "天津天津市",
+              "lng": 117.195,
+              "lat": 39.122,
+              "description": "展示李叔同艺术生涯。",
+              "treasures": []
             }
           ]
         }
@@ -1348,6 +1681,42 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "河北省科技馆",
+              "level": 2,
+              "address": "河北石家庄市",
+              "lng": 114.514,
+              "lat": 38.042,
+              "description": "河北省大型综合性科普教育场馆。",
+              "treasures": []
+            },
+            {
+              "name": "正定县博物馆",
+              "level": 2,
+              "address": "河北石家庄市",
+              "lng": 114.575,
+              "lat": 38.147,
+              "description": "以正定古城文物和隋唐文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "石家庄市博物馆",
+              "level": 2,
+              "address": "河北石家庄市",
+              "lng": 114.514,
+              "lat": 38.042,
+              "description": "石家庄地区综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "赵县赵州桥博物馆",
+              "level": 2,
+              "address": "河北石家庄市",
+              "lng": 114.776,
+              "lat": 37.756,
+              "description": "以赵州桥历史文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1390,6 +1759,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "秦皇岛市玻璃博物馆",
+              "level": 2,
+              "address": "河北秦皇岛市",
+              "lng": 119.6,
+              "lat": 39.935,
+              "description": "中国首家以玻璃为主题的专业博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -1411,6 +1789,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "承德博物馆",
+              "level": 2,
+              "address": "河北承德市",
+              "lng": 117.963,
+              "lat": 40.974,
+              "description": "依托避暑山庄而建，收藏清代宫廷文物。",
+              "treasures": []
             }
           ]
         },
@@ -1432,6 +1819,198 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "廊坊博物馆",
+              "level": 2,
+              "address": "河北廊坊市",
+              "lng": 116.713,
+              "lat": 39.538,
+              "description": "展示廊坊地区历史文化和非物质文化遗产的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "邯郸市",
+          "museums": [
+            {
+              "name": "邯郸市博物馆",
+              "level": 2,
+              "address": "河北邯郸市",
+              "lng": 114.49,
+              "lat": 36.613,
+              "description": "收藏展示邯郸地区历史文物的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "磁州窑博物馆",
+              "level": 2,
+              "address": "河北邯郸市",
+              "lng": 114.373,
+              "lat": 36.469,
+              "description": "展示磁州窑陶瓷文化的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "涉县博物馆",
+              "level": 2,
+              "address": "河北邯郸市",
+              "lng": 113.691,
+              "lat": 36.584,
+              "description": "以一二九师革命文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "保定市",
+          "museums": [
+            {
+              "name": "保定市博物馆",
+              "level": 2,
+              "address": "河北保定市",
+              "lng": 115.465,
+              "lat": 38.874,
+              "description": "保定地区最大的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "冉庄地道战纪念馆",
+              "level": 2,
+              "address": "河北保定市",
+              "lng": 115.633,
+              "lat": 38.793,
+              "description": "全面展示冀中地道战历史的纪念馆。",
+              "treasures": []
+            },
+            {
+              "name": "涿州博物馆",
+              "level": 2,
+              "address": "河北保定市",
+              "lng": 115.974,
+              "lat": 39.486,
+              "description": "以三国文化和涿州历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "定州博物馆",
+              "level": 2,
+              "address": "河北保定市",
+              "lng": 114.99,
+              "lat": 38.516,
+              "description": "以定窑瓷器和定州历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "燕下都遗址博物馆",
+              "level": 2,
+              "address": "河北保定市",
+              "lng": 115.509,
+              "lat": 39.393,
+              "description": "展示燕国下都遗址文物。",
+              "treasures": []
+            },
+            {
+              "name": "野三坡地质博物馆",
+              "level": 2,
+              "address": "河北保定市",
+              "lng": 115.352,
+              "lat": 39.58,
+              "description": "展示太行山地质和自然风光。",
+              "treasures": []
+            },
+            {
+              "name": "满城汉墓博物馆",
+              "level": 2,
+              "address": "河北保定市",
+              "lng": 115.317,
+              "lat": 38.949,
+              "description": "以西汉中山靖王刘胜墓为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "张家口市",
+          "museums": [
+            {
+              "name": "张家口市博物馆",
+              "level": 2,
+              "address": "河北张家口市",
+              "lng": 114.886,
+              "lat": 40.769,
+              "description": "展示张家口地区悠久历史文化的综合博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "宣化博物馆",
+              "level": 2,
+              "address": "河北张家口市",
+              "lng": 115.063,
+              "lat": 40.597,
+              "description": "以辽墓壁画和宣化历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "沧州市",
+          "museums": [
+            {
+              "name": "沧州市博物馆",
+              "level": 2,
+              "address": "河北沧州市",
+              "lng": 116.857,
+              "lat": 38.31,
+              "description": "沧州地区规模最大的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "黄骅博物馆",
+              "level": 2,
+              "address": "河北沧州市",
+              "lng": 117.33,
+              "lat": 38.371,
+              "description": "以海盐文化和黄骅历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "衡水市",
+          "museums": [
+            {
+              "name": "衡水市博物馆",
+              "level": 2,
+              "address": "河北衡水市",
+              "lng": 115.67,
+              "lat": 37.739,
+              "description": "展示衡水地区历史文化的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "邢台市",
+          "museums": [
+            {
+              "name": "邢台市博物馆",
+              "level": 2,
+              "address": "河北邢台市",
+              "lng": 114.508,
+              "lat": 37.068,
+              "description": "以邢台古城和商代邢国文物为特色。",
+              "treasures": []
+            },
+            {
+              "name": "邢台清风楼博物馆",
+              "level": 2,
+              "address": "河北邢台市",
+              "lng": 114.504,
+              "lat": 37.065,
+              "description": "以邢台历史和清风楼文物为特色。",
+              "treasures": []
             }
           ]
         }
@@ -1510,6 +2089,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "太原市博物馆",
+              "level": 2,
+              "address": "山西太原市",
+              "lng": 112.549,
+              "lat": 37.87,
+              "description": "太原市最大的综合性博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -1531,6 +2119,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "长治市博物馆",
+              "level": 2,
+              "address": "山西长治市",
+              "lng": 113.116,
+              "lat": 36.195,
+              "description": "收藏上党地区历史文物的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "壶关太行山大峡谷博物馆",
+              "level": 2,
+              "address": "山西长治市",
+              "lng": 113.41,
+              "lat": 36.115,
+              "description": "展示太行山地质和文化。",
+              "treasures": []
             }
           ]
         },
@@ -1552,6 +2158,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "云冈石窟博物馆",
+              "level": 2,
+              "address": "山西大同市",
+              "lng": 113.122,
+              "lat": 40.111,
+              "description": "展示云冈石窟艺术的专题博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "浑源县博物馆",
+              "level": 2,
+              "address": "山西大同市",
+              "lng": 113.699,
+              "lat": 39.693,
+              "description": "以悬空寺文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1594,6 +2218,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "永济市博物馆",
+              "level": 2,
+              "address": "山西运城市",
+              "lng": 110.447,
+              "lat": 34.867,
+              "description": "以鹳雀楼文化和永济历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "解州关帝庙博物馆",
+              "level": 2,
+              "address": "山西运城市",
+              "lng": 110.821,
+              "lat": 34.966,
+              "description": "以关公文化为特色的博物馆。",
+              "treasures": []
             }
           ]
         },
@@ -1615,6 +2257,121 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "临汾市博物馆",
+              "level": 2,
+              "address": "山西临汾市",
+              "lng": 111.519,
+              "lat": 36.088,
+              "description": "以陶寺遗址出土文物为特色的综合性博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "晋国博物馆",
+              "level": 2,
+              "address": "山西临汾市",
+              "lng": 111.567,
+              "lat": 35.77,
+              "description": "依托曲村-天马遗址而建的遗址类博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "侯马晋国古都博物馆",
+              "level": 2,
+              "address": "山西临汾市",
+              "lng": 111.372,
+              "lat": 35.619,
+              "description": "展示晋国古都文物。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "晋中市",
+          "museums": [
+            {
+              "name": "平遥县博物馆",
+              "level": 2,
+              "address": "山西晋中市",
+              "lng": 112.176,
+              "lat": 37.189,
+              "description": "位于平遥古城内，收藏展示平遥历史文物。",
+              "treasures": []
+            },
+            {
+              "name": "左权县博物馆",
+              "level": 2,
+              "address": "山西晋中市",
+              "lng": 113.379,
+              "lat": 37.082,
+              "description": "以左权抗战文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "朔州市",
+          "museums": [
+            {
+              "name": "朔州市博物馆",
+              "level": 2,
+              "address": "山西朔州市",
+              "lng": 112.432,
+              "lat": 39.331,
+              "description": "展示朔州地区历史和边塞文化的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "应县木塔博物馆",
+              "level": 2,
+              "address": "山西朔州市",
+              "lng": 113.19,
+              "lat": 39.553,
+              "description": "以应县木塔和辽代文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "阳泉市",
+          "museums": [
+            {
+              "name": "阳泉市博物馆",
+              "level": 2,
+              "address": "山西阳泉市",
+              "lng": 113.583,
+              "lat": 37.857,
+              "description": "展示阳泉地区历史和煤炭文化的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "忻州市",
+          "museums": [
+            {
+              "name": "忻州市博物馆",
+              "level": 2,
+              "address": "山西忻州市",
+              "lng": 112.734,
+              "lat": 38.416,
+              "description": "展示忻州地区历史和五台山文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "吕梁市",
+          "museums": [
+            {
+              "name": "吕梁市博物馆",
+              "level": 2,
+              "address": "山西吕梁市",
+              "lng": 111.144,
+              "lat": 37.519,
+              "description": "展示吕梁地区历史和红色文化。",
+              "treasures": []
             }
           ]
         }
@@ -1709,6 +2466,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "呼和浩特博物馆",
+              "level": 2,
+              "address": "内蒙古呼和浩特市",
+              "lng": 111.67,
+              "lat": 40.818,
+              "description": "以呼和浩特历史和蒙元文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "和林格尔博物馆",
+              "level": 2,
+              "address": "内蒙古呼和浩特市",
+              "lng": 111.822,
+              "lat": 40.378,
+              "description": "以东汉壁画墓和盛乐文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1793,6 +2568,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "呼伦贝尔民族博物馆",
+              "level": 2,
+              "address": "内蒙古呼伦贝尔市",
+              "lng": 119.765,
+              "lat": 49.211,
+              "description": "展示呼伦贝尔地区多民族历史文化的博物馆。",
+              "treasures": []
+            },
+            {
+              "name": "满洲里市博物馆",
+              "level": 2,
+              "address": "内蒙古呼伦贝尔市",
+              "lng": 117.378,
+              "lat": 49.597,
+              "description": "展示中俄边境城市满洲里的历史文化。",
+              "treasures": []
+            },
+            {
+              "name": "扎兰屯市博物馆",
+              "level": 2,
+              "address": "内蒙古呼伦贝尔市",
+              "lng": 122.737,
+              "lat": 48.014,
+              "description": "以扎兰屯历史和达斡尔族文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1856,6 +2658,80 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "锡林郭勒盟博物馆",
+              "level": 2,
+              "address": "内蒙古锡林郭勒盟",
+              "lng": 116.048,
+              "lat": 43.933,
+              "description": "以蒙古族游牧文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "二连浩特恐龙博物馆",
+              "level": 2,
+              "address": "内蒙古锡林郭勒盟",
+              "lng": 111.977,
+              "lat": 43.653,
+              "description": "以恐龙化石为特色的专题博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "巴彦淖尔市",
+          "museums": [
+            {
+              "name": "巴彦淖尔市博物馆",
+              "level": 2,
+              "address": "内蒙古巴彦淖尔市",
+              "lng": 107.388,
+              "lat": 40.743,
+              "description": "展示河套文化和阴山岩画的综合博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "乌兰察布市",
+          "museums": [
+            {
+              "name": "乌兰察布市博物馆",
+              "level": 2,
+              "address": "内蒙古乌兰察布市",
+              "lng": 113.114,
+              "lat": 40.994,
+              "description": "展示乌兰察布地区历史和察哈尔文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "乌兰浩特市",
+          "museums": [
+            {
+              "name": "兴安盟博物馆",
+              "level": 2,
+              "address": "内蒙古乌兰浩特市",
+              "lng": 122.065,
+              "lat": 46.072,
+              "description": "以蒙古族发源地历史为特色的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "乌海市",
+          "museums": [
+            {
+              "name": "乌海市博物馆",
+              "level": 2,
+              "address": "内蒙古乌海市",
+              "lng": 106.812,
+              "lat": 39.655,
+              "description": "展示乌海地区历史和书法文化。",
+              "treasures": []
             }
           ]
         }

@@ -282,6 +282,33 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "西安事变纪念馆",
+              "level": 2,
+              "address": "陕西西安市",
+              "lng": 108.954,
+              "lat": 34.266,
+              "description": "展示西安事变历史的专题纪念馆。",
+              "treasures": []
+            },
+            {
+              "name": "大明宫遗址博物馆",
+              "level": 2,
+              "address": "陕西西安市",
+              "lng": 108.968,
+              "lat": 34.282,
+              "description": "展示唐代大明宫遗址。",
+              "treasures": []
+            },
+            {
+              "name": "华清宫博物馆",
+              "level": 2,
+              "address": "陕西西安市",
+              "lng": 109.215,
+              "lat": 34.366,
+              "description": "以唐代华清宫遗址为特色。",
+              "treasures": []
             }
           ]
         },
@@ -339,6 +366,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "法门寺博物馆",
+              "level": 2,
+              "address": "陕西宝鸡市",
+              "lng": 107.899,
+              "lat": 34.444,
+              "description": "以法门寺地宫出土文物为特色。",
+              "treasures": []
             }
           ]
         },
@@ -360,6 +396,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "黄帝陵博物院",
+              "level": 2,
+              "address": "陕西延安市",
+              "lng": 109.262,
+              "lat": 35.583,
+              "description": "展示中华人文始祖黄帝文化。",
+              "treasures": []
             }
           ]
         },
@@ -381,6 +426,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "铜川市博物馆",
+              "level": 2,
+              "address": "陕西铜川市",
+              "lng": 108.945,
+              "lat": 34.897,
+              "description": "以耀州窑陶瓷为特色。",
+              "treasures": []
+            },
+            {
+              "name": "耀州窑博物馆",
+              "level": 2,
+              "address": "陕西铜川市",
+              "lng": 108.98,
+              "lat": 34.909,
+              "description": "以耀州窑陶瓷为特色。",
+              "treasures": []
             }
           ]
         },
@@ -445,6 +508,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "咸阳市博物馆",
+              "level": 2,
+              "address": "陕西咸阳市",
+              "lng": 108.709,
+              "lat": 34.329,
+              "description": "以秦汉文物和咸阳古都历史为特色。",
+              "treasures": []
+            },
+            {
+              "name": "茂陵博物馆",
+              "level": 2,
+              "address": "陕西咸阳市",
+              "lng": 108.354,
+              "lat": 34.39,
+              "description": "以汉武帝茂陵文物为特色。",
+              "treasures": []
             }
           ]
         },
@@ -466,6 +547,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "城固县博物馆",
+              "level": 2,
+              "address": "陕西汉中市",
+              "lng": 107.333,
+              "lat": 33.157,
+              "description": "以张骞故里文化为特色。",
+              "treasures": []
+            },
+            {
+              "name": "勉县博物馆",
+              "level": 2,
+              "address": "陕西汉中市",
+              "lng": 106.673,
+              "lat": 33.153,
+              "description": "以武侯墓文化和勉县历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -487,6 +586,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "渭南市博物馆",
+              "level": 2,
+              "address": "陕西渭南市",
+              "lng": 109.502,
+              "lat": 34.499,
+              "description": "展示渭南地区历史和仓颉文化。",
+              "treasures": []
+            },
+            {
+              "name": "韩城市博物馆",
+              "level": 2,
+              "address": "陕西渭南市",
+              "lng": 110.442,
+              "lat": 35.477,
+              "description": "以司马迁故里和韩城历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -529,6 +646,20 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "商洛市",
+          "museums": [
+            {
+              "name": "商洛市博物馆",
+              "level": 2,
+              "address": "陕西商洛市",
+              "lng": 109.94,
+              "lat": 33.868,
+              "description": "展示商洛地区历史和商鞅文化。",
+              "treasures": []
             }
           ]
         }
@@ -591,6 +722,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "兰州市博物馆",
+              "level": 2,
+              "address": "甘肃兰州市",
+              "lng": 103.834,
+              "lat": 36.061,
+              "description": "展示兰州地区历史和丝路文化。",
+              "treasures": []
             }
           ]
         },
@@ -654,6 +794,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "张掖大佛寺博物馆",
+              "level": 2,
+              "address": "甘肃张掖市",
+              "lng": 100.448,
+              "lat": 38.927,
+              "description": "以西夏大佛和张掖历史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -675,6 +824,24 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "麦积山石窟博物馆",
+              "level": 2,
+              "address": "甘肃天水市",
+              "lng": 106.0,
+              "lat": 34.35,
+              "description": "以麦积山石窟艺术为特色。",
+              "treasures": []
+            },
+            {
+              "name": "秦安县博物馆",
+              "level": 2,
+              "address": "甘肃天水市",
+              "lng": 105.677,
+              "lat": 34.859,
+              "description": "以大地湾遗址文物为特色。",
+              "treasures": []
             }
           ]
         },
@@ -696,6 +863,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "金塔县博物馆",
+              "level": 2,
+              "address": "甘肃酒泉市",
+              "lng": 98.903,
+              "lat": 40.004,
+              "description": "以汉代居延文化为特色。",
+              "treasures": []
             }
           ]
         },
@@ -717,6 +893,136 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "庆阳市",
+          "museums": [
+            {
+              "name": "庆阳市博物馆",
+              "level": 2,
+              "address": "甘肃庆阳市",
+              "lng": 107.638,
+              "lat": 35.734,
+              "description": "以周祖文化和庆阳历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "临夏市",
+          "museums": [
+            {
+              "name": "临夏州博物馆",
+              "level": 2,
+              "address": "甘肃临夏市",
+              "lng": 103.21,
+              "lat": 35.601,
+              "description": "以古生物化石和临夏砖雕为特色。",
+              "treasures": []
+            },
+            {
+              "name": "永靖县博物馆",
+              "level": 2,
+              "address": "甘肃临夏市",
+              "lng": 103.319,
+              "lat": 35.938,
+              "description": "以刘家峡恐龙化石为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "定西市",
+          "museums": [
+            {
+              "name": "定西市博物馆",
+              "level": 2,
+              "address": "甘肃定西市",
+              "lng": 104.626,
+              "lat": 35.58,
+              "description": "展示定西地区历史和马家窑文化。",
+              "treasures": []
+            },
+            {
+              "name": "陇西县博物馆",
+              "level": 2,
+              "address": "甘肃定西市",
+              "lng": 104.634,
+              "lat": 35.003,
+              "description": "以李氏文化和陇西历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "平凉市",
+          "museums": [
+            {
+              "name": "平凉市博物馆",
+              "level": 2,
+              "address": "甘肃平凉市",
+              "lng": 106.684,
+              "lat": 35.543,
+              "description": "以崆峒文化和平凉历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "白银市",
+          "museums": [
+            {
+              "name": "白银市博物馆",
+              "level": 2,
+              "address": "甘肃白银市",
+              "lng": 104.173,
+              "lat": 36.544,
+              "description": "展示白银地区历史和丝路文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "陇南市",
+          "museums": [
+            {
+              "name": "陇南市博物馆",
+              "level": 2,
+              "address": "甘肃陇南市",
+              "lng": 104.929,
+              "lat": 33.388,
+              "description": "展示陇南地区历史和白马藏族文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "嘉峪关市",
+          "museums": [
+            {
+              "name": "嘉峪关长城博物馆",
+              "level": 2,
+              "address": "甘肃嘉峪关市",
+              "lng": 98.289,
+              "lat": 39.773,
+              "description": "以嘉峪关长城文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "合作市",
+          "museums": [
+            {
+              "name": "甘南州博物馆",
+              "level": 2,
+              "address": "甘肃合作市",
+              "lng": 102.911,
+              "lat": 35.0,
+              "description": "展示甘南藏族文化的博物馆。",
+              "treasures": []
             }
           ]
         }
@@ -765,6 +1071,122 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "西宁市博物馆",
+              "level": 2,
+              "address": "青海西宁市",
+              "lng": 101.778,
+              "lat": 36.617,
+              "description": "展示西宁地区历史和多民族文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "德令哈市",
+          "museums": [
+            {
+              "name": "海西州民族博物馆",
+              "level": 2,
+              "address": "青海德令哈市",
+              "lng": 97.37,
+              "lat": 37.37,
+              "description": "展示柴达木盆地历史和蒙古族藏族文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "海东市",
+          "museums": [
+            {
+              "name": "海东市博物馆",
+              "level": 2,
+              "address": "青海海东市",
+              "lng": 102.104,
+              "lat": 36.502,
+              "description": "展示河湟文化和海东地区历史。",
+              "treasures": []
+            },
+            {
+              "name": "柳湾博物馆",
+              "level": 2,
+              "address": "青海海东市",
+              "lng": 102.15,
+              "lat": 36.33,
+              "description": "以柳湾彩陶为特色的遗址博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "玉树市",
+          "museums": [
+            {
+              "name": "玉树州博物馆",
+              "level": 2,
+              "address": "青海玉树市",
+              "lng": 97.008,
+              "lat": 33.004,
+              "description": "展示三江源文化和玉树地区历史。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "共和县",
+          "museums": [
+            {
+              "name": "海南州博物馆",
+              "level": 2,
+              "address": "青海共和县",
+              "lng": 100.62,
+              "lat": 36.284,
+              "description": "展示海南藏族自治州历史和藏族文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "同仁市",
+          "museums": [
+            {
+              "name": "黄南州博物馆",
+              "level": 2,
+              "address": "青海同仁市",
+              "lng": 102.015,
+              "lat": 35.516,
+              "description": "以热贡艺术和唐卡文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "海晏县",
+          "museums": [
+            {
+              "name": "海北州博物馆",
+              "level": 2,
+              "address": "青海海晏县",
+              "lng": 100.994,
+              "lat": 36.896,
+              "description": "以金银滩和原子城文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "玛沁县",
+          "museums": [
+            {
+              "name": "果洛州博物馆",
+              "level": 2,
+              "address": "青海玛沁县",
+              "lng": 100.238,
+              "lat": 34.478,
+              "description": "展示果洛地区藏族文化。",
+              "treasures": []
             }
           ]
         }
@@ -807,6 +1229,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "银川市博物馆",
+              "level": 2,
+              "address": "宁夏银川市",
+              "lng": 106.23,
+              "lat": 38.487,
+              "description": "展示银川地区历史和西夏文化。",
+              "treasures": []
             }
           ]
         },
@@ -828,6 +1259,66 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "隆德县博物馆",
+              "level": 2,
+              "address": "宁夏固原市",
+              "lng": 106.111,
+              "lat": 35.625,
+              "description": "以六盘山红色文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "吴忠市",
+          "museums": [
+            {
+              "name": "吴忠市博物馆",
+              "level": 2,
+              "address": "宁夏吴忠市",
+              "lng": 106.199,
+              "lat": 37.997,
+              "description": "展示吴忠地区历史和黄河文化。",
+              "treasures": []
+            },
+            {
+              "name": "盐池县博物馆",
+              "level": 2,
+              "address": "宁夏吴忠市",
+              "lng": 107.407,
+              "lat": 37.783,
+              "description": "以盐池长城和革命文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "中卫市",
+          "museums": [
+            {
+              "name": "中卫市博物馆",
+              "level": 2,
+              "address": "宁夏中卫市",
+              "lng": 105.189,
+              "lat": 37.5,
+              "description": "展示中卫地区历史和沙坡头文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "石嘴山市",
+          "museums": [
+            {
+              "name": "石嘴山市博物馆",
+              "level": 2,
+              "address": "宁夏石嘴山市",
+              "lng": 106.376,
+              "lat": 39.013,
+              "description": "展示石嘴山地区历史和工业文化。",
+              "treasures": []
             }
           ]
         }
@@ -921,6 +1412,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "交河故城遗址博物馆",
+              "level": 2,
+              "address": "新疆吐鲁番市",
+              "lng": 89.055,
+              "lat": 42.953,
+              "description": "以交河故城遗址为特色。",
+              "treasures": []
             }
           ]
         },
@@ -984,6 +1484,15 @@
                   "imageUrl": ""
                 }
               ]
+            },
+            {
+              "name": "克拉玛依博物馆",
+              "level": 2,
+              "address": "新疆克拉玛依市",
+              "lng": 84.873,
+              "lat": 45.596,
+              "description": "以石油文化和克拉玛依发展史为特色。",
+              "treasures": []
             }
           ]
         },
@@ -1005,6 +1514,196 @@
                   "imageUrl": ""
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "伊宁市",
+          "museums": [
+            {
+              "name": "伊犁州博物馆",
+              "level": 2,
+              "address": "新疆伊宁市",
+              "lng": 81.278,
+              "lat": 43.913,
+              "description": "展示伊犁河谷历史和哈萨克族文化。",
+              "treasures": []
+            },
+            {
+              "name": "尼勒克县博物馆",
+              "level": 2,
+              "address": "新疆伊宁市",
+              "lng": 82.512,
+              "lat": 43.8,
+              "description": "以乌孙文化和草原石人为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "昌吉市",
+          "museums": [
+            {
+              "name": "昌吉州博物馆",
+              "level": 2,
+              "address": "新疆昌吉市",
+              "lng": 87.308,
+              "lat": 44.014,
+              "description": "展示昌吉地区历史和北庭文化。",
+              "treasures": []
+            },
+            {
+              "name": "奇台县博物馆",
+              "level": 2,
+              "address": "新疆昌吉市",
+              "lng": 89.593,
+              "lat": 44.022,
+              "description": "以北庭故城文物为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "库尔勒市",
+          "museums": [
+            {
+              "name": "巴州博物馆",
+              "level": 2,
+              "address": "新疆库尔勒市",
+              "lng": 86.174,
+              "lat": 41.726,
+              "description": "以楼兰文化和塔里木河流域历史为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "阿克苏市",
+          "museums": [
+            {
+              "name": "阿克苏地区博物馆",
+              "level": 2,
+              "address": "新疆阿克苏市",
+              "lng": 80.26,
+              "lat": 41.168,
+              "description": "展示阿克苏地区历史和龟兹文化。",
+              "treasures": []
+            },
+            {
+              "name": "库车博物馆",
+              "level": 2,
+              "address": "新疆阿克苏市",
+              "lng": 82.962,
+              "lat": 41.718,
+              "description": "以龟兹文化和石窟艺术为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "哈密市",
+          "museums": [
+            {
+              "name": "哈密博物馆",
+              "level": 2,
+              "address": "新疆哈密市",
+              "lng": 93.515,
+              "lat": 42.818,
+              "description": "以哈密王陵文物和丝路文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "和田市",
+          "museums": [
+            {
+              "name": "和田地区博物馆",
+              "level": 2,
+              "address": "新疆和田市",
+              "lng": 79.927,
+              "lat": 37.114,
+              "description": "展示和田地区历史和于阗文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "塔城市",
+          "museums": [
+            {
+              "name": "塔城地区博物馆",
+              "level": 2,
+              "address": "新疆塔城市",
+              "lng": 82.985,
+              "lat": 46.746,
+              "description": "展示塔城地区多民族文化的博物馆。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "阿勒泰市",
+          "museums": [
+            {
+              "name": "阿勒泰地区博物馆",
+              "level": 2,
+              "address": "新疆阿勒泰市",
+              "lng": 88.131,
+              "lat": 47.848,
+              "description": "展示阿勒泰地区历史和草原文化。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "博乐市",
+          "museums": [
+            {
+              "name": "博州博物馆",
+              "level": 2,
+              "address": "新疆博乐市",
+              "lng": 82.051,
+              "lat": 44.854,
+              "description": "以博尔塔拉文化和蒙古族文化为特色。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "石河子市",
+          "museums": [
+            {
+              "name": "石河子军垦博物馆",
+              "level": 2,
+              "address": "新疆石河子市",
+              "lng": 86.041,
+              "lat": 44.307,
+              "description": "展示新疆生产建设兵团发展史。",
+              "treasures": []
+            }
+          ]
+        },
+        {
+          "name": "巴州",
+          "museums": [
+            {
+              "name": "若羌县楼兰博物馆",
+              "level": 2,
+              "address": "新疆巴州",
+              "lng": 88.168,
+              "lat": 39.023,
+              "description": "以楼兰文化和丝路文物为特色。",
+              "treasures": []
+            },
+            {
+              "name": "米兰遗址博物馆",
+              "level": 2,
+              "address": "新疆巴州",
+              "lng": 89.5,
+              "lat": 38.5,
+              "description": "以米兰遗址和丝路文化为特色。",
+              "treasures": []
             }
           ]
         }
