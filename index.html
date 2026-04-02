@@ -289,31 +289,34 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 .img-fullscreen img { max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 4px; }
 .img-fullscreen .close-hint { position: absolute; top: 20px; right: 20px; color: rgba(255,255,255,0.6); font-size: 14px; }
 
-/* 地图标记样式 - 水滴pin */
+/* 地图标记样式 */
 .museum-pin {
   position: relative; cursor: pointer;
   transition: transform 0.2s cubic-bezier(.4,2,.6,1), filter 0.2s;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
 }
-.museum-pin:hover { transform: scale(1.35) translateY(-3px); filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); z-index: 9999 !important; }
+.museum-pin:hover { transform: scale(1.4) translateY(-2px); filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4)); z-index: 9999 !important; }
 .museum-pin svg { display: block; }
-/* 二级博物馆小圆点 */
-.museum-dot {
-  transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
+/* 二级博物馆标记 */
+.museum-dot-wrap {
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.25));
 }
-.museum-dot:hover { transform: scale(1.8); box-shadow: 0 2px 8px rgba(0,0,0,0.5) !important; z-index: 9999 !important; }
+.museum-dot-wrap:hover { transform: scale(1.6); filter: drop-shadow(0 2px 5px rgba(0,0,0,0.4)); z-index: 9999 !important; }
+.museum-dot-wrap svg { display: block; }
 /* 一级博物馆光晕 */
-.museum-pin.level1::after {
+.museum-pin::after {
   content: ''; position: absolute; top: 50%; left: 50%;
-  width: 28px; height: 28px; border-radius: 50%;
-  transform: translate(-50%, -60%);
-  background: radial-gradient(circle, rgba(245,200,66,0.35) 0%, transparent 70%);
-  animation: pulse-glow 2.5s ease-in-out infinite;
+  width: 22px; height: 22px; border-radius: 50%;
+  transform: translate(-50%, -55%);
+  background: radial-gradient(circle, rgba(232,165,23,0.3) 0%, transparent 70%);
+  animation: pulse-glow 3s ease-in-out infinite;
   pointer-events: none;
 }
 @keyframes pulse-glow {
-  0%, 100% { transform: translate(-50%,-60%) scale(1); opacity: 0.6; }
-  50% { transform: translate(-50%,-60%) scale(1.5); opacity: 0; }
+  0%, 100% { transform: translate(-50%,-55%) scale(1); opacity: 0.5; }
+  50% { transform: translate(-50%,-55%) scale(1.4); opacity: 0; }
 }
 
 /* Leaflet 弹窗覆盖 */
@@ -718,38 +721,34 @@ function createMarker(m) {
   let html, iconSize, iconAnchor, popupAnchor;
 
   if (isL1) {
-    // 一级博物馆：水滴 pin
-    const w = 20, h = 27;
-    let svg;
-    if (visited) {
-      svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
-        <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#5de87a"/><stop offset="100%" stop-color="#27ae60"/>
-        </linearGradient></defs>
-        <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
-          fill="url(#${gid})" stroke="#1e8449" stroke-width="1"/>
-        <path d="M7 10.5l2.5 2.5 5.5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-      </svg>`;
-    } else {
-      svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 22 30">
-        <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#f5c842"/><stop offset="100%" stop-color="#d4a017"/>
-        </linearGradient></defs>
-        <path d="M11 0C5 0 0 5 0 11c0 8 11 19 11 19s11-11 11-19C22 5 17 0 11 0z"
-          fill="url(#${gid})" stroke="#b8860b" stroke-width="1"/>
-        <circle cx="11" cy="10.5" r="3" fill="#fff" opacity="0.9"/>
-      </svg>`;
-    }
-    html = `<div class="museum-pin${visited ? ' visited-pin' : ''}">${svg}</div>`;
+    // 一级博物馆：博物馆建筑小图标 16x18
+    const w = 16, h = 18;
+    const fill = visited ? '#27ae60' : '#e8a517';
+    const stroke = visited ? '#1e8449' : '#b8860b';
+    // 简洁的博物馆建筑：三角屋顶 + 柱子
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 16 18">
+      <polygon points="8,1 1,7 15,7" fill="${fill}" stroke="${stroke}" stroke-width="0.8"/>
+      <rect x="2" y="7" width="12" height="9" rx="0.5" fill="${fill}" stroke="${stroke}" stroke-width="0.8"/>
+      <rect x="4" y="9" width="2" height="5" rx="0.3" fill="#fff" opacity="0.85"/>
+      <rect x="7" y="9" width="2" height="5" rx="0.3" fill="#fff" opacity="0.85"/>
+      <rect x="10" y="9" width="2" height="5" rx="0.3" fill="#fff" opacity="0.85"/>
+      <line x1="2" y1="16" x2="14" y2="16" stroke="${stroke}" stroke-width="1"/>
+      ${visited ? '<path d="M5.5 4.5l1 1 2.5-2.5" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>' : ''}
+    </svg>`;
+    html = `<div class="museum-pin">${svg}</div>`;
     iconSize = [w, h];
     iconAnchor = [w/2, h];
-    popupAnchor = [0, -h + 4];
+    popupAnchor = [0, -h + 2];
   } else {
-    // 二级博物馆：小圆点
-    const s = 10;
-    const color = visited ? '#27ae60' : '#5dade2';
-    const border = visited ? '#1e8449' : '#2e86c1';
-    html = `<div class="museum-dot${visited ? ' visited-dot' : ''}" style="width:${s}px;height:${s}px;border-radius:50%;background:${color};border:1.5px solid ${border};box-shadow:0 1px 3px rgba(0,0,0,0.3);cursor:pointer;"></div>`;
+    // 二级博物馆：小菱形 8x8
+    const s = 8;
+    const fill = visited ? 'rgba(39,174,96,0.85)' : 'rgba(180,130,60,0.6)';
+    const stroke = visited ? '#1e8449' : 'rgba(150,110,40,0.8)';
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${s}" height="${s}" viewBox="0 0 8 8">
+      <rect x="1.17" y="1.17" width="5.66" height="5.66" rx="1" transform="rotate(45 4 4)"
+        fill="${fill}" stroke="${stroke}" stroke-width="0.6"/>
+    </svg>`;
+    html = `<div class="museum-dot-wrap">${svg}</div>`;
     iconSize = [s, s];
     iconAnchor = [s/2, s/2];
     popupAnchor = [0, -s/2];
