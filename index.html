@@ -207,8 +207,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC'
 .dropdown-item-sub { font-size: 11px; color: rgba(255,255,255,0.4); white-space: nowrap; }
 .dropdown-item-badge {
   font-size: 10px; padding: 1px 5px; border-radius: 3px;
-  background: rgba(245,200,66,0.2); color: #f5c842; white-space: nowrap; flex-shrink: 0;
+  white-space: nowrap; flex-shrink: 0; align-self: flex-start; margin-top: 2px;
 }
+.dropdown-item-badge.badge-l1 { background: rgba(245,200,66,0.2); color: #f5c842; }
+.dropdown-item-badge.badge-l2 { background: rgba(93,173,226,0.2); color: #5dade2; }
+.dropdown-item-treasure {
+  font-size: 11px; color: rgba(245,200,66,0.7); margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.dropdown-item-treasure em { color: #f5c842; font-style: normal; }
 .dropdown-empty {
   padding: 14px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.3);
 }
@@ -1098,38 +1105,45 @@ function highlight(text, query) {
   return text.replace(new RegExp(escaped, 'gi'), m => `<em>${m}</em>`);
 }
 
-// 模糊匹配：支持子串、拼音首字母、分词
+// 模糊匹配：支持子串、拼音首字母、分词、镇馆之宝
 function fuzzyMatch(museum, query) {
   const q = query.toLowerCase().trim();
-  if (!q) return { match: true, score: 0 };
-  
-  const fields = [
-    museum.name,
-    museum.province,
-    museum.city,
-    museum.address || '',
-    museum.description || '',
-    ...(museum.treasures || []).map(t => t.name)
-  ];
-  const fullText = fields.join(' ').toLowerCase();
-  const pinyinText = getPinyinInitials(fields.slice(0, 4).join('')).toLowerCase();
-  
-  // 关键词分词（空格分割）
-  const keywords = q.split(/\s+/);
-  
+  if (!q) return { match: true, score: 0, matchedTreasure: null };
+
+  const baseFields = [museum.name, museum.province, museum.city, museum.address || '', museum.description || ''];
+  const baseText = baseFields.join(' ').toLowerCase();
+  const pinyinText = getPinyinInitials(baseFields.slice(0, 4).join('')).toLowerCase();
+
+  // 检查镇馆之宝匹配
+  let matchedTreasure = null;
+  const treasures = museum.treasures || [];
+  for (const t of treasures) {
+    const tName = t.name.toLowerCase();
+    const tAll = (t.name + ' ' + (t.era || '') + ' ' + (t.description || '')).toLowerCase();
+    const tPinyin = getPinyinInitials(t.name).toLowerCase();
+    if (tName.includes(q) || tAll.includes(q) || tPinyin.includes(q)) {
+      matchedTreasure = t.name;
+      break;
+    }
+  }
+
+  const treasureText = treasures.map(t => t.name + ' ' + (t.era || '') + ' ' + (t.description || '')).join(' ').toLowerCase();
+  const allText = baseText + ' ' + treasureText;
+
+  const keywords = q.split(/\s+/).filter(Boolean);
   let score = 0;
   for (const kw of keywords) {
-    if (fullText.includes(kw)) {
-      // 名称匹配加分更高
+    if (allText.includes(kw)) {
       if (museum.name.toLowerCase().includes(kw)) score += 10;
+      else if (matchedTreasure && matchedTreasure.toLowerCase().includes(kw)) score += 8;
       else score += 3;
     } else if (pinyinText.includes(kw)) {
       score += 1;
     } else {
-      return { match: false, score: 0 };
+      return { match: false, score: 0, matchedTreasure: null };
     }
   }
-  return { match: true, score };
+  return { match: true, score, matchedTreasure };
 }
 
 // ===== 搜索下拉列表 =====
@@ -1146,8 +1160,8 @@ function showDropdown(query) {
 
   const results = [];
   for (const m of allMuseums) {
-    const { match, score } = fuzzyMatch(m, query);
-    if (match) results.push({ museum: m, score });
+    const { match, score, matchedTreasure } = fuzzyMatch(m, query);
+    if (match && score > 0) results.push({ museum: m, score, matchedTreasure });
   }
   results.sort((a, b) => b.score - a.score);
 
@@ -1155,18 +1169,24 @@ function showDropdown(query) {
   dropdownActiveIndex = -1;
 
   if (dropdownItems.length === 0) {
-    dropdown.innerHTML = `<div class="dropdown-empty">未找到相关博物馆</div>`;
+    dropdown.innerHTML = `<div class="dropdown-empty">未找到相关博物馆或文物</div>`;
   } else {
     const q = query.toLowerCase().trim();
     dropdown.innerHTML = dropdownItems.map((r, i) => {
       const m = r.museum;
       const highlightedName = highlight(m.name, q);
+      const levelBadge = m.level === 1 ? '一级' : '二级';
+      const levelCls = m.level === 1 ? 'badge-l1' : 'badge-l2';
+      const treasureHint = r.matchedTreasure
+        ? `<div class="dropdown-item-treasure">🏆 ${highlight(r.matchedTreasure, q)}</div>`
+        : '';
       return `<div class="dropdown-item" data-index="${i}" onmousedown="selectDropdownItem(${i})">
         <div style="flex:1;min-width:0">
           <div class="dropdown-item-name">${highlightedName}</div>
           <div class="dropdown-item-sub">${m.province} · ${m.city}</div>
+          ${treasureHint}
         </div>
-        <div class="dropdown-item-badge">一级</div>
+        <div class="dropdown-item-badge ${levelCls}">${levelBadge}</div>
       </div>`;
     }).join('');
   }
