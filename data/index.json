@@ -3,9 +3,9 @@
   "description": "以国家一级、二级博物馆为核心，按七大区域、省份、地级市组织的中国博物馆数据",
   "dataVersion": "2025.04",
   "totalMuseums": {
-    "level1": 301,
-    "level2": 500,
-    "total": 801
+    "level1": 296,
+    "level2": 496,
+    "total": 792
   },
   "regions": [
     {

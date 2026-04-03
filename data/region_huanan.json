@@ -477,22 +477,6 @@
           "name": "惠州市",
           "museums": [
             {
-              "name": "惠州博物馆",
-              "level": 1,
-              "address": "广东省惠州市惠城区",
-              "lng": 114.415,
-              "lat": 23.112,
-              "description": "以客家文化为特色，第五批国家一级博物馆。",
-              "treasures": [
-                {
-                  "name": "苏东坡历史文物",
-                  "era": "宋代",
-                  "description": "苏东坡在惠州生活的相关文物。",
-                  "imageUrl": ""
-                }
-              ]
-            },
-            {
               "name": "惠州市博物馆",
               "level": 2,
               "address": "广东惠州市",
