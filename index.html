@@ -884,28 +884,32 @@ function filterLevel(level) {
   document.querySelectorAll('.level-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.level === String(level));
   });
+  buildRegionNav();
+  updateNavVisited();
   renderMarkers();
 }
 
 // ===== 区域导航 =====
 function buildRegionNav() {
   const container = document.getElementById('regionList');
+  // 根据当前等级筛选过滤计数
+  const src = currentLevel === 'all' ? allMuseums : allMuseums.filter(m => m.level === currentLevel);
   let html = '';
 
   // "全部"选项
   html += `<div class="region-item"><div class="region-header" onclick="selectAll()">
     <div class="region-dot" style="background:linear-gradient(135deg,#f5c842,#e74c3c)"></div>
     <span class="region-name">全部区域</span>
-    <span class="region-count">${allMuseums.length}家</span>
+    <span class="region-count">${src.length}家</span>
   </div></div>`;
 
   for (const region of REGIONS) {
-    const rMuseums = allMuseums.filter(m => m.region === region.name);
+    const rMuseums = src.filter(m => m.region === region.name);
     const provinces = region.provinces;
 
     let provinceHtml = '';
     for (const p of provinces) {
-      const pMuseums = allMuseums.filter(m => m.province === p);
+      const pMuseums = src.filter(m => m.province === p);
       if (pMuseums.length === 0) continue;
 
       // 按城市分组
@@ -929,7 +933,6 @@ function buildRegionNav() {
         ).join('');
 
         if (singleCity) {
-          // 只有一个城市时，直接展开不显示城市头部，避免重复
           cityHtml += `<div class="museum-nav-list" style="display:block;border-left:none;margin-left:0;padding-left:4px">${museumsHtml}</div>`;
         } else {
           cityHtml += `<div class="city-group" id="city-${encodeURIComponent(p)}-${encodeURIComponent(cityName)}">
@@ -959,6 +962,8 @@ function buildRegionNav() {
         <div class="city-list">${cityHtml}</div>
       </div>`;
     }
+
+    if (rMuseums.length === 0) continue;
 
     html += `<div class="region-item" data-region="${region.name}">
       <div class="region-header" onclick="toggleRegion(this.parentElement)">
