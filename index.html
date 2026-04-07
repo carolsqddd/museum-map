@@ -705,7 +705,8 @@ function toggleVisitedFilter() {
 }
 
 function updateVisitedCount() {
-  const n = visitedSet.size;
+  const src = currentLevel === 'all' ? allMuseums : allMuseums.filter(m => m.level === currentLevel);
+  const n = src.filter(m => visitedSet.has(m.name)).length;
   document.getElementById('stat-visited').textContent = n;
   document.getElementById('btn-visited').textContent = n;
 }
